@@ -1,0 +1,540 @@
+@font-face {
+  font-family: 'EastmanRomanTria';
+  src: url(../fonts/EastmanRomanTrial-Bold.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Bold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  src: url(../fonts/stolzl_book.otf) format('otf'),
+       url(../fonts/stolzl_medium.otf) format('otf'),
+       url(../fonts/stolzl_bold.otf) format('otf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: 'Stolzl', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+
+ul,
+ol,
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #161616 !important;
+}
+
+p {
+  margin: 0px !important;
+}
+
+h1 {
+ font-family: 'EastmanRomanTria', sans-serif;
+ font-size: 40px !important;
+ font-weight: 700 !important;
+ color: #FFFFFF ;
+ max-width: 584px;
+ margin-bottom: 24px;
+}
+
+h2 {
+  font-family: 'Stolzl', sans-serif;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  color: #0D1C12;
+}
+
+h3 {
+  font-family: 'Stolzl', sans-serif;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #0D1C12;
+}
+
+._container {
+  width: 100% !important;
+  padding-right: calc(1.5rem * .5) !important;
+  padding-left: calc(1.5rem * .5) !important;
+  max-width: 1400px !important;
+  margin: 0px auto !important;
+  overflow-x: hidden !important;
+}
+
+section {
+  width: 100% !important;
+  padding-right: calc(1.5rem * .5) !important;
+  padding-left: calc(1.5rem * .5) !important;
+  max-width: 1400px !important;
+  margin: 0px auto !important;
+  /* margin-bottom: 60px; */
+  overflow-x: hidden !important;
+}
+
+.general-button {
+  padding: 24px 32px;
+  border-radius: 24px !important;
+  background: #77BB58 !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  outline: none !important;
+  transition: background-color .5s ease-in-out;
+}
+
+.general-button:hover {
+  background: #629a48 !important;
+  transition: background-color .5s ease-in-out;
+}
+
+.filter-catalog-button {
+  padding: 8px 16px !important;
+  border-radius: 12px !important;
+  background: #EFEFEF !important;
+  text-align: center !important;
+  color: #000000 !important;
+  border: none !important;
+  outline: none !important;
+  transition: background-color .5s ease-in-out;
+}
+
+.filter-catalog-button:hover {
+  background: #b0b0b0 !important;
+  transition: background-color .5s ease-in-out;
+}
+
+.product-card {
+  padding: 8px 8px 16px 8px;
+  background-color: #0D3334;
+  border-radius: 24px;
+}
+
+.product-card h2 {
+  font-size: 18px !important;
+}
+
+.slick-track .product-card {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.product-card-img {
+  max-width: 100%;
+  max-height: 190px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.product-card-info {
+  padding: 0px 8px;
+}
+
+.product-card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.product-card-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 24px !important;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.product-card-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.product-card-button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  background-color: #234546;
+  color: #FFFFFF !important;
+  transition: background-color  .5s ease-in-out;
+}
+
+.product-card-button:hover {
+  background-color: #3d797b;
+  transition: background-color color .5s ease-in-out;
+}
+
+.custom-prev-arrow {
+  background-color: #0D3334;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%  ;
+  padding: 5px;
+
+  position: absolute;
+  top: 45%;
+  left: 0;
+  z-index: 1;
+}
+
+.custom-next-arrow {
+  background-color: #0D3334;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%  ;
+  padding: 5px;
+
+  position: absolute;
+
+  top: 45%;
+  right: 0;
+  z-index: 1;
+}
+
+/* ------------Header------------ */
+
+header { 
+  padding-top: 12px !important;
+  margin-bottom: 16px !important;
+}
+
+header hr {
+  width: 100% !important;
+  border: 1px solid #B8B8B8 !important;
+}
+
+.header-contact__info > * {
+  margin-right: 32px !important;
+}
+
+.header-contact__info > *:last-child {
+  margin-right: 0px !important;
+}
+
+.header-contact {
+}
+
+.header-contact a {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.header-contact p {
+  font-weight: 400;
+  color: #484A46;
+}
+
+.header-icons > * {
+  margin-right: 12px !important;
+}
+
+.header-icons > *:last-child{
+  margin-right: 0px !important;
+}
+
+header .header-icons svg {
+  fill: #B8B8B8;
+  cursor: pointer;
+  transition: fill .5s ease-in-out;
+}
+
+header .header-icons svg:hover {
+  fill: #d8d7d7;
+  transition: fill .5s ease-in-out;
+}
+
+header .navbar .nav-link {
+  font-size: 16px;
+  color: #161616 !important;
+  transition: color .5s ease-in-out;
+}
+
+header .navbar .nav-link:hover {
+  font-size: 16px;
+  color: #77BB58 !important;
+  transition: color .5s ease-in-out;
+}
+
+.header .navbar .navbar-nav > * {
+  margin-right: 12px;
+}
+
+.header .navbar .navbar-nav > *:last-child {
+  margin-right: 0px;
+}
+
+
+
+
+/* ------------Cars In Stock------------ */
+
+.cars-in-stock {
+  position: relative;
+  margin-bottom: 40px !important;
+}
+
+.cars-in-stock img {
+  border-radius: 20px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: -1;
+  display: block;
+}
+
+.overlay-img {
+  position: absolute;
+  top: 84px;
+  left: 80px;
+}
+
+.cars-in-stock p {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.rating-site p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.rating-site #id_average_rating {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.award-company-status {
+  position: absolute;
+  max-width: 354px;
+  line-height: 20px;
+  bottom: 12px;
+  right: 0;
+}
+
+.award-company-status p {
+  font-size: 14px;
+  color: #000000;
+}
+
+
+/* ------------Filter Catalog------------ */
+
+.filter-catalog {
+  position: relative;
+  margin-bottom: 60px ;
+}
+
+.fileter-catalog-country > * {
+  margin-right: 12px;
+}
+
+.fileter-catalog-country > *:last-child {
+  margin-right: 0px;
+}
+
+.fileter-catalog-price {
+  margin: 24px 0px;
+}
+
+.fileter-catalog-price > * {
+  margin-right: 12px;
+}
+
+.fileter-catalog-price > *:last-child {
+  margin-right: 0px;
+}
+
+.slider-products-1 {
+}
+
+.slider-products-2 {
+  
+}
+
+
+/* ------------Country Catalog------------ */
+
+.country-catalog {
+  position: relative;
+  margin-bottom: 60px !important;
+}
+
+.country-title {
+  margin: 0px;
+}
+
+
+/* ------------Purchase Scheme------------ */
+
+.purchase-scheme {
+  margin-bottom: 40px !important;
+}
+
+#delivery {
+  position: relative;
+}
+
+.purchase-scheme-text {
+  margin-bottom: 40px;
+}
+
+.shipping-calculator {
+  padding: 24px 40px;
+  background-color: #0D3334;
+  border-radius: 32px;
+  color:  #FFFFFF;
+}
+
+.purchase-scheme .shipping-calculator label {
+  margin-bottom: 8px;
+}
+
+.purchase-scheme-title {
+  margin-bottom: 12px !important;
+}
+
+.purchase-scheme-subtitle {
+  max-width: 475px;
+  font-size: 16px;
+  color: #484A46;
+}
+
+select {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #234546;
+  padding: 12px 16px;
+  border: none !important;
+  border-radius: 16px;
+  cursor: pointer;
+} 
+
+.select-delivery-area{
+  margin-bottom: 24px;
+}
+
+.select-car-body-type {
+  margin-bottom: 24px;
+}
+
+.delivery-price {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+
+.download-sample {
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin-top: 12px;
+}
+
+.purchase-scheme-info {
+  position: absolute;
+  top: 28%;
+  left: 16%;
+}
+
+
+/* ------------Consultation For Auto------------ */
+
+.bg-consultation-for-auto {
+  background-image: url('/static/img/consultation-for-auto/bg-consultation-for-auto.png');
+  margin-bottom: 100px;
+}
+
+.consultation-for-auto {
+  padding: 100px 0px;
+  color: #FFFFFF;
+}
+
+.consultation-for-auto a {
+  color: #77BB58 !important;
+}
+
+.consultation-for-auto-title {
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.consultation-for-auto-subtitle {
+  max-width: 405px;
+  margin-bottom: 32px !important;
+}
+
+.consultation-for-auto-button-whatsapp {
+  padding: 8px;
+  background-color: #234546;
+  border-radius: 16px;
+}
+
+
+/* ------------About Us------------ */
+
+.about-us {
+  margin-bottom: 60px !important;
+}
+
+.about-us-text {
+  margin-bottom: 40px;
+}
+
+.about-us-text h2 {
+  margin-bottom: 16px !important;
+}
+
+.about-us-text p {
+  font-size: 16px;
+}
+
+.about-us-group-advantages h3 {
+  margin-bottom: 16px;
+}
+
+.about-us-group-advantages .col svg {
+  margin-bottom: 12px;
+}
+
+.about-us-group-advantages .col h3 {
+  margin-bottom: 8px;
+}
+
+.about-us-img-with-info {
+  position: relative;
+}
+
+.about-us-text-on-img-medal {
+  position: absolute;
+  bottom: 15px;
+  left: 90px;
+}
+
+.about-us-on-img-text {
+  position: absolute;
+  color: #FFFFFF;
+  max-width: 334px;
+  bottom: 20px;
+  right: 0;
+}
+
+.about-us-on-img-text h3 {
+  color: #FFFFFF;
+}
+
+.about-us-on-img-text p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.about-us-on-img-text a {
+  color: #77BB58 !important;
+}

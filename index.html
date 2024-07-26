@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./static/vendor/slick.css">
+  <link rel="stylesheet" href="./static/vendor/bootstrap.css">
+  <link rel="stylesheet" href="./static/style/style.css">
+  <title>Battery25</title>
+</head>
+<body>
+  <header class="header">
+    <div class="_container">
+
+      <div class="row">
+
+        <div class="col d-flex header-contact__info">
+          <a class="header-logo" href="/">
+            <img src="./static/img/logo-header.png" alt="logo">
+          </a>
+
+          <div class="header-contact">
+            <a href="tel:88005004946">8 800 500 49 46</a>
+            <p>Владивосток</p>
+          </div>
+
+          <div class="header-contact">
+            <a href="tel:88005004946">8 800 500 49 46</a>
+            <p>Москва</p>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-end align-items-center header-icons">
+          <a href="#">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_40)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0059 10C20.0059 15.5228 15.5287 20 10.0059 20C4.48301 20 0.00585938 15.5228 0.00585938 10C0.00585938 4.47715 4.48301 0 10.0059 0C15.5287 0 20.0059 4.47715 20.0059 10ZM10.3642 7.38254C9.39157 7.7871 7.44764 8.62443 4.53244 9.89454C4.05905 10.0828 3.81107 10.267 3.7885 10.447C3.75035 10.7514 4.13145 10.8712 4.65042 11.0344C4.72101 11.0566 4.79416 11.0796 4.86914 11.1039C5.37972 11.2699 6.06655 11.4641 6.4236 11.4718C6.74748 11.4788 7.10897 11.3453 7.50806 11.0712C10.2318 9.23261 11.6378 8.30328 11.7261 8.28325C11.7884 8.26911 11.8747 8.25134 11.9332 8.30331C11.9916 8.35528 11.9859 8.4537 11.9797 8.48011C11.9419 8.64106 10.4459 10.0319 9.67178 10.7516C9.43044 10.976 9.25925 11.1351 9.22426 11.1715C9.14586 11.2529 9.06596 11.3299 8.98917 11.4039C8.51483 11.8612 8.15912 12.2041 9.00887 12.7641C9.41722 13.0332 9.74399 13.2557 10.07 13.4777C10.426 13.7202 10.7811 13.962 11.2405 14.2632C11.3576 14.3399 11.4694 14.4196 11.5783 14.4972C11.9926 14.7926 12.3648 15.058 12.8247 15.0156C13.0919 14.9911 13.3679 14.7398 13.5081 13.9904C13.8394 12.2194 14.4905 8.38215 14.641 6.80091C14.6542 6.66238 14.6376 6.48508 14.6243 6.40725C14.611 6.32942 14.5832 6.21853 14.482 6.13644C14.3622 6.03922 14.1772 6.01871 14.0945 6.02017C13.7184 6.0268 13.1413 6.22745 10.3642 7.38254Z"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1_40">
+              <rect width="20" height="20" fill="white" transform="translate(0.00585938)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <a href="#">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_45)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.98161 0H10.0271C15.5358 0 20.0014 4.46696 20.0014 9.97723V10.0228C20.0014 15.533 15.5358 20 10.0271 20H9.98161C4.47297 20 0.00732422 15.533 0.00732422 10.0228V9.97723C0.00732422 4.46696 4.47297 0 9.98161 0ZM6.90908 4.06893H13.0958C14.805 4.06893 16.1955 5.45982 16.1955 7.16952V12.8312C16.1955 14.5409 14.805 15.9317 13.0958 15.9317H6.90908C5.19988 15.9317 3.80941 14.5409 3.80941 12.8312V7.16952C3.80941 5.45982 5.19988 4.06893 6.90908 4.06893ZM6.90908 5.16272C5.803 5.16272 4.90287 6.06312 4.90287 7.16952V12.8312C4.90287 13.9376 5.803 14.8379 6.90908 14.8379H13.0958C14.2019 14.8379 15.102 13.9376 15.102 12.8312V7.16952C15.102 6.06312 14.2019 5.16272 13.0958 5.16272H6.90908ZM12.8864 9.99962C12.8864 11.5902 11.5926 12.8837 10.0032 12.8837C8.41306 12.8837 7.11995 11.5902 7.11995 9.99962C7.11995 8.40904 8.41306 7.11555 10.0032 7.11555C11.5933 7.11555 12.8864 8.40904 12.8864 9.99962ZM11.7929 10.0003C11.7929 9.01304 10.9902 8.21004 10.0032 8.21004C9.01618 8.21004 8.21342 9.01304 8.21342 10.0003C8.21342 10.9876 9.01618 11.7906 10.0032 11.7906C10.9902 11.7906 11.7929 10.9876 11.7929 10.0003ZM13.154 7.58152C13.582 7.58152 13.9308 7.23328 13.9308 6.80445C13.9308 6.37562 13.5827 6.02737 13.154 6.02737C12.7253 6.02737 12.3771 6.37562 12.3771 6.80445C12.3771 7.23328 12.7253 7.58152 13.154 7.58152Z"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1_45">
+              <rect width="19.9941" height="20" fill="white" transform="translate(0.00585938)"/>
+              </clipPath>
+              </defs>
+            </svg>
+              
+          </a>
+
+          <a href="#">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C2.23858 0 0 2.23858 0 5V11C0 13.7614 2.23858 16 5 16H15C17.7614 16 20 13.7614 20 11V5C20 2.23858 17.7614 0 15 0H5ZM13 8.00002L8 11V5L13 8.00002Z"/>
+            </svg> 
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mt-3 mb-3">
+
+    <div class="_container">
+      <div class="row">
+
+        <div class="col-10">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Авто из Японии</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Авто из Китая </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Авто из Кореи </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Авто в наличии</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Калькулятор </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Блог</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-2 d-flex justify-content-end">
+          <button type="button" class="btn general-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Заказать звонок
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <section class="cars-in-stock">
+    <img src="/static/img/cars-in-stock/bg-car-section-1-full-design.png" alt="bg">
+
+    <div class="overlay-img">
+
+      <h1>КУПИТЬ АВТО ИЗ ЯПОНИИ,  КИТАЯ, КОРЕИ В НАЛИЧИИ И ПОД ЗАКАЗ</h1>
+      <p>7+ лет опыта: надёжные автомобили по выгодным ценам</p>
+
+      <div class="d-flex align-items-center" style="margin-top: 60px;">
+
+        <button type="button" class="btn general-button me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Рассчитать стоимость
+        </button>
+
+        <div class="rating-site">
+
+          <div class="d-flex mb-1 rating-overall">
+            <img class="me-2" style="width: 20px; height: 20px;" src="/static/img/cars-in-stock/star-rating.png" alt="icon">
+            <div id="id_average_rating">4.3</div>
+          </div>
+
+          <p id="id_all_reviews">На основе 406 оценок</p>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <div class="d-flex align-items-center award-company-status">
+      <img class="me-3" style="width: 28px; height: 28px;" src="/static/img/cars-in-stock/medal-best-enterprise.png" alt="icon">
+      <p>Наша компания получила статус «Лучшее предприятие отрасли 2023»</p>
+    </div>
+  </section>
+
+  <section class="filter-catalog">
+
+    <div class="d-flex fileter-catalog-country">
+
+      <button class="filter-catalog-button">
+        <img class="me-2" src="/static/img/every-catalog/filter-korea.png" alt="icon">
+        Из Кореи
+      </button>
+
+      <button class="filter-catalog-button">
+        <img class="me-2" src="/static/img/every-catalog/filter-china.png" alt="icon">
+        из Китая
+      </button>
+
+      <button class="filter-catalog-button">
+        <img class="me-2" src="/static/img/every-catalog/filter-japan.png" alt="icon">
+        из Японии
+      </button>
+    </div>
+
+    <div class="d-flex fileter-catalog-price">
+
+      <button class="filter-catalog-button">
+        500 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        600 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        1 000 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        2 000 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        3 000 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        4 000 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        5 000 000 ₽
+      </button>
+    </div>
+
+    <button class="custom-prev-arrow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.96945 12.5306L14.4694 20.0306C14.5391 20.1003 14.6219 20.1556 14.7129 20.1933C14.8039 20.231 14.9015 20.2504 15.0001 20.2504C15.0986 20.2504 15.1962 20.231 15.2872 20.1933C15.3783 20.1556 15.461 20.1003 15.5307 20.0306C15.6004 19.9609 15.6557 19.8782 15.6934 19.7872C15.7311 19.6961 15.7505 19.5986 15.7505 19.5C15.7505 19.4015 15.7311 19.3039 15.6934 19.2128C15.6557 19.1218 15.6004 19.0391 15.5307 18.9694L8.56038 12L15.5307 5.03063C15.6714 4.8899 15.7505 4.69903 15.7505 4.50001C15.7505 4.30098 15.6714 4.11011 15.5307 3.96938C15.39 3.82865 15.1991 3.74959 15.0001 3.74959C14.801 3.74959 14.6102 3.82865 14.4694 3.96938L6.96945 11.4694C6.89971 11.539 6.84439 11.6218 6.80665 11.7128C6.76891 11.8038 6.74948 11.9014 6.74948 12C6.74948 12.0986 6.76891 12.1962 6.80665 12.2872C6.84439 12.3783 6.89971 12.461 6.96945 12.5306Z" fill="white"/>
+        </svg>
+        
+    </button>
+    <button class="custom-next-arrow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.0306 12.5306L9.53055 20.0306C9.46087 20.1003 9.37815 20.1556 9.2871 20.1933C9.19606 20.231 9.09847 20.2504 8.99993 20.2504C8.90138 20.2504 8.8038 20.231 8.71276 20.1933C8.62171 20.1556 8.53899 20.1003 8.4693 20.0306C8.39962 19.9609 8.34435 19.8782 8.30663 19.7872C8.26892 19.6961 8.24951 19.5986 8.24951 19.5C8.24951 19.4015 8.26892 19.3039 8.30663 19.2128C8.34435 19.1218 8.39962 19.0391 8.4693 18.9694L15.4396 12L8.4693 5.03063C8.32857 4.8899 8.24951 4.69903 8.24951 4.50001C8.24951 4.30098 8.32857 4.11011 8.4693 3.96938C8.61003 3.82865 8.80091 3.74959 8.99993 3.74959C9.19895 3.74959 9.38982 3.82865 9.53055 3.96938L17.0306 11.4694C17.1003 11.539 17.1556 11.6218 17.1933 11.7128C17.2311 11.8038 17.2505 11.9014 17.2505 12C17.2505 12.0986 17.2311 12.1962 17.1933 12.2872C17.1556 12.3783 17.1003 12.461 17.0306 12.5306Z" fill="white"/>
+        </svg>
+        
+    </button>
+    <div class="d-flex justify-content-between slider-products-1">
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/81df958c-279b-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <button type="button" style="margin-top: 40px;" class="btn general-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Оставить заявку
+      </button>
+    </div>
+
+  </section>
+
+  <section class="country-catalog">
+    
+    <h2 class="country-title">Автомобили из Кореи</h2>
+
+    <div class="d-flex fileter-catalog-price">
+
+      <button class="filter-catalog-button">
+        500 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        600 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        1 000 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        2 000 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        3 000 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        4 000 000 ₽
+      </button>
+
+      <button class="filter-catalog-button">
+        5 000 000 ₽
+      </button>
+    </div>
+
+    <button class="custom-prev-arrow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.96945 12.5306L14.4694 20.0306C14.5391 20.1003 14.6219 20.1556 14.7129 20.1933C14.8039 20.231 14.9015 20.2504 15.0001 20.2504C15.0986 20.2504 15.1962 20.231 15.2872 20.1933C15.3783 20.1556 15.461 20.1003 15.5307 20.0306C15.6004 19.9609 15.6557 19.8782 15.6934 19.7872C15.7311 19.6961 15.7505 19.5986 15.7505 19.5C15.7505 19.4015 15.7311 19.3039 15.6934 19.2128C15.6557 19.1218 15.6004 19.0391 15.5307 18.9694L8.56038 12L15.5307 5.03063C15.6714 4.8899 15.7505 4.69903 15.7505 4.50001C15.7505 4.30098 15.6714 4.11011 15.5307 3.96938C15.39 3.82865 15.1991 3.74959 15.0001 3.74959C14.801 3.74959 14.6102 3.82865 14.4694 3.96938L6.96945 11.4694C6.89971 11.539 6.84439 11.6218 6.80665 11.7128C6.76891 11.8038 6.74948 11.9014 6.74948 12C6.74948 12.0986 6.76891 12.1962 6.80665 12.2872C6.84439 12.3783 6.89971 12.461 6.96945 12.5306Z" fill="white"/>
+        </svg>
+        
+    </button>
+    <button class="custom-next-arrow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.0306 12.5306L9.53055 20.0306C9.46087 20.1003 9.37815 20.1556 9.2871 20.1933C9.19606 20.231 9.09847 20.2504 8.99993 20.2504C8.90138 20.2504 8.8038 20.231 8.71276 20.1933C8.62171 20.1556 8.53899 20.1003 8.4693 20.0306C8.39962 19.9609 8.34435 19.8782 8.30663 19.7872C8.26892 19.6961 8.24951 19.5986 8.24951 19.5C8.24951 19.4015 8.26892 19.3039 8.30663 19.2128C8.34435 19.1218 8.39962 19.0391 8.4693 18.9694L15.4396 12L8.4693 5.03063C8.32857 4.8899 8.24951 4.69903 8.24951 4.50001C8.24951 4.30098 8.32857 4.11011 8.4693 3.96938C8.61003 3.82865 8.80091 3.74959 8.99993 3.74959C9.19895 3.74959 9.38982 3.82865 9.53055 3.96938L17.0306 11.4694C17.1003 11.539 17.1556 11.6218 17.1933 11.7128C17.2311 11.8038 17.2505 11.9014 17.2505 12C17.2505 12.0986 17.2311 12.1962 17.1933 12.2872C17.1556 12.3783 17.1003 12.461 17.0306 12.5306Z" fill="white"/>
+        </svg>
+        
+    </button>
+    <div class="d-flex justify-content-between slider-products-2">
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/81df958c-279b-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+          <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">2 115 600 ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <button type="button" style="margin-top: 40px;" class="btn general-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Оставить заявку
+      </button>
+    </div>
+  </section>
+
+  <section class="purchase-scheme">
+
+    <div id="delivery">
+      <svg id="russia-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 808.9 458.9" enable-background="new 0 0 808.9 458.9" xml:space="preserve">
+        <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Крым" data-code="RU-CR" d="M1.6,328.6H4l1.2,0.8l1.5,0.2v-0.9l1.3-0.2l0.8,1.3h3.3l0.1-1.1
+        l1.2,0.3v2.1l1.4,1.3l-0.8,2l1.6,1.6v2.9l0.4,1.1l-0.5,1.3l-0.8,1.1l1.2,1.2l0.5,1.2l2,0.6l2.1,0.3l2.5,4.2l-1.5,0.2l-1.3,1.3
+        l-2.6-0.9l-2-1.8l-0.4-1.1l-0.2-1l-1.3-0.9l-2.6,0.6l-1.7-0.9l-2.1-1.2l-3,0.5l-2.2-0.4l-1-1.7l-0.7-2.6l1.6-0.1l1.9-2.3l0.5-2.4
+        L4.2,334v-1.7l-1-1.6l-1.6-1.2L1.6,328.6z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Мурманская область" data-code="RU-MUR" d="M160,158.1l6.1,5.5l-0.3,2.3l-0.7,1.9l1.4,1.4l2.1-0.5l1.3,0.8
+        l1.6-0.1l0,0l-0.5-2.8l1.2-1.2l0.8-2.2l1.8,1.8l-1.5,1.5l-0.6,2.9l1.8,0.8l0.9,4.7l1.6,2.8l0.9,2.5l1.1,2.7l2.4,2.4v3.4l2.3,2.3
+        l3.7,2.1l3.4,1.3l3.9-0.8h3.5l3.4-3.4l2.2-3.9l0.5-4.6l0.1-2.8l-2.2-2.2l-0.1-3.9l-0.8-1.8l0.6-3.2v-3.7l-1-3.6l-2.1-2.1v-2.9
+        l-1.8-0.9v-2.7l-1.6-1.6l-2.2-1.1v-2.4l-0.6-2.4l1.3-1.3l1.5,1.5l1.4,0.9l-0.6-2.3v-2l-3-0.1l-2.2,0.3l0.5-2.7l-2.2,1.5l-1.8-1.8
+        h-2.2l-3.7-1.4l-5.3,2.7l-4.1,2v6.8l-2,3.5h-6.5l-3.9,3.9L160,158.1L160,158.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Псковская область" data-code="RU-PSK" d="M75.6,243l1.7,2.1l0.8-2.2h1.8l0.8-1.3l0.7-1.5l0.3-2.7l1.1-1.1
+        l0.2-1.6l2-1.6l-1.1-1.1l1-1l1.1-0.6v-1.8l1.1-0.6l1.3-1.3l1.7-0.8l0.6-1.8l-1.3-1l-0.4-1l0.9-0.9v-1.6l1-1l2.1-0.2l-0.5-2.5
+        l0.7-2.3l-0.8-1.8l-0.1-1.8l-1.6-1.6l0.8-1.7l-1.5-1.8l-2.9-0.1l-2.2,2.9l-2.7,1l-0.1,1.9l-1.4,1.6l-3.2,0.1L76,214v2.7l-3,1.9
+        l-2,0.5l0.6,2.3l-1.4,2.5l-2.4,2.4l-0.4,1.8l1.1,2.5l1.8,1.8l-0.6,2l-0.8,1.9l2.4,0.6l2.2,2v4.3L75.6,243"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Смоленская область" data-code="RU-SMO" d="M71.1,245.3l-0.9,1.9l-2.5,0.8l-1,2.8l-1.4,3.3l-0.8,3l0.1,2.2
+        l-1.3,0.9l1.9,1.9l-0.8,2.8l-0.6,2.5l1.9,1v2.2l1.2-1.2l1.3-2.1l1.6,0.1l1.9-1l1.7-0.4l1.8-1.8H77l1.3,1.3l0.4,1.5l1.8,0.2l0.6-0.6
+        l1,0.3l1.8,1.4l1.4-1.1h1.8l2.3-0.5l0.9-1.4l1.7-1.7l2.3-0.9l0.6-2.1l-0.6-1.3l-1.5-1.2l-1-1.9l-1-1v-1.3l-2.2-0.6l-2,0.6l-2.5-0.6
+        l-1.2-1.2l-1.9-1.1l-1.4-1.4l-0.5-2.6l-1.7-1l-0.2-0.8l-1.7-2.1l-2.2,0.2L71.1,245.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Брянская область" data-code="RU-BRY" d="M61.4,268.1l-2.5-0.9l-0.8-1.9l-1.4-1.5l-1.9,0.1l-0.6,2.3
+        l-1.6,1.9l-2.4,2.4l-1.1,2l1.1,1.9l1.3,1.3l1.7-1.5l1.1,1.6l1.4,1.5l1.9,0.3l1.4,1.4l1,2.5l-0.3,2l-0.9,3.4l1.4,0.1l0.9-1.3l1.8-0.6
+        l1.1,0.8h1.6l1.4-1.4l1.3,0l0.3-1.1l-0.4-1.1l1.2-0.4h1.4l1,1l0.7-0.7l0.4-1.6l0.8-0.8l-0.3-1.8l-1.2-1.2v-1.5l1-1v-1.9l0.5-1.9
+        l-1-1l0.1-1.2l-1.2-1.9l-1.9,1l-1.6-0.1l-1.3,2.1l-1.2,1.2v-2.2l-1.9-1L61.4,268.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Курская область" data-code="RU-KRS" d="M57,298.3v-2.7l-1.4-2.5l-1.4-2.2l1.3-1l0.8-1.9h1.5l1.1-1
+        l1.4,0.1l0.9-1.3l1.8-0.6l1.1,0.8h1.6l0.7,1.1l1.3,0.5l1,0.8v2.1l1.5,0.4l0.4,1.2l1.3,0.6l0.4,2.8l1.4,2.3l0.4,2.9l1.4,0.3l1,1v2.2
+        l1.6,0.3l1.8,1.1l-1.5,1.5l-1.9-0.7l-1.2,1.2v1.9l-1.3,0.6l-0.6-1.9l-1.9-1.9l-2.9-1.8l-1.8,0.4l-3.5-0.7v-1.4l-1.8-1.9l-0.9,0.9
+        h-2.2l-2.6-0.6L57,298.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Белгородская область" data-code="RU-BEL" d="M67.4,326.1l-0.8-2.9l-1.9-1.1l-2-2.3l0.8-2.7l-0.8-3.9l-2.4-1.8
+        l-2.8-2.2l-0.9-2.9l-1.9-1.5l-0.6-1.8l1.6-1.9l2.6,0.6h2.2l0.9-0.9l1.8,1.9v1.4l3.5,0.7l1.8-0.4l2.9,1.8l1.9,1.9l0.6,1.9l0.5,1.7
+        l-1.1,0.9l1.6,1.6l-1,1.9h-1.3v2.5l0.4,1.9l-1.9,1v2.2l-1.5,0.1l0.4,1.6l-2.2,1.2L67.4,326.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Воронежская область" data-code="RU-VOR" d="M67.8,326.5l2.2-1.2l-0.4-1.6l1.5-0.1v-2.2l1.9-1l-0.4-1.9v-2.5
+        h1.3l1-1.9l-0.9-0.9l-0.7-0.7l1.1-0.9l-0.5-1.7l1.3-0.6v-1.9l1.2-1.2l1.9,0.7l1.5-1.5l2.2,0.4l1,1.9l2.3,0.8l-0.5,2.3l1.5,1.5
+        l1.9,0.2l1.8,2.5l1.3,1.3l-0.6,1.9l1.5,1.5l2.4,1l0.8,1.6l1.5,1.5l0.8,2.5l1,2.6l-0.9,0.9h-2.6l-1.9-1.1l-0.4-1.4l-1.9-0.4l-1.8,1.6
+        h-3.6l-0.9,3l-3,3h-3.3l-1.1,1.1h-1.8l-0.9-1.2h-2.2V333l-1-1l-2.2-1v-2.7L67.8,326.5"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Карачаево-Черкесская Республика" data-code="RU-KC" d="M39.7,397.4l-1.9-0.9l-2.8-1.9l-0.9-3l-1.9-2.9l-0.6-2.5l1.5-1.5
+        l1.8-0.3l1.3-1.3h1.3l0.7,1.5l1.1,1.6h2.5l1.9-2.4l1.5,0.5v2l1.4,1l0.3,1.6l0.7,1h-2.2l-0.6,1.1l1,1l0.7,1.1l-0.7,1.6l-1.8,0.7
+        l-1.2-0.1l-1.5,1.5L39.7,397.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Северная Осетия — Алания" data-code="RU-SE" d="M44.2,406.3l0.5,4.1l1.8,1.8l2.8,0.4l1.6,1.6l0.4,1.3l1.2-2h1.9
+        l0.2-1.3l-0.6-2l0.6-3l1.7-0.7l2.6,0.1l-0.5-2.2l-2.4-2.2l-1,0.8v1.5l-0.9,0.9l-2.3,0.1l-0.8,0.8l-1.3-1h-1.6L47,406l-1.1-0.2
+        L44.2,406.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Ингушетия" data-code="RU-IN" d="M58.7,411.5l-1.2,2.6l-1.5,2.4l-1.9,1.4l-0.6-2.3l-2.2-0.3l1.2-2
+        h1.9l0.2-1.3l-0.6-2l0.6-3l1.7-0.7l0.9,1.7l2,1.6L58.7,411.5"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Дагестан" data-code="RU-DA" d="M77.1,405.7l-1.3,1.3v2.1l1.3,1.3l0.8,2.4l-0.6,2.4l-0.6,2.2
+        l-1.5,1.5v0.9L74,421l-2.8,4.6v3.5l0.8,4.3l-0.5,3.3l0.3,4.1l-3,1.4l-2-0.9l-2.9,1l-2.8-0.6l-0.4-2.4l-1.4-4.2l-0.3-3l-2-1.4V429
+        l-1-2.7l-1.8-2.3l1.1-1.9l2.2-0.3l1.4-1.1l2.1,0.2l1.3-1l2.1,1.2l0.8-3l2.2-2.7l2.3-1.3l1.3-0.4l-0.2-2.9l-2.6-0.2l-1.4-1.9l-1.8-2
+        l0.8-2l-1.3-0.6v-1.1h1.6l0.9-0.8l-0.6-1l1-1l1.6,0.6l1.9-0.6l2-1.3l1.7,1.2l0.9,1.3l1.4,0.5l0.6,1.6L77.1,405.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Калмыкия" data-code="RU-KL" d="M78.7,406.2l2.7-0.8h2.4l2.2-2.5l1.8-0.8v-1.8l-1.4-1l-1.7,0
+        l-0.4-1l4.1-2.9v-1.2l-0.8-0.8v-1.5l-0.9-1.2l1-1l1.4,0.6l0.2,1h0.9l0.2-1.6l2.7,0.2l0.8-2l-1.3-1.3l0.9-3.2l1.5-0.8l0.3-1.5
+        l0.3-1.6l-2.8-0.1l-1.2-1.6l-0.2-2.4l0.4-1.9l0.3-2.1l-1.5-1l-0.7-2.5l-2.3-0.5l-1.3-1.3v-1.6l-1.2-0.4l-0.9,2.5l-1.3,0.5l-1.3-1.3
+        l-1.5,0.6l-1.4-1.4l-2.3,2.1v2.7l1.6,0.1l1.9-1v1.9l-1.2,2.6l-2.6,1.9h-2.9l-2.7,2.8l-1.5-0.4l-0.6,0.6l-1.4-0.5l-1-1l-0.9-3.8
+        l-1.6-0.4l-1.2-1.2v-1.7l-0.7-1.8h-1.5v1.2l-0.9,0.9H57l-1.2-0.9l-1.6,1.3l1.4,0.7l0.6,1.7h1.3l1-0.4L59,374l1,1l2.3-0.4l1.4,0.6
+        L64,377l1.2,1.4l0.4,1.6l1.2,1.2l0.8,2.3l-0.9,1.7l1,1.8l1.3,1.3l1,1.3v1.5l1.4,1.4l0.3,1.9l1.1,1.6v2.9l1.7,1.2l0.9,1.3l1.4,0.5
+        l0.6,1.6l-0.2,2.2L78.7,406.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Оренбургская область" data-code="RU-ORE" d="M202.8,387.3l0.8,1.8l1.8,1.8l1.2,1.2l0.5,2.2l1.8,1.8l-1.8,2.4
+        l-1.6,1.6h-2.8l-2.9,0.2l-1.5-1.5l-1-2.1h-1.3l-1.4,1.4h-2.2l-2.5-2.5l-0.5-1.4l-1.9-1.9v-3.2l-1.6-1.6h-2.9l-2.4,0.9l-0.9-1.9
+        l-2.4-1.9l-2.2-1.1l-2.9,1.4l-2.7,0.4l-2.2-0.6l-1.5-2.9l-2.2-1.9l-1.5,2.5h-1.6v-2l1.5-1.5l-1-2.2l-1.3-3.3l-0.5-3.4l-1.9-2.3
+        l-3-1.1l-0.9-2.2l-1.6-1.6l-3,0.5h-1.8v-2.4l-0.9-2.5l0.1-1.4h4.5l1.3-2.6l2.4-1.7l1.4,0.4l0.8-1.7l3.5-0.6l1.7-4l2.9-1.6l2.2-2.2
+        l0.8-3.5h2.1l2.1,2.1l-1.5,1.5l1.3,1.2l0.8,1.4l-0.1,3.3l1,1l-0.7,3.5l1.4,0.9l1.7,1.7l1.1,2.8v2.8l0.8,1.7l-0.7,1.7v2.4l-0.5,1.2
+        l1.5,0.8l1.3-1.3h2.2l0.8,1.4l-0.8,1.9l-2.1,0.8l0.5,1l1.3,0.3l-0.4,2.5l-0.8,0.8l0.4,2h1.2l0.3,1.1l1.5,1.5l1.5-0.7l1.1-1.1
+        l1.3,0.7l0.5,1.3l1.4,1l1.6,0.4l1.6-1.2l1.1-2.5h2.1h2.4l1.5-0.6l2.1,0.9h1.3l0.9,1.6l-0.6,1.6l-2.4,1.2l0.2,1.6h1.3L202.8,387.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Челябинская область" data-code="RU-CHE" d="M229.8,371.6l-3.2-0.6l-2.3,0.6l-2-1.8l-2.9-1.5h-2.7l-0.9,2.8
+        l0.9,1.9l-1.8,1.8l1.4,0.9l1.4,1.4l1.7,1.7l-1.6,1.6h-1.8l-2.2-2.2l-3.3,0.1l-2.2,0.9l0.9,3.2l-0.9,2.3l-2.2,0.6l-2.5-0.6l-1,2.7
+        l-0.4-2h-1.3l-0.2-1.6l2.4-1.2l0.6-1.6l-0.9-1.6h-1.3l-2.1-0.9l-1.5,0.6h-4.5l0.8-1.3l2-0.9l0.3-1.9l1.7-3.1h1.3v-2.2l1.7-2.2v-1.4
+        l2.6-2.6l2-0.7v-0.9l2.1-0.2l0.9,1.2h1.5v-2.4l-0.9-2.8l-3.1-1l-1.3,0.9l-3.1-0.3l-1.6-2.6l-0.4-3.4l-1.2-1.2l-0.5-2.4l2.8-2.1
+        l1.9,0.6l2.1,1l1.4,1.4v1.7l2.6,1l1.7-1.7l2.9-0.7v-1.5l1.5-2.8l0.6-1.9l-0.5-2.1l1.7-0.7l2.1,1.4l0.7,1.3l2.3,0.8l0.4,1l1.7,0.2
+        l1.7,1.7l1.6-1.6l1.8,1l1.4,1.4l1.3,1.3l0.1,2.8l0.4,3.2l-1.2,1.9h-2.2l-1.3,1.3l0.7,2.4l-1.2,1.2h-1.7l-0.5,1.7l1.5,1.5l1.6,0.1
+        l0.3,1.2h2.5l1,2.5l-1.9,1.9L229.8,371.6"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Омская область" data-code="RU-OMS" d="M305.6,394.7l-2.1,2.1l-3.5,1l-3,1.6l-1.4-2l-2.7,1.3h-2.2
+        l0.8-3.4l3-1.4v-1.8H292l-2.3-1.4l-1.4,1.4l-2.5-0.8l0.8-3l-1.8-1.8l-2.5,1.5l-2.8-0.8l-0.7-2.2l1.6-1.6v-2.4l0.6-1.8l-1-3.2
+        l-1.9-0.9v-1.5l0.7-1.5l1.3-1.3v-1.7l1-0.2l1.3-1.3l0.5-1.3v-2.2l3.2-3.2l2.4-0.4l0.9-0.9V358l-1.9-1l-0.6-1.5l-1.2-1.2l-1.7-0.9
+        V352l2-1l-0.9-2.6l0.2-2l1.8-2l0.9-1.5l1.9-1.3l2,2l-1.2,1.2v1.5l1.7,0.6l2.2,0.7l1.4,0.7l1.6,1h2.6l0.9-1.2l2.2,1.1l1.9,0.6h3
+        l2.5-1.2l2-2l1.1-1.6l0.4,1.2l-0.7,1.6l-0.8,1.7v2.6l1.5,1.5l-0.4,3.2l1.4,2.9l0.8,2.2v3.2v2.9l-2,2l0.4,1.4v1.9l-1,1l-1.8-0.7
+        l-1.6,0.7l-2.4,2.8l-1.4,3.5l0.6,4.5v2.6l1.3,1.3v1.5l-1.4,1.4L305.6,394.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Новосибирская область" data-code="RU-NVS" d="M318.4,405.7l-1.4-1.4l-1.5-3.1l-1.6-1.6l-2.2-0.9v-2.3h1.8l1.5-2
+        l-0.6-1.8h-2.3l-1.9,1.9l-2.7,0.1l-2,0.1l1.1-3l1.4-1.4v-1.5l-1.3-1.3v-2.6l-0.6-4.5l1.4-3.5l2.4-2.8l1.6-0.7l1.8,0.7l1-1v-1.9
+        l-0.4-1.4l2-2v-6.1l2.8,0.7l1.5,1.5h3.1l3.4,0.5l2.9,1.5l3.4,1.4l2.1,2.1l1.7,1.7l2.5,3.5h5.5l2.2,3h2.6l3-0.8l1.8-1.8l1.6,0.8
+        l0.5,3.2v2.4l1,1l-1.2,1.2l1.4,1.4l1.6-1.6l1.7-1.9l3.2,0.2l0.4,4.2l0.9,1.8l0.7,3.8l-0.5,5.4l1.6,2.4l-4.2,2.4h-2.5l-1.7,1.3
+        l-1.7-1l-1.7,1.7l-1.5-1.5l-2.4,2.4l-1.1,2.9l-1.7,0.8l-1.7-2.5h-1.4l-1.1-1.7v-1.8l-2.3-2.3l-1.2-1.2l-2.6,0.1l-3.7,1.2l-3.7,2.8
+        H327l-2.5,1l-1.9,0.7l-1.4-1.4l-0.9,1.2L318.4,405.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Алтай" data-code="RU-AL" d="M396.3,452.3l-3,0.7l-2.1,2.1l-3.8-0.1l-3.2,1.8l-1.6,1.6
+        l-3.7-0.6l-1.1-1.9l-1.4-2.5l-0.7-2.6l-2,2l-3.3,1.3l-3-1L364,452v-3l-2.7-1.6l-1-2.3l-2.2-1.4l-0.5-3l2.5-0.2v-2.2l-1.1-1.1
+        l-1.7-1.7l1.2-1.2l2.7-0.9l3.3-1.2h2.2l3-3.1V427l1.5-1.5l2.4,1.5l1.2-1.6h1.3l1-1.5l-1.4-1.4l1.1-2l2-1l2.5,2.2h2.5l2.2,1.1h1.2
+        l0.1,2.3l-1.6,1.6l-1.9,1.9l0.6,2.5l-1.2,1.2l2.6,2.6h2l1.2-2.5h1.3l0.4,2.9l0.9,2.8l2.9,2.9l2.3,2.2l-0.6,1.8l-2.1,0.5l-1,1
+        l1.9,1.9v2.1L396.3,452.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Алтайский край" data-code="RU-ALT" d="M357.6,440.6l-1.8-1.6l-2.4-1l-1.6-1.6h-3.2l-1.6,1.6l-3.2,0.5
+        l-1.3-1.3l-2.8,0.5l-1.5-1.5l-1.4-1.4v-1.9l-1.4-1.6l-2,0.6l-1.4,2.9l-2.8,0.5l-1.6-3.3l-0.9-2.9l-0.6-3.3l-2.2-3.8v-3l-2-1.9v-4.2
+        l-1.5-5.1l-2.2-2.2l1.5-0.7l1.3-1.5l1.4,1.4l4.4-1.7h4.2l3.7-2.8l3.7-1.2l2.6-0.1l3.5,3.5v1.8l1.1,1.7h1.4l1.7,2.5l1.7-0.8l1.1-2.9
+        l2.4-2.4l1.5,1.5l1.7-1.7l1.7,1l1.7-1.3h2.5l4.2-2.4l1.5,2.9h2.3l1.6,3.1l1.4,1.4l0.5,2.4l2,1.2h1.9l0.1,1.7l-1.9,0.9l1.3,2.4v2
+        l0.8,2.1l-2,1l-1.1,2l1.4,1.4l-1,1.5h-1.3l-1.2,1.6l-2.4-1.5l-1.5,1.5v1.9l-1.4,1.4l-1.6,1.7h-2.2l-3.3,1.2l-2.7,0.9l-1.2,1.2
+        l1.7,1.7l1.1,1.1v2.2L357.6,440.6"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Тыва" data-code="RU-TY" d="M457.9,424.1l-2,2l-1.6,3.2l-1.7,1.7l-0.5,3.3l1.6,1.9v2.8
+        l2.2,2.2v3l-3,2l-2.9,2.9h-2.4h-3.7l-3.4-0.9l-3.5,0.6l-2.5-0.8l-3.7-1.3l-2-2l-2.4-2.4l-2.9-0.9l-3.4,1.4l-2.2-2.2l-2.7-1.2
+        l-2.2,2.2h-2.8l-0.9,2.7H406l-4.2,2.7l-2.5,2.5h-2.5l-0.5,2.7l-1-1.8v-2.1l-1.9-1.9l1-1l2.1-0.5l0.6-1.8l-2.3-2.2l-2.9-2.9l-0.9-2.8
+        l-0.4-2.9l1.1-1.1l2.2,0.6l2.5,0.2l2.4-2.4v-2.8l2.7-1.4l2.2,2.2l2.9,1h2.9l2.6,1.3h2l2.7-1.1l3.7-3.2l2.7-0.8v-3.2l1.9-1.9v-2.1
+        l2.9-0.8l0.8-4.6l1.2-1.2l3.3,0.6l2.4-2.4l2.8,0.1l1.1-1.1l1.4,0.5l0.7-1.6h2.3l1.9,1.4l2.9,0.4l2.4,2.3l1.6,0.8h2.8l1.1-1.1
+        l1.3,1.3l1,1l-1.5,1.5v2.2l-1.4,1.4l0.5,2.2l1.2,1.2L457.9,424.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Амурская область" data-code="RU-AMU" d="M675.1,379.6l-1.5,1.5l-2.9-0.8l-2.4-0.6l-3.7,0.5h-3.4l-1.4,1.4
+        L656,383l-3.8-0.8l-1.6-3.1l-1.8-1.8c0,0-2.2-1.3-2.2-1.8c0-0.5-2.4-2.4-2.4-2.4l-3-0.5l-1.3-3l-2.9-2.3l-2-2l-2.8-0.8l-1-2.7
+        l-2.5-1.1l-1.5-1.5l-5.1-0.5h-2.7l-3,1.6l-3.8-0.6l-2.9,1h-3.2l-4.3,3.2l-2,2l-1.8-3.2l-0.8-1.6h-2.2l-0.6-2.7l-1.1-1.6l1.9-1.1
+        v-0.9h-1l-1.7-1.8l-1.4-0.2l0.3-3.2l-0.8-1.5l-0.9-2.5l-2-1l-1.5,2l-1.5-0.6l-0.1-2.2l-1-1l-1.5-0.4l-1.6,1.6l-0.8,1.9l-2.6-0.7
+        l-0.8-1.6l1.5-1.9l-0.9-1.5l-1.7,0.6l-2.2-0.6l-1.5-1.5l0-1.5l2.2-2.2l2.5-2.1h2.5l1.1-1.1l1.4,1.4l1.9,0.4l0.9-0.9h2.5l1,1.3
+        c0,0,1.6,0.2,1.6,0s0.5-1.9,0.5-1.9l3.2,0.6l1.1-1.1l2.3-0.5l2.1,1l2.7,2.7l2.1-0.9l2.3-0.6l1-1.4l1.7,0.8l1.3-1.3h1.4l1.3,1.3l5-5
+        l2.7,0.4v-1.7l3.4-1.3l2.5,0.5c0,0,2.4-1.5,2.5-1.6c0.1-0.1-0.2-2.6-0.2-2.6l4.1-2.5l3.9-3.2l1,0.6l1.6-0.8l1.4-1.8l2-0.3l1.8-1.8
+        l2.3-0.4l2.3,1.3l-0.9,2.2c0,0,0.2,1.7,0.1,1.7s-1.6,2.2-1.6,2.2v3.9l-0.9-0.1l-0.7,1.7l1.4,2.3v1.7l-1.5,0.9l-0.9,2.1l1.6,1.9
+        l3.1,0.4l1.1-1l2-0.6l3.5,4.8l1.5-1.4l1.6,0.1l2.3-3.4l2.4-0.9l0.8-0.8l-0.5-2.4l0.6-2l2.5-0.5l1.3-1.3l1.4-2.4l2.4-0.2l2.2,2.2
+        l0.6,3.8l2.3,1.6l-0.9,3.1l-4.1,1.5l-2.2-0.1l-1,1.4l2.6,2.6l0.1,1.7l-2.3,2.5l-0.3,3.7l-2.2,2l-0.1,1.7l-1.7,2.1l1.5,2.3l-1.2,2.2
+        l0.5,5.1l1.4,1.4h1.3l1.4,2.2l1.1-1.1l2.8,0.3l0.5,2l2.4,1.7l0.2,1.8l1.1,0.3l1.4,1.1l0.1,3l-1.2,0.5l0.6,2l-0.6,1.5l0.3,2.8
+        L675.1,379.6z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Еврейская автономная область" data-code="RU-YEV" d="M703.4,368.4l-3,1.6l-0.8,2.5l-2,3.3l-2.3,2.9l1,3.2l-2.7,2.2
+        l-2.7,1.5l-2.3,0.8l-0.6,2.3h-2.4l-2.4-1.4l-1.8-0.6v-2.9l-2-1.8l-1.6-1.6l-0.3-2.8l0.6-1.5l-0.6-2l1.2-0.5l1.3,0.3l1.3-2.1l1.2-1.2
+        l-0.2-2.7l2.1-0.3l2.2,0.4l2.9-1.4l2.1,1l2.5,3l1.6-2.2c0,0,3.3-0.6,3.5-0.8c0.2-0.2,1.3-2.4,1.3-2.4l2.6-0.3l2.2-0.9l-0.2,2.1
+        l0.8,0.8l-0.3,1.5H703.4L703.4,368.4z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Приморский край" data-code="RU-PRI" d="M735.3,360.2l1.4,3.7l1,4.1l0.8,3.7l0.8,4.9v4.8l-0.8,2.5v4.9v6.1
+        l-0.8,4.6l0.8,4.7l-0.3,6.1v2.9l-2.5,4.2l-1.6,3.5l-1.9,3.5h-1.6l-3.2,1.3l-2.7,1.5l-1.8-0.8v-1.7l-1-1l-1,2.2v2.3l-1.1-1.1
+        l-1.6-1.6v1.3l-0.5,3.2l0.5,2.2l-0.7,2.5l-1.1,1.1v1.3v2l-2.4-0.1l-1-1l0.9-2.9l1.5-3v-2.5l-1.3-3l-2.7-2.7l-1.4-1.4l-1.1-2.9
+        l-2.4-2.4l-2.3-0.8l-0.1-2.5l1.6-1.6l1.4-1.4v-2.5l1.8-1.8l2-1l2.1,0.7l1.8-1.8l1.1-2.3l-2-3.2l1-2.7l-1.3-2.8l-0.3-2.9l-1.8-2.4
+        l0.5-2l-1.4-2.4l2.5-0.3v-1.1l-1.4-1.4l0.3-2.4l2.2-3l1.8,0.5l0.5,0.5l1.7-0.1l0.6-0.9l2.6,0.4l0.2-0.8l2.6-0.4l2-2.5v-3.6l-1.5-0.4
+        l0.4-2.1l3-1.1l0.8-1.8l0.3-2.5l-1-2.4l-1-0.3l-0.8,1.6l-2.1,0.2l-0.6-1.8l-2.3-0.3l-0.4-1.7l2.5-2.1l0.9-3.5l1.5-0.2l1.8,1.4
+        l1.4,1.4l1.8-0.1l0.8,1.6l-0.6,1.3l2.2,1.6l2.1-1.8L735.3,360.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Магаданская область" data-code="RU-MAG" d="M713.7,143l1.6,1.6v4.1l1.3,3l0.3,4.8l-0.9,2.9l-1-2.5l-2.3-1.1
+        l0,3.2l-1.9-1.9l-1.3-1.3l-1-2.2l-3.5-3.3l1,2.8l-1,3h-3.4v2l-1.1,4.2l-1.4,1.6l0.1,5.6l2.3,1.5l-0.4,3.5l2.3,3.5v3.8l0.7,5l2.1,2.1
+        v2.3l1.8,1.8l1.6-0.3l1.5-1.3l1.1-1.1h1.9l-0.1,2.4l-2,0.6v3.4l-3.8,0.6l0.9,4.4l-0.4,1.9l-2.4,1v2.7l-0.9,2.4c0,0-3,0.7-2.4,0.1
+        c0.6-0.6-1.1-1.1-1.1-1.1v-1.6l0.5-1.6l2.1-0.7l-1-1l-2.3,0.9l-2.4,0.4v1.1L695,208l-1.8,2.2l-2,0.5l-1.6,1.6l-0.6,1.9l0.6,2.4
+        l1.4,1.4l-1.6,1.8l-2.7-1l0.8,2.7l-2,2l-1.8,1.6l-0.6-2l-2.8-2.8h-1.5l-1.1,1l-1.5-0.8l-2.2-0.1l-1.9,2.3l-1.7,0.1l-1.4-2.1V218
+        l2.4-1.3l-1.9-2.6v-1.9l-1.7-0.6l-2.9-1.8l-1.7-0.9l-4.8-0.3l-2.6,3l-2-0.1l0.4-2.4l-1.9-1.9l-0.5-1.5l-1.7-1.7l-3-1.5l-0.8-1.8
+        l-2.1-2.8v-1.5l-1-0.5l0.5-2.5l1.2-1.2l-1.8-1.1l0.4-2.2l3.3-1.3v-1.2l2.5,0.1l-0.2-2.8l-1.9-0.6l-1.3-1.7l1.6-1.5h1.6v-2l1.6-1.1
+        v-1.4l2-0.5l1.2,1.4l1.7-0.2l0.9-1.8l-0.6-1.6l1.7-2.8l0.6-1.8l1.7-0.3v-1.6l-0.9-2.3l-2.1-1.2l-2-2l-0.2-4.8l-1.9-1l-1.3-1.8v-2.1
+        l1.5-0.3l-0.7-2.1l-2.1-0.6l0.4-1.9l2.2-0.9v-2.2l1-1h2.5l0.2-2.6h3.2l1.3-1.3l-0.8-2.6l1.1-2.1l-1.5-2.5l2.8-1.2l1.3,1.3l1.5,2.2
+        h2.1l2.5-1l0.8-1.6l2.6,0.6l3-0.3l2.7-3.7l4,0.6l4.2-4.9l3.2,0.3l0.1,1.3l0.8,0.8l-0.6,1.8l3,1.3l0.4,1.9l3-0.6l1,2.3l2.1,0.9
+        l0.1,1.7l1.6,1.6l1.9-0.5h2.2l0.4,1.5h1.4l1,1.2l-0.8,2.8h1.1l0.9-1.3l0.9,0.9v1.7L713.7,143z"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Архангельская область" data-code="RU-ARK" d="M167.7,189.4l-0.5,0.7l0.8,1l1-1L167.7,189.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M348.1,78l-1,0.3l0.8,1v1h1.3v-1.8L348.1,78"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M274.9,191h-1.3l-1.4-2.1l-0.8,0.5l-2.4-2.3l-1.8-2l0.7-2.1
+    l1.8-0.6l0.7-1.1l-1.3-1l0.1-2.8l-0.8-0.2l-0.8-2.1l-1.7-0.1l-1.4-2l0.5-2.5l1.8-2.5l2.2,0.2l0.7,0.8l0.8,0.3l0.3-1.5l2.6-0.8
+    l2.1-2.2l-1.4-1.5l1.8-1.2l2.1,0.8l0.6-1.7v-1.7h2.6l1.3,1.3l1.3-1.3l0.3-1.2l2.9-0.6l-1-1l-2.5-0.9v-0.9l2.9-0.8l3-0.8l1.5-1.5h2
+    v-1.4l2.8-0.1l-1.5-1.5l2.4-0.1l0.9,0.9l-0.1-2.3l1.2-1.2l-1.3-1.5l0.8-1.3l1.4,1.4h1.7v-1.7l2.5,0.9l1.3-1.4l1.3-1.5h1.6l2.8-1.3
+    l2,0.7h2.9l1.9-1.9l2.2,0.2l1,1.5h2.4l1.2,1.1l2.1-0.6h2.9l1.9-1.9l2.2-1.2l3-1.2h2.8l1.6,2.5v2.8l-2.4,2.2l-2.2,2.1l-2.9,0.2
+    l-3.4,1.6l-3.1-1.1l-1.5,1.5l-3.6-0.1H317l-1.7,1.8h-3.6l-2.6,1.5l0.8,1.8l-1.8,0.7l-2.2-0.2h-2l-0.2,1.3l-2.1-0.6v2.1l-2.1,1.5
+    l-1.7,1.3v-2l-1.4,1.3l0.3,2.3h-1.4l-1-1v1.1v1.7l-1-1l-1.3,1.3l-1.1,1.1h-1.5l-1.1,1.5l-1.5,2.5h-2.4l-2,1.6v2.2l-2,0.8l-0.7,2.3
+    l-1.6,1.6v2.9l-0.8,2.1l1,3l-0.9,3l1.3,2l0.6,2.1l-0.7,0.7l-2,0.9v-1.5L274.9,191"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M347.8,86.1l-0.7,1l-2.5,0.5l-1.6,0.9l1.2,0.6l-0.6,1.3l1,0.3h2.1
+    l1.7-1.7l1.2-1.2l-0.4-1.9L347.8,86.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M339.9,84.4l-0.5,0.5l1,1l1.8-0.7v-1.5h-1L339.9,84.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M338.6,87.4l-1.4-1.6l-1,1l-0.8,1.5v1.9l1.6,0.3l0.4,1.1l2-0.5
+    l1.3-1.3l1-1l0.5-1.6h-1.4L338.6,87.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M332.9,94l-0.6,0.6v1.2h1.3l0.5-1.5L332.9,94"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M330.3,89.2l-0.7-0.7h-2.1v1.4l-1.1,1.1l0.7,0.7l2.3-0.5l0.9,0.9
+    l2-0.5l0.6-1.3l1.4,0.5l-0.8-1.7l-1.3-1.3L330.3,89.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M340.8,73.3l-0.6,1.1l1,1l1-1L340.8,73.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M338.7,75.9h-1.5v1.7l1.6,1.6v1.3l1.4-0.7l-0.9-1.8L338.7,75.9"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M329.2,80.9h-1.3l-0.3,0.3l1.1,1.1L329.2,80.9"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M330.3,83.1l-0.9,0.9l0.9,1l1-0.1L330.3,83.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M331.2,78.9v1.2h1.3l-0.3-1.4L331.2,78.9"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M333.1,82v1.1h1.1l-0.9-0.9L333.1,82"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M334.1,84.5l0.5,0.5l0.9-0.9L334.1,84.5"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M335.5,79.5v1.3l1.1,0.1v-1.4H335.5"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M333.8,76.8l0.7,1.2l0.6-0.6l-0.6-0.6H333.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M321.5,84.8l-0.7,0.7l1.2,1.2l1.4,0v-2.3l-1-1.2L321.5,84.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M324.6,83.3l0.5,1.3h1v-1.1L324.6,83.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M319.3,75.7l-1,1v1l-1.1,1.1l-1.9-1.4l-1.6,0.9v1.1l-2-1.4
+    l-1.5,0.6l0.5,2.3l1.4-0.5v1.5l1.5,0.4l1.4-1.4l1.9-0.8l1.6,0.5h2.4l1.7-1.7l-1.6-1.6l1.1-1.1l-1.9-1.1L319.3,75.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M313.9,73.3h-2.1l-1.2-1.2l-0.9,1.7l1.1,1.1l0.4,1.3l2.5-0.9
+    l0.9,0.9l1.6-0.7l0.7,0.7v-1.4l-1.1-1.1h-1L313.9,73.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M315.8,83.3H315l0.3,1.2l1.7,0.1L315.8,83.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M316.1,85.8l-0.9,0.9l0.7,0.7l1.6,0.4l-1-1L316.1,85.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M323,73.6v1.2h1l1-1L323,73.6"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M206.3,204.1l-2.2,2.2l-1.6,2v-2.8l1.8-1.8l-2.2-3.3l-1.5-1.5
+    h-2.3l-3.4,1.1l-3-1.6l-3.7,1.4l-3.9-0.6l-0.1,4.4l-2.2,1.8l0.9,2.2l-1.1,1.1l-3.6-1.1l-1.4-2.9l-2.2-2.2l-0.7-3.7l-0.8-5.7h-2.2
+    l-2.2,2.3v2.2l-0.3,2.8l1.6,1.6l-0.6,3.2l-3.2,2.3l-2.8-2.8l-2.6-2.6l-0.7,0.8l-1,1.5l-1.3-0.9l-0.6,0.6l-1-1.3l-0.8,0.9l0.1,2
+    l-0.8,1.8l-1.6,0.8l-0.6,1.4l-0.3,3.2l2.4,2.4l-1,2.6l-2.1,0.6l0.3,1.7l-0.4,2l-2.5,2.5l-0.9,0.2l-1,1.1l-1.9,3.9l0.3,1.2l-1,1
+    l0.7,3.5l1.5,0.9v1.6l2,1l0.5,1.3l0.8,0.5l1.2,1.2h1.3l1.1,1.1l0.5,1.4l2.5,0.1l1.9,0.5l0.9,0.9l1.6,0.4l0.6,1.6l1.5,1.5l1,0.7v1.3
+    l1.1,0.4h2.2v-0.8l1,0.3h1.4v1.6l0.8,0.9h0.8v1l1.5,0.8l1,1l1.3-1.3l0.4-1.1l1.4,0.6l1,1.6l-1.1,1.1l1.5,0.8v0.8h1.1l1.4,0.6
+    l-0.6,0.6l0.8,1.2l0.8,0.8l1.4-1.2l1,0.3l0.7,1.1l0.5,0.5l1.2,1.2l-0.4,1.4l1.1,0.6l1.6-0.4l-0.1-0.9l1.1,0.3h2l0.3,1l1.3,0.3
+    l1.1-1.3l1.3-1l1.1-1.8l-1.4-1.4l1-1l1.5-1l0.2-1.1l2-1.2l1.7-1.7l1.1-0.5l1.6-1.6l-1.1-1.1L203,250l-1.3,0.6l-0.8-0.8h-1.1
+    l-1.6,0.3l-0.7,1.6l-0.8-0.3l-1.1,1.6l-1.1-1.1l-1.2-0.4l-1.3-0.6l-0.2-2.2l1.5-0.8l-0.3-1.4l0.6-0.6l0.5-1.2l1.5-0.4l1.8,0.4
+    l0.3-1.2l-0.3-2l-0.9-0.9l0.5-1.9l1.7-1.1v-1.8l0.5-1.8l-1.3-1.3l-1.3-1.9v-1.5l-0.3-1.7h1.6l1.8,1.3l1.5,0.5l1.1,1.1l2.2,0.4
+    l1.8,1.1l2,2l0.4,2l1.5-0.8l1.7-0.6l1.3,0.8l1.6,0.4l1.6,1.3h1.1l0.8,0.8l1.1-1.1l1.1-2l-1-1l-0.4-1.7l0.8-1.7l-0.6-1.2l-1.4-1.4
+    l-0.5-1.1l1.1-1.1l0.9-0.9v-0.9l0.9-0.9l0.7-1.9l1.4-1.4l-1-1l-2.4-1.1l-0.3,0.8l-2.2,0.8l-1.2-0.4l-1.5-1.8l-1.1-1.1l-0.5-2.2l-2-2
+    l-1.1-1.5l-0.7-2.7l-1-2.1L206.3,204.1"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Сахалинская область" data-code="RU-SAK" d="M705.1,284.6l-0.9,0.2l-0.7-1.9v-1.6l2.8,0.8l1.4,0.7l0.8,1.8
+    l1.5,1.5l2.7,0.5l0.7,1.8l3.1,2h1.6l1.3,1.9l1.1,3l1.7,1.7l3.2,3.3l2.1,0.5l2.9,1.1l2.7,2.4l3.7,2.1l2.4,2.1l3.2,1.6l2.7,1.6
+    l1.8,1.4l3.1,1.2l-0.4,1.4l-1.1,1.1l-2.1,0.7h-1.6l0.4,2.3l-0.4,1.6v1.3l1.9,2.9c0,0,1.8,2,1.4,2.3c-0.3,0.3,0.1,3.4,0.1,3.4
+    l1.4,1.4l2.2,2.2l1.9,1.2h2.8l1.6,1.6h1.9l1,2.1l2.4,0.1l1.5-1.5l2.6,1.5l1.5,2c0,0,0.5,1.3,0,1.3s-3.5-1.4-3.5-1.4l-1.3,1.3h-2.8
+    l-0.9,2.2l0.5,2.2l1.8,1.8l1.3,2.9l-1.8,1.4l-1.4-1.8l-1.9-1.9l-3.3-3.1v-2.1l-2.2-2.2l-2.1-2.1l-1.4-1.9l-1.8-3.4l-2.2-2.1
+    l-2.3-1.3l-2.2-0.7l-1.9-3.9l-4.1-5.6l-3.3-3.3l-2.7-2.7l-2.4-3.3l-1.5-2.5l-4.2-1.9l-3.3-1.4l-2-0.2l-2.6-3.6v-1.6l-2.8-2.9
+    l-1.5-2.8l-3.1-1l0.8-2.2v-1.6l2.5,0.8l0.4-2.2l-1.5-1.5v-0.8l-1.5-1.5L705.1,284.6z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M797.8,341.9l0.4,2.3l0.2,2.2l0.9,0.3v-1.8l0.7-1.4v-2
+    L797.8,341.9"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M805.3,343.2v1l1.4,0.8v-1.6L805.3,343.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M800.8,334.3l1.3,0.5l0.4-1.8l-0.7-3.5l1.2-1.2l-0.2-2.5l-1.9-0.5
+    l-0.5,2.9l0.7,0.7l-0.6,2.1L800.8,334.3"></path>
+            <path fill="#282828" stroke="#FFFFFF" stroke-width="1.5" d="M804.1,319.8l-0.5,0.5l0.4,1.9l0.9-1.3L804.1,319.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M805.4,313.1l0.5-2.8l-0.8-1.8l0.4-1.9l1.5-1.5l0.4,2l-0.3,2.1
+    l0.4,2.4l-0.8,1.8L805.4,313.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M806.9,288.7v2.4v2h1.5l-0.4-1.9V290v-1.4L806.9,288.7"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Камчатский край" data-code="RU-KAM" d="M745.7,210.4c0,0,1.1,2.5,1.6,3l3.4,2.3l3.5,1.9l5.4,1.6l2.5,0.5
+    l2.3,1.5l1.4,1.9l4.8,2.5l4.2,1.8l4.4,2l2.3,2.3h2.5l1.8,1.8l2.3,1.2h3.7l1.4,1.9v-2.5l-0.6-3.4l-1.3-5.3l-0.5-4.1l-2.4-2.3
+    l-3.3-3.3l-2.2-0.9l-1.3-4.6l1-2.3v-2.3l2.8-0.4V204l-3.7-0.9L781,202l-2.2-0.8l-2.5-3.9l-0.9-5.1l1.3-2.8l2.2-1.4l1.5-1l-0.9-2.3
+    l-2.5-2l-4.3,0.5l-1.8-1.8l-2.3-0.6l-2.7-4.4l-0.8-3l2.5-0.8l1-2.4l-2.5-2.5h-2.1l-1.3,1.3l-3.3-0.7l-3.3-2.3l-0.6-2.9l-3.3-3.3
+    l-0.9,1.9l-1.2,1.2v1.1l1,2.2h-3.5l-2.1-2.1l-3.5-1.8l-0.4-2.8l-0.5-3.5l-2.4-2.4l-1.8-1.8l-1.5-1.5l-1.9-3.2l1.4-1.4v-3.3h1.5
+    l2.3-2.3l-2.3-1.1v-2.4l-1.4-3.7l1.5-0.1l1.8,1.8l2.4,1.1v-2l-2.2-3.3v-1.9l1-3.5l-1.4-1.4l2.7-3.8l1.6-3.8l3.2-1l2.3,1.1l2.2-1.9
+    l-1.4-1.4l-2.2-2.4l-1.3-5.1v-3.7l-2.4-2.2l-1.3-3.9l-0.6-4.1l-1.3-3l-0.8-3.5l-1.4,2l-2.2,0.2l-1.6-1.6l-1.9,0.6l-0.6,3.2l-0.9,3.2
+    l-1.9,2.9c0,0,1.1,1.1,1.1,1.7s-1.3,3.9-1.3,3.9l-1.3,2.8l-2.1,1.3l-1.4-1.4l-1.9,0.6l-1.7,1.7l-2.2,0.4l-1.9,2.6l-1.5-1.5l-0.8-2.1
+    l-1-2l-0.7-2.6l-1.6-0.5l-2.2,1.5l-1.3,1.3l-1.8-0.8l-3,0.5l0.6,1.9l-1,1.5l-1.3-0.4l-3,0.9v2.2l-1.4,1l-0.8,2.6l-2.1-0.2l-2.5,1.9
+    l0.9,0.9l-1.3,1.3l-2.1,1.1l-1.1,2.3v2.2l0.9,1l3.2,0.3l0.1,1.3l0.8,0.8l-0.6,1.8l3,1.3l0.4,1.9l3-0.6l1,2.3l2.1,0.9
+    c0,0,0.1,1.3,0.1,1.7c0,0.4,1.6,1.6,1.6,1.6l1.9-0.5h2.2l0.4,1.5h1.4l1,1.2l-0.8,2.8h1.1l0.9-1.3l0.9,0.9v1.7l2.6,0.3l1.2-1.7
+    l1.1,0.1l0.3-1.6h-2.5l-2.1-2.1l-2.2-2.2l-1.5-1.4l0.8-2v-2.7l2.8-1.5l2-2l0.8,0.8l-2.4,2.3v2.9l2.7,1.6l1.8,2.3l1.5,1.5l1.6,0.6
+    h1.6l1.6,3.2l1.5,1.5v2.2v1.8l-0.9,3l0.1,2.5l1.5,1.3l1.5,4.7l1.3,3.2l1.1,3.9l1,4.2l2.4,3.2l1.5,4.7l0.6,4.1l1.3,3.8l-1,1l-1.1,1.1
+    l1.2,2.1l-0.9,1.9l-1.1,1.1v1.1l2.3,0.5l2.2,3l0.4,2.9l1.8,1.8l0,2.7l2.5,2.7L745.7,210.4z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M743.1,147.2v2.4l-0.2,2.2l1.3,0.9l0.9,1.1l0.1,2l1.8,0.7l-0.4-2
+    l-0.8-1.5l0.8-2.5v-3.1l-2.1-0.9L743.1,147.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M785.7,158.7l-1.5,0.5l0.8,1.6h2.6h2.6l1.6-1.6l-2.1-0.7l-2.1,0.9
+    L785.7,158.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M793.3,239.5l-0.7,2l-1,1l1.2,1.2l0.7,1.5l-0.2,2l-0.1,2.5
+    l1.2,1.2l1.3-0.7v-2.6l1.2-1.2l-0.9-2.2l-1.5-1.5l0.1-2L793.3,239.5"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M798,256.6v1.6l1.1,0.5l0.8-1L798,256.6"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M795,153l-1.4,1l0.8,0.8l1-1l1-1L795,153"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Чукотский автономный округ" data-code="RU-CHU" d="M738.9,84.7v-4.6l-0.9-4.1l-2.2-3.3l1-1l-3-2l0.8-1.1h2.7l1.6-3.5
+    l2.5-1v-2.7l-1.8-1.8l-1-2.2l-2,1.5l-1.4-1.1l-1.6,0.3l-1.3,1.3H730l-0.6,1.2h-2.3v-1.8l-2.8,0.1l-1.5,0.3l-1.9-0.1l-0.8,1.3
+    l-1.6,1.6l-2.7,0.1l-1.5,1.1v2.4l-1.6,0.6l-1.3-1.3l2-2.4H712l-2.2,0.9l0.9-2l2.7-1.1h1.9l2-3.3l-0.5-2.9l-1-3.7l-2.1-2.1l-2-2
+    l-1.1,1.1l-0.1-2.4h-1.9l-2.8,0.8l-1.7-1.7v-1.7l-2.2-0.4l0.8-0.8l1.1-0.5l-1-1l0.2-1.2l1.3,0.8l1.4,1.1h2.4l1.6-1.3l1.6,1.3
+    l2.1-2.1v-3.2l-1-1.9l2.2-3.2h2.4l1.9,0.8l2.7-0.9l1.4-3l2.7-2.9l2.9-0.3l1.1-3.3l-2.2-0.6v-1h2.7l-0.9-2v-1.6L728,17l-1.4,0.4
+    l-1.6-2.5l-2.3-2.3v1.3l-3-1.1l-1.4,1.4l-2.3-0.4l2.9-1.9V9.1c0,0,0.8-2.3,0-1.5c-0.8,0.8-2.7,0.8-2.7,0.8l1.4-2.9l-1.3-1.3
+    l-1.6-1.4c0,0,0.8-2.9,0-2.2S711.7,2,711.7,2l-2.3,3.2h-0.9l-3,1.1l-1.8,1.8l-1.3,1.8l-0.3,2.3l-1.4-0.1v1.1l2,0.5l-2.4,1.6
+    l-0.8,2.3l2.3,0.6l3.5,0.3l3-0.6v1.5l-3,1.6l-1.7,1.7l-2.6-2l-2.9,0.9l-2-2l-1.8,1l-2.8,1.3l-2.3,2.4l-4.3,1.3l-2.3,3.3l-3.2,1.3
+    l-2.6,2.6l-2.5,2.5l-2.7,1.6l-3.8,1.6l-2,2l-4.3,4.3l-3.9,3.7l-1,3.7l-2.2,3.2l-0.8,2.3l0.8,2.2H653l-2,1.1l-0.3,2.7l-2.3,1.1
+    l-0.6,2.4v1.4h2.5l0.8,1.8l3.2-0.5l4.3,1.9l1.4,0.3l0.8,2l-0.6,2l-2.5,0.6l-2.8,1.3l-2,0.8h-2.9l-1.9-1.9l1.8-1.8l-2.4-2.4l-1.3,1.3
+    l-1.4,2.5l1.8,2.5l-0.5,1.5l1.3,1.3l-0.8,3l-3.2,2.3v2.5l-1.6,1.6h-1.9l-1.1,2.2v4.2l1,1.4l3,1l2.5,0.3l0.6,1.6l2.3,0.9l2,3.3
+    l-2.6,2l-1.2,3v2.5l-1.7,1.2v2.6l-1.5,2.4l1,2.5l2,1.1v2.9l2.5,0.4l2.4,1l2.6-0.9h2.1l1.5,1.5l1.3,2.7h1.4l2.8-1.2l1.3,1.3l1.5,2.2
+    h2.1l2.5-1l0.8-1.6l2.6,0.6l3-0.3l2.7-3.7l4,0.6l1.8-1.8l2.4-3.1l-0.9-1v-2.2l1.1-2.3l2.1-1.1l1.3-1.3l-0.9-0.9l0.6-0.6l1.9-1.3
+    l2.1,0.2l0.6-2.4l1.7-1.3v-2.2l3-0.9l1.3,0.4l1-1.5l-0.6-1.9l3-0.5l1.8,0.8l1.3-1.3l2.2-1.5l1.6,0.5l0.7,2.6l1,2l0.8,2.1l1.5,1.5
+    l1.9-2.6l2.2-0.4l1.7-1.7l1.9-0.6l1.4,1.4l2.1-1.3l1.3-2.8l1.3-3.9l-1.1-1.7l1.9-2.9l0.9-3.2l0.6-3.2l1.9-0.6l1.6,1.6l2.2-0.2
+    L738.9,84.7z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M650,21.1l-1-0.4l-0.9,0.9l-1.9,1l-1.6,1.6l0.1,2.7l-0.7,0.7
+    l0.3,2.2l1.3,1.8l1.3,3l2,0.4l1.4-1.4l1-1.9l-1.1-1.2l1.7-2.4l-0.3-2.6v-3.1L650,21.1"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Калининградская область" data-code="RU-KGD" d="M21.6,195.1l2,0.4l1.7-0.5l0.6-1.2l1.5,0.2l1.4,1.4l0.1,2l1.2,0.4
+        l0.2,1.5l1.8,0.3l0.4-1.4l-1-1l0.8-0.8l0.5,0.5l1.7,1.4v2.2l-0.2,1.9l1,1.6l1,0.7l0.4,2.5l-0.9,1.9l-4.2,2.1l-6.4-7.6L21.6,195.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Калужская область" data-code="RU-KLU" d="M73,268.4l-1.2-1.9l1.7-0.4l1.8-1.8H77l1.3,1.3l0.4,1.5l1.8,0.2
+        l0.6-0.6l1,0.3l1.7,1.3l1.6-1h1.8l2.3-0.5l1.8,0.5l1,1.8l1.2,1.2h2.1l0.8,1.5l0.8,1.4l-0.9,1.3l-0.7,1.3v1.9l-1.9,1.3l-1.8-1.2
+        l-0.7,0.7v1.4l-1.7,0.3l-1.5-1.5l-1.3-0.7l-2.2,0.6l-1.1,1.1l-1.1-0.4l-1.8,2.4l-2.8-1.1h-2l-1.8-0.6l-0.3-1.8l-1.2-1.2v-1.5l1-1
+        v-1.9l0.5-1.9l-1-1L73,268.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Новгородская область" data-code="RU-NGR" d="M118.4,243.7l0.9-0.9l0.3-1.9l-1.6-2.6l-1.8-0.7l0.5-1.1l0.8-1.6
+        l-0.7-1.9l-0.3-1.9l-1-1l-1.5-0.5l0.8-1.6v-1.5l-1.6-0.7l-0.2-1.5l-1.8-0.1l-1.1,1.1l-1.4-1.7l0.4-3.3l-1.1-0.3l-1.3-1.3l-1.2,1
+        l-1.3,0.3l-2-0.8l-2-0.2h-2.9l-0.9-1.8l-1.1,0.5l-0.9,0.9l-1.7-0.2l-2.1,0.2l-1,1v1.6l-0.9,0.9l0.4,1l1.3,1l-0.6,1.8l-1.7,0.8
+        l-1.3,1.3l-1.1,0.6v1.8l-1.1,0.6l-1,1l1.1,1.1l0.8,1.6l1.1,1.1H89l1.1,1.1l1.9-0.1l1.5,0.9h2.7l1.4,1.4l1.8,0.2l1.1-1.1h2.1l1.4-1.4
+        h1.7l1.4,0.7l1,1l0.5,1.8h1.8l1.2,1.5h1.6l0.3-1.1l1.1,1.1l1.7,0.8L118.4,243.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Тверская область" data-code="RU-TVE" d="M100.3,257.4v1.6l0.7,0.1l0.2,1.4h1.9l1.1,0.7l1.6,0.9h2l1.3,1.3
+        h2.1l1.7,1l1.6,0.5l1.5-1.4l2.5-1.6l-0.9-2v-1.2l1.4-1.4l-0.6-2.2l0.7-1.6h1.8l0.8-2.6l2.5-1.1v-2.5l0.7-2.1l-1.8-0.6l-2,0.4
+        l-1.5-0.6l-1.1-0.7c0,0-1.5-0.8-1.8-0.8c-0.3,0-2-0.8-2-0.8l-1.1-1.1l-0.3,1.1h-1.6l-1.2-1.5h-1.8c0,0-0.1-1.8-0.5-1.8s-1-1-1-1
+        l-1.4-0.7H104l-1.4,1.4h-2.1l-1.1,1.1l-1.8-0.2l-1.4-1.4h-2.7l-1.5-0.9l-1.9,0.1l-1.1-1.1h-2.2l-1.1-1.1l-0.8-1.6l-2,1.6l-0.2,1.6
+        l-1.1,1.1l-0.3,2.7l-0.7,1.5l-0.8,1.3h-1.8l-0.8,2.2l0.2,0.8l1.7,1l0.5,2.6l1.6,1.6l1.7,1l1.2,1.2l2.5,0.6l2-0.6l2.2,0.6v1.3l1,1
+        l1,1.9l1.4,1.1l0.8,1.4l0.8-1h1.5l1-1.4L100.3,257.4z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Московская область" data-code="RU-MOS" d="M112.2,278.6l-0.6-1.2v-1.6l-1.2-0.5l-0.6-1.7l1.4-1.1l-0.1-1.7
+        l1-1l0.5-1.6l1.4-0.7c0,0-0.5-1.4-0.4-1.6s0.9-1.1,0.9-1.1l-1.6-0.5l-1.7-1h-2.1l-1.3-1.3h-2l-1.6-0.9l-1.1-0.7h-1.9l-0.2-1.4
+        l-0.7-0.1v-1.6l-2,0.8l-1,1.4h-1.5l-0.8,1l-0.6,2.1l-2.3,1l-1.7,1.7l-0.9,1.4l1.8,0.5l0.8,1.6l1.3,1.4h2.1l0.8,1.5l0.8,1.4l-1.6,2.7
+        v1.9l1.1,1.8l1.6,0.3v1.4l-0.5,1.6l0.5,1.6l-0.6,2.1l0.2,1.7l1.9-0.3l0.3-1.3l1.6-0.3l0.5,0.5l2.3-0.1l0.7-0.7l2,0.4l1.2,0.4
+        l1.3-0.3l0.6-0.6l1.5,0.1h1.5l0-1.8l0.8-0.4l0.4-1.3l0.2-2.4l-1-1L112.2,278.6z M105.9,272.2l-0.8,1.1l0.3,1.3h-1.7l-0.5-0.5
+        l-0.5-0.5l-0.9,0.9l-1.3,0.1l0.5-1.4v-1.1v-1.3l0.9,0.1l0.8-1.2l-0.3-0.7l0.8-0.7l1.1-0.3l0,0.8l0.4,0.8l0,0.2l1.2,0.5l0.9,0.9
+        L105.9,272.2z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Москва" data-code="RU-MOW" d="M104.7,269.9l0-0.2l-0.4-0.8l0-0.8l-1.1,0.3l-0.8,0.7l0.3,0.7
+        l-0.8,1.2l-0.9-0.1v1.3v1.1l-0.5,1.4l1.3-0.1l0.9-0.9l0.5,0.5l0.5,0.5h1.7l-0.3-1.3l0.8-1.1l1-0.9l-0.9-0.9L104.7,269.9"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Ненецкий автономный округ" data-code="RU-NEN" d="M299.3,218.6l-1,1.5l-1.2,1.2l-0.8,0.8l1.2,1.2l0.3,1l1,0.3v2v2.3
+    h-1.2l-1.5-0.8h-1.5l-2.5,2.2l-2.2,0.1l-1,2.4l-3.4-0.6l-0.9,1.5l-1.5,1.5l-1.5,0.8l-2.8,1l-2.4,0.6l-2.9-1.5l-1.5,0.3l-1.7-1.5
+    l-3.4-1.3l-3.4-2.2l-2.5-1l-4.1-1.6l-2-2l-2.5-0.3l-4-2.6l-2-2l-3.1-1.4l-3-2.6l-2.8,0.3l-2.1,1.4l-13.2,0.1l-1-1l-2.4-1.1l-0.3,0.8
+    l-2.2,0.8l-1.2-0.4c0,0-1.3-1.5-1.5-1.8c-0.3-0.3-1.1-1.1-1.1-1.1l-0.5-2.2l-2-2l-1.1-1.5l-0.7-2.7l-1-2.1l-1-1.3l3-0.6l2.5-3.7
+    v-3.2l1-2.2l3.3-1.6v-2l3.2-1.9v-3.2l-0.5-3h2.2l0.7,1.6l2.9,2.9l2.2,3.3v4.4l-0.8,2.3l-1.1,1.1l-1.9-1.9l-2.7-0.6l-4.1,1.4v3.3l1,3
+    v2.5l2.9,0.8l2.8,1.3l3.2-1.5v-2.3l3.3-0.8l3.2,1.5l-0.5-2l4.9,0.9l2.7-0.5l4.8,0.6h2.8l1.4,2.5h1.3v-2.3l4.1-1.3h2.2l0.9,3.3h-2.4
+    l-0.8,2.3l-1.9,0.6l2.9,2.7h2l3.8-1.6l3.6,0.7l3.9,3.9l1.3-1.3h2.7l3.4-1.1l1.3,1.3l-0.4,1.8l-2,1.4v2.2l2.4,2l0.2-2.3l1.1-1.1
+    l2.5,0.6v-2l2.4-0.4l0.5-3l-0.4-3.7l2.3-1.1l2-0.6l2.3,2.3l1-1l2.6,3.2l3,3l2.4,2.4L299.3,218.6z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M282.9,197.8l-1.8,0.9l-1.4,0.5l0.3,3l0.2,1.6l1.3,0.3l0.5,2.4
+    l2.4,0.2l0.8-2l-1.2-2l0.1-2.2L282.9,197.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M242.2,187.8l-2.5,0.7l-1.5,2l-1.1,1.5l0.8,2.2l1.8,0.7l1.7,0.7
+    l1.6-1.1l2,0.3l1-2.4l-1.6-2.1l-0.1-1.7L242.2,187.8"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Ямало-Ненецкий автономный округ" data-code="RU-YAN" d="M295.8,232.2l0.2-1.4l1-0.5l0.6-1.4h1.2v-4.3l-1-0.3l-0.3-1
+    l-1.2-1.2l2-2l1-1.5l1,2l3,3l2,3.2l2.2,2.9v2.5l1.8,2.8l2.5-1.5v-2.7l2.9-2.7l-2-0.6l-1.4-3.3l0.5-3.5l-2.4-1.6l-1.3-2.7l1.2-1.2
+    l2.5-1.3v-2l0.6-3l1.1-1.5v-1.9l-1.6-0.5l0.9-2.5l1.4-1.8l2.5-0.9l2.7-1.3l1-1l2.2-2.2l1.6-3.7l1.3-3l1.4-3l2.4-1.3l1.5,2.2h3
+    l1.5,1.5h2.7l1.1,4.3l-1.3,1.3l-0.6,4.6l-3.6,3.6l-1,3.3l2.2,1.9l-0.8,4.3l-0.6,3.4l-2.5,3.8l-0.9,5.4l-1.4,4.8l-1,2.4l1,3.4
+    l2.2,2.2l-0.4,2l-2.8,2.2l-0.5,4.7l-2.8,0.8l-3.3,3.3l-1.9,2.8l-1.8,1l-3.2-0.6l-1.9,1.3l-2.1-1.3l-1.3-1.3l-1.9-0.6v2.4l1.9,2.9
+    l1.9,0.9l2.5,1.8l2.2-0.1l1.5,2.2h2.3c0,0,1-1.7,0.4-2.2c-0.5-0.5,1.3-1.3,1.3-1.3h1.6l0.8-0.8l3.2-0.9l2.5-1.4v-2.7l1.1-1.1l2-2
+    l1.6-1.6l0.8-3l-0.6-2.7l-0.3-2.4l1.7-1.7l1.7-1.7h2.7l2.9-0.4l0.8,2.5l1.2,1.2l1.5,3.9l-2,2l0.1,3v1.9l2.5,2.5l2.9,0.6v-1.8
+    L347,250l-1.1-1.1v-1.5l-0.3-2.3l2-0.6l0.8-1.6l-0.8-2.4l0.9-2l-1.3-2.5l-1.6-1.5l-1-1l-3.1-1.1l-1.8-1.8l-1.5,1.5l-1.9,0.9l-1-1.4
+    h-2.3l-0.4-2.4l1.5-1.5l-0.4-4.1l1.8-2.8l1.1-3.3l2.5-2.5l-0.9-2.8l-0.8-2.4l0.3-2.6l-1.8-1.8l2-2l3.2-3.2h2.7l1.5-2.4l1-2.7
+    l-0.9-2.2l0.9-1.9h2l-0.6,2.7v3.7l-0.5,3.3l-2.3,2.3v3.2v2.3l2.7,2l1.5,1.3l2-1.2l2,2l2.2,2v-1.5l-0.8-2l-1.5-1.5l-2.3-1.1v-1
+    l-1.9-1.9l-0.9-2.8l2.7-1.8l1.3,1.3l2,2l1.5-1.4L355,201l-0.2-1.5l1.5-1.5l0.1,1.5h1.2l0.5,1.4l1,1l1.7,0.4l1.8,1l0.4,1.6l-1.2,1.2
+    l0.3,1.3l-2.4,0.4l-1.1,1.1l-0.7,0.7l0.8,1.7l0.6-0.6l0.7,1.5l2.7,1.5l-0.3,3v4.4H360l-1,1.5l-1.9,1.9l-2.3,1.7l0.1,2.3l1.1,1.1
+    l0.3,1.4l1.6,1.6l2.4,0.4l0.3,1.6l0.8,0.8l1.5-1.3l0.8,0.8l1.5-1.5l-0.1,2.5l2,0.4v2l1.2,2.9l-0.7,1.8h-1l1,1.9l-0.8,2.4l-1.4,1.4
+    l-0.5,1.6l-1.8-0.4l-0.1,2l1.2,1.2l0.4,2.3l-1.1,1.9l1.1,1.1v1.8l2.8,1.6l1.1,2.2l-1.7,1.6v1.3l0.9,1.5v2.3l-1.1,0.9l1.4,2.5h1.5
+    l1.5,1.5l1.1,2.3l0.3,2.9l-1.3,1.3l0.6,2.7l2.9,0.6l1.5,1.5l1.5-1.5l0.5,3l-0.5,2.7l0.9,2l-1.7,1.7l-1.8,2.3l-1.3,2.4l1.9,2.7v3.2
+    l-1.8,1.8l-0.2,2.9l-1.1,1.1l-3,3l-2.7-3.3h-1.8l-1.9,0.6l-1.9-3.2l-3.7-1.1l-1.2,1.2l-2.6-3.4l-1-2.7l-2.7,1.8l-2.3,1.3l-1,1.8
+    h-4.4h-4.7l-2-2l-2.7-1.4l0.9-2.4l-3.4-1.4l-1.2,1.2l-2-2l-3.1-0.8l-2.2,0.5l-2.5-2.7h-2.2l-1.9-3h-2.2l-4.4,0.5l-0.9-2.5l0.6-2.5
+    l-2.9-2.9v-2.2l-0.7-3.4l-3-3h-3.4l-1.4,1.4l-1.9-1.9l-1.8,1.8l-3.4-0.6l-1.9-2.2l2.2-2.2l-2.9-2.5l-2.9-1.5l-2.7,1.1l-2.7-1.1
+    l-3.4,0.8l-2.5-2.5l-2.2-2.2l-1.2-1.2l2.3-2.3l1-3.1l-0.5-3.4l0.3-4.2l3.3,0.1v-2.8l4.1-2.3l4.1-0.9h4.3l0.9-2.8h2.4l2.3-2.3l3-1.5
+    l-2-2l2.3-1v-1.6l-2.5-1.3L295.8,232.2z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M350.4,182.5l-1,0.9l0.7,1l1.4-0.9l1.7,0.5l-0.5-1L350.4,182.5"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M345.1,187.1l-0.6,1.5l0.9,0.8l1-1.3L345.1,187.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M332.8,179.7l-1.3,0.9l0.5,1l-0.9,1.3l0.2,0.8l2.1,0.6l2-0.9
+    l1.2,0.1v-1.2l-1.8-0.5l0.9-1l-1-1.5l-1.3,0.5L332.8,179.7"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Хабаровский край" data-code="RU-KHA" d="M636.4,315.7l-1.4-3.3v-2.5l-1.7-1.7l1.5-1.5l0.4-3.3l-3.5-1.5
+    h-2.8l-0.3-1.7l2-0.4l-1-2.1l0.6-3.9l-2.4-0.4l-2.4-2.5l2.1-0.5l0.2-3l-0.9-0.9l-0.6-1.6l0.8-2l-1.6-1.6l1.3-1.8l-1.1-1.1v-2.7
+    l2.6-1.3l1.7-1l2.1,0.2l1.7-1.7l2.3-0.9l0.3-2.2l-1.5-1.5l0.8-2.1l2.9-0.6l3.9-3.9l-0.2-4.4l2.8-0.9v-1.4l-2.7-2.7l-0.6-1.9l-3-3
+    l-1.9-0.4l-0.4-2.5l0.5-2.9l-1.5-1.5l2.3-3v-2.7l0.2-3.3l-1.2-1.2l-0.6-2.4l-1.1-1.1l-0.1-2.9l2.2-0.5l1.9,0.5l2.5,1.3l2.5-1.3
+    l2-0.6l2-2l1.4-2.5l1.9,0.1l1.1-0.7l0.8,0.8l1.1-0.4v-2.1l-0.2-3.5l2,0.1l2.6-3l4.8,0.3l4.6,2.7l1.7,0.6v1.9l1.9,2.6L669,218v2.9
+    l1.4,2.1l1.7-0.1l1.9-2.3l2.2,0.1l1.5,0.8l1.1-1h1.5l2.8,2.8l0.6,2h-1.5l-1.5,1.4l1,1.6l0.8,0.8l-2.2,1.4h-2.9l-2.9,2.8l-1.8,1.8
+    l-2,3.4l-2.2,2.2l-2.2,4.3l-0.4,4.2l2,4.1l-1.9,1.9l-0.6,4.1l1.1,2.9l1.8,1.8l-1.5,2.5v3.4v4.6l-0.8,3.2v4.3l1.3,1.4v3v3.4l-1.1,4.3
+    v3.5l-1.9,3.2v3.2l-1,2.8l1.1,2.6h1.9l1.5-1.5h2.1l1.6-1.6l1.8-1.8l1.3,1.3l1.5,0.8v1.6l1.2,2.2l1.5,1.5l1.3-1.3v-2l-1.8-0.8v-1.9
+    l1.4-1.5v1.3l1.5,1.1l0.8-0.3l0.8,0.8v2.3v1.6l2.5-1v-1.3l1.4-1.9l0.9-0.8l1.4,1l0.3-2.1l-1.2-1.2l-1.1-2.2l-1.4-2.5l2.3-1.3
+    l1.4-1.4l2.8-0.6h3.3l2.7,0.3l1.2,1.2c0,0,2.9-0.5,3.5-0.5c0.6,0,2.4-0.8,2.4-0.8l1.6,1.6l-1.2,1.2l-0.9,0.9l-0.8,1.4h2.2h2.3
+    l0.5,1.6l1.9,1.9l2.3-0.3l1.2,1.2l1.3,2.4l0.4,4.8l1.6,5.1l2.6,3.7l3.2,3.2l1.3,1.3l0.6,2.2l2.5,2.5l1.8,3l0.6,1.8l2.3,3.6l2,2v5.3
+    l-0.8,4.6l1.4,4.6l-2.1,1.8l-2.2-1.6l0.6-1.3l-0.8-1.6l-1.8,0.1l-1.4-1.4l-1.8-1.4l-1.5,0.2l-0.9,3.5l-2.5,2.1l0.4,1.7l2.3,0.3
+    l0.6,1.8l2.1-0.2l0.8-1.6l1,0.3l1,2.4l-0.3,2.5l-0.8,1.8l-3,1.1l-0.4,2.1l1.5,0.4v3.6l-2,2.5l-2.6,0.4l-0.2,0.8l-2.6-0.4l-0.6,0.9
+    l-1.7,0.1l-0.5-0.5l-1.8-0.5l-2.2,3l-0.3,2.4l1.4,1.4v1.1l-2.5,0.3l-0.6-2.8l-2.5-2.7l1.9-1.9v-2.8l-1.6-1.6l-1.8-1.8l-0.5-1.6
+    l0.3-1.5l-0.8-0.8l0.2-2.1l-2.2,0.9l-2.6,0.3l-1.3,2.4l-3.5,0.8l-1.6,2.2l-2.5-3l-2.1-1l-1.9,0.8l-1,0.5l-2.2-0.4l-2.1,0.3l0.2,2.7
+    c0,0-0.9,1.4-1.2,1.2c-0.3-0.3-1.2,2.2-1.2,2.2l-1.5-0.4l-0.1-3l-1.4-1.1l-1.1-0.3l-0.2-1.8l-2.4-1.7l-0.5-2l-2.8-0.3l-1.1,1.1
+    l-1.4-2.2h-1.3l-1.4-1.4l-0.5-5.1l1.2-2.2l-1.5-2.3l1.7-2.1l0.1-1.7l2.2-2l0.3-3.7c0,0,2.3-2.3,2.3-2.5c0-0.3-0.1-1.7-0.1-1.7
+    l-2.6-2.6l1-1.4l2.2,0.1l4.1-1.5l0.9-3.1l-2.3-1.6l-0.6-3.8l-2.2-2.2l-2.4,0.2l-1.4,2.4l-1.3,1.3l-2.5,0.5l-0.6,2l0.5,2.4l-0.8,0.8
+    l-2.4,0.9l-1.2,1.7l-1.1,1.7c0,0-1.4-0.2-1.6-0.1c-0.2,0.2-1.5,1.4-1.5,1.4l-3.5-4.8l-2,0.6l-1.1,1l-3.1-0.4l-1.6-1.9l0.9-2.1
+    l1.5-0.9v-1.7l-1.4-2.3l0.7-1.7l0.9,0.1v-3.9l1.6-2.2l-0.1-1.7l0.9-2.2l-2.3-1.3l-2.3,0.4l-1.8,1.8l-2,0.3l-1.4,1.8l-1.6,0.8
+    L636.4,315.7z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M674.7,295.9l-1.1,1.2v1.5v1.6l1.9-0.8l1,1l1.1-1.1l0.4-2.2
+    l-1.2-1.8L674.7,295.9"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Краснодарский край" data-code="RU-KDA" d="M52.8,365.6l-1-1.3l-1.4-0.6l-1.4-2.2l-1-1l1.7-1.4l-0.4-2
+        l1.4-0.4l-1-1l-3.4-3.6l-1.5,0.8l-1.3-1.3l0.1-1.3l0.4-1.6l-1.8-0.8l-1.1,1.1l-1.5-1.4l-1.4-1l-1.5-0.3l-0.5,1.6l1,1.9l-0.4,3.2
+        l-1.9-0.6h-1.5l-2.9,0.1l-2.2,0.9l-0.9,1.9l-1.9-0.6l-2-2.5l-1.5,0.3l-1.4,1.4l0.6,2.5l-0.8,2.3l1,2l1.5,1.4l-0.3,3.8l1.3,1.9l1,2.2
+        l0.5,4.3l-0.4,5.8l1,3l1.6-0.3l1.3,1.8l1,1.3l1.4,0.3l1.5-1.5l1.8-0.3l1.3-1.3h1.3l0.7,1.5l1.1,1.6h2.5l1.9-2.4l0.7-1.4l-0.5-1.8
+        l1.3-0.4l2.1-1.6l-1.2-1.2l1-1.7l-0.8-1.5l-1-0.8l1-1.5v-1.5l1-1.1l1,0.3l0.7,1l1.8-0.2l1.1-1.1l-0.2-2.6L52.8,365.6z M39.6,372.5
+        v2.8l-0.7,1.4l-0.5-1.7l-1.2,0.5l-1.1,1.1l-1.3,1.9l-1.4,1.4l-0.9,0.8v1l-1.3,0.2l-0.6,0.6l-0.7-1.3l-1.9-2.4l1.1-1.1l1,0.5h2.8
+        l0.3-1l-0.5-1.2v-2.1h1.2l0.8-1.5l1.4,0.1l0.8-0.8l-0.7-1.7l-1.4-0.9l-0.4,0.5H33l-0.9-1l-1-1l-0.7-0.7l-0.6-1.1v-1.2l0.7-0.3
+        l0.9,0.9l0.6,0.6l0.8,1.2l1.6,0.5l0.7-0.3l1.6,0.5l0.4,1.4l1.1,0.6l0.8,0.8l0.9,0.6L39.6,372.5L39.6,372.5z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Ставропольский край" data-code="RU-STA" d="M56,402.1l0.5-1l-1.4-1l-1-1l-1.8,0.4l-2.3-2.3l-0.5-1.5l-1.9-0.4
+        l-2-0.6l0.6-1.4l-0.6-1.3l-1-1l0.6-1.1h2.2l-0.7-1l-0.3-1.6l-1.4-1v-2l-1.5-0.5l0.7-1.4l-0.5-1.8l1.3-0.4l2.1-1.6l-1.2-1.2l1-1.7
+        l-0.8-1.5l-1-0.8l1-1.5v-1.5l1-1.1l1,0.3l0.7,1l1.8-0.2l1.1-1.1h1.4l0.9,1l1.4,0.7l0.6,1.7h1.3l1-0.4L59,374l1,1l2.3-0.4l1.4,0.6
+        L64,377l1.2,1.4l0.4,1.6l1.2,1.2l0.8,2.3l-0.9,1.7l1,1.8l1.3,1.3l1,1.3v1.5l1.4,1.4l0.3,1.9l1.1,1.6v2.9l-2,1.3l-1.9,0.6l-1.6-0.6
+        l-1,1l0.6,1l-0.9,0.8h-1.6v1.1l1.3,0.6l-0.8,2h-2.1l-1-1V405l-0.9,0.1l-1,1.3l-1.1,0.2l-0.5-2.2L56,402.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Чеченская Республика" data-code="RU-CE" d="M66.8,408.9l1.3,1.8l2.6,0.2l0.2,2.9l-1.3,0.4l-2.3,1.3l-2.2,2.7
+        l-0.8,3l-2.1-1.2l-1.3,1l-2.1-0.2l-1.4,1.1l-2.2,0.3L56,420l-1.9-2l1.9-1.4l1.5-2.4l1.2-2.6l0.5-1.9l-2-1.6l-0.9-1.7l2.6,0.1
+        l1.3-0.4l0.8-1l0.9-0.1v0.9l1,1h2.1L66.8,408.9"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Кабардино-Балкарская Республика     " data-code="RU-KB" d="M39.7,397.4l1.5-0.6l1.5-1.5l1.2,0.1l1.8-0.7l2,0.6l1.9,0.4
+        l0.5,1.5l2.3,2.3l1.8-0.4l1,1l1.4,1l-0.5,1l-1,0.8v1.5l-0.9,0.9l-2.3,0.1l-0.8,0.8l-1.1-1h-1.8L47,406l-1.1-0.2l-1.7,0.6l-1.8-1.6
+        l0.5-2.5l-2.2-1.8L39.7,397.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Волгоградская область" data-code="RU-VGG" d="M97.9,329.9l-0.2,2.2l0.8,3l2.8,0.4l1.7,0.9v1.5l2.6-0.1l3,2.9
+        l0.4,3.5l-2.3,2.2l1.7,1.6l0.9-0.9l1.8,0.7l0.5,2.6l1.2,1.2h1.8l0.4,1.9l1.5,1.5l0.1,2.5l-0.9,2l-1.6,1.2h-2.5l-2,2l-1.6,1.6v2.3
+        l-2.2,0.9l-2.3-0.1l-1.6,1.6l-0.9-2.6l-1.5-1.5l-1.8,1.2l-2.6-0.1l-1.3-1.3l-3,0.8l-0.9,2.3l-2.3-0.5l-1.3-1.3v-1.6l-1.2-0.4
+        l-0.9,2.5l-1.3,0.5l-1.3-1.3l-1.5,0.6l-1.4-1.4l-2.3,2.1l-2.7-2.6l-0.6-2.3l0.8-2.1v-2.3l-2.8-2l1.6-1.6v-1.6l2.1-0.9l1.7,1.7
+        l2.6-0.4l1.8-3.4l-1.1-4.5l3-3l1.1-2.7l-1.8-2.7l-0.2-1.7l3-3l0.9-3h3.6l1.8-1.6l1.9,0.4l0.4,1.4l1.9,1.1H97.9"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Вологодская область" data-code="RU-VLG" d="M124.2,249.7v-2.5l0.7-2.1l-1.8-0.6l-2,0.4l-2.6-1.2l0.9-0.9
+        l0.3-1.9l-1.6-2.6l-1.8-0.7l1.3-2.7l1.4-1.4l2.4,0.4l0.8-1.1l1.6-0.4l1.6-2.1l0.7-1.7l1.1-2.2l2.9-1.6l1.9-2.7l1.4,0.8l2.3-1.3
+        l2.1-0.7l2.1,0.4l1.8,0.8l2.1-0.4l1.6,1l0.1,1.1l1.8,2l-1.9,3.9l0.3,1.2l-1,1l0.7,3.5l1.5,0.9v1.6l2,1l0.5,1.3l0.8,0.5l1.2,1.2h1.3
+        l1.1,1.1l0.5,1.4l2.5,0.1l1.9,0.5l0.9,0.9l1.6,0.4l0.6,1.6l1.5,1.5l1,0.7v1.3l1.1,0.4h2.2v-0.8l1,0.3h1.4v1.6l0.8,0.9h0.8v1l1.5,0.8
+        l1,1l1.3-1.3l0.4-1.1l1.4,0.6l1,1.6l-1.1,1.1l1.5,0.8v0.8h1.1l1.4,0.6l-0.6,0.6l1.6,2l-2.8,2.8l-1.7,1.7l-2.4-1.1l-1.3,1.2l2.8,2.9
+        l-1.8,0.9v2.3l-0.8,0.8l-2.9-2.6l-1.6,2.4l-2.8-0.7l-1.2,1.2l-1.7-2.5l-2.6-1.4l-2.1-1l-0.9-2.4l-2.5-2.5l-3.3-0.6l-1.7-3.6
+        l-2.6,1.2l-2.8-1.2l-3.1,0.8l-2.8,1.2l-3-3v-2.7v-2.3l-2.4-2.4l-1.2,1.2l-3.2-2.2l-1.3-1.3l-2.3,0.2L124.2,249.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Ростовская область" data-code="RU-ROS" d="M76.4,369.7v-2.7l-2.7-2.6l-0.6-2.3l0.8-2.1v-2.3l-2.8-2l1.6-1.6
+        v-1.6l2.1-0.9l1.7,1.7l2.6-0.4l1.8-3.4l-1.1-4.5l3-3l1.1-2.7l-1.8-2.7l-0.2-1.7h-3.3l-1.1,1.1h-1.8l-0.9-1.2h-2.2V333l-1-1l-1,1.3
+        l-0.9,2.2l-4.7,0.6l0.1,2l-1.8-0.3l-1.8,1.8l0.5,2.8l-1.9,1.1l-2.8,2.8l-3-3.3l-2-2.2l-2.2,0.9l-2.4-1l-2.8,1.3l-1.9,2l1.5,0.5
+        L46,346l2.2,0.5l1.5,1.1l-0.5,2.3L47,349l-2.9-0.4l-0.4,1.6l-0.1,1.3l1.4,1.4l1.4-0.9l4.4,4.6l-1.4,0.4l0.4,2l-1.7,1.4l1,1l1.4,2.2
+        l1.4,0.6l1,1.3l-1.2,1.2l0.2,2.6h1.4l0.9,1l1.6-1.3l1.2,0.9h2.3l0.9-0.9v-1.2h1.5l0.7,1.8v1.7l1.2,1.2l1.6,0.4l0.5,2.2l0.4,1.6l1,1
+        l1.4,0.5l0.6-0.6l1.5,0.4l2.7-2.8H76l2.6-1.9l1.2-2.6v-1.9l-1.9,1L76.4,369.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Астраханская область" data-code="RU-AST" d="M101.9,369l-0.9-2.6l-1.5-1.5l-1.8,1.2l-2.6-0.1l-1.3-1.3l-3,0.8
+        l-0.9,2.3l0.7,2.5l1.5,1l-0.8,4l0.2,2.4l1.2,1.6l2.8,0.1l-0.7,3.1l-1.5,0.8l-0.9,3.2l1.3,1.3l-0.8,2l-2.7-0.2l-0.2,1.6h-0.9l-0.2-1
+        l-1.4-0.6l-1,1l0.9,1.2v1.5l0.8,0.8v1.2l-4.1,2.9l0.4,1l1.7,0l1.4,1l2.3,0.4l0.9,0.9l1.9,0.5c0,0-0.3,1,1,1s2.7-0.2,2.7-0.2h1.1h1.4
+        h1.8l2.2-0.3l1.3-1.3l-1.6-1.6l-1.1-2.2l-0.3-2.3l1.9,0.3l1.3,1.4l1.3-1.3v-3.5l-0.7-4.3l0.6-3.3l-1.5-1.5l-2.4-2.3l-1.6-1l1.6-1.6
+        l0.8-3.3l-1.8-1.8l-0.8-2.5L101.9,369z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Орловская область" data-code="RU-ORL" d="M68.4,284.7l-1.3,0l-1.4,1.4l0.7,1.1l1.3,0.5l1,0.8v2.1l1.5,0.4
+        l0.4,1.2l1.3,0.6l0.4,2.8l1.4,2.3l0.4,2.9l1.4,0.3l1,1l1.5-1.2h1.6l1.1-1.1l-0.7-1.4l2.5-1.5l0.7-1.8l2-0.7l-0.9-2.8l0.9-0.9
+        l-2.3-1.5l-1.6-3.2l-0.9-4.4l-2.8-1.1h-2l-1.8-0.6l-0.8,0.8l-0.4,1.6L72,283l-1-1h-1.4l-1.2,0.4l0.4,1.1L68.4,284.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Липецкая область" data-code="RU-LIP" d="M94,294.4l-1.8,0.1l-0.6,1.1h-1.9l-0.7,1.5h-1.5l-1.3-1.8
+        l-0.9-0.9l-2,0.7l-0.7,1.8l-2.5,1.5l0.7,1.4l-1.1,1.1H78l-1.5,1.2v2.2l1.6,0.3l1.8,1.1l2.2,0.4l1,1.9l2.3,0.8l-0.5,2.3l1.5,1.5
+        l1.9,0.2l2,2.7l1.5-1.2h1.4l0.4-2l-1.4-1.4l0.3-1.8l-0.8-1l0.4-1.3l1.7-0.6l2.1-2.1l2.6-1.9l-0.5-3.4l-1.7-1.7l-1.6,1.1l-0.8-1.3
+        l0.6-1.3L94,294.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Тульская область" data-code="RU-TUL" d="M97.7,288.2l-1,1.7v1.5l-1.3,1l-1.4,2l-1.8,0.1l-0.6,1.1
+        c0,0-1.9-0.4-1.9,0s-0.7,1.5-0.7,1.5h-1.5l-1.3-1.8l-0.9-0.9l-0.9-2.8l0.9-1.2l-2.3-1.2l-1.6-3.2l-0.9-4.4l1.8-2.4l1.1,0.4l1.1-1.1
+        l2.2-0.6l1.3,0.7l1.5,1.5l1.7-0.3v-1.4l0.7-0.7l1.8,1.2l1.9-1.3l1.1,1.8l1.6,0.3v1.4l-0.5,1.6l0.5,1.6l-0.6,2.1L97.7,288.2z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Рязанская область" data-code="RU-RYA" d="M98.6,302l-0.5-3.4l-1.7-1.7l-1.6,1.1l-0.8-1.3l0.6-1.3l-0.6-1
+        l1.4-2l1.3-1v-1.5l1-1.7l1.9-0.3l0.3-1.3l1.6-0.3l0.5,0.5l2.3-0.1l0.7-0.7l2,0.4l1.2,0.4l1.3-0.3l0.6-0.6l1.5,0.1h1.5l1.2,1
+        l-0.5,1.5l1.9,0.6l0.3,1.7l1.3,0.4l1.6,2.6v2.3l1.2,0.8l0.8,0.8v1.2l0.4,1.2l-1.2,1.2l-1.5,0.4l-0.8,0.8l-1.2,1.2h-1.4v1l-1.1,1.1
+        l-1.4,1l-1.2-0.6l-1.5-1.5l-1.2,0.1l-1.5-1.4l-1.4,1.6l-2.3-0.3l-0.8-2.1l-2.3-0.7L98.6,302"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Тамбовская область" data-code="RU-TAM" d="M97.8,326.4l1.8-0.8l1.2-0.1l1.3-1.3l2.2-1.2l2.5-1.5l0.7-1.3h2.1
+        l0.3-4l-1-1.9l0.5-3.3l-0.5-2l1.2-1.2l1.4-1.6l-1.5-1.5l-1.2,0.1l-1.5-1.4l-1.4,1.6l-2.3-0.3l-0.8-2.1l-2.3-0.7l-1.8,0.1l-2.6,1.9
+        l-2.1,2.1l-1.7,0.6l-0.4,1.3l0.8,1l-0.3,1.8l1.4,1.4l-0.4,2h-1.4l-1.5,1.2l1.1,1.1l-0.6,1.9l1.5,1.5l2.4,1l0.8,1.6l1.5,1.5
+        L97.8,326.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Мордовия" data-code="RU-MO" d="M121.4,300.2l1.4,1.4h2.3l0.6,1.8l1.2,1.2v2.4l1.6,1.6l0.6,2.1
+        l2.1,0.6l1-1.5l3-0.1l0.6-0.6l2.1-0.1l-0.3,1.5l0.9,0.9h1.3l0.7,1.5l-1.3,1.9l0.6,1.3l-1.1,1.1l-0.4,1.8l-3.3,0.4l-1.2-1.3l-2,1.4
+        l-1.8-0.2l-1.7-1.7l-1.5-1.5h-2.6l-0.7,0.7l-2.6-2.3V312l-2-2h-1.5l-2.2-0.9l-1.2-1.2l-1.4,0.5l-0.2-1.6l1.4-1l1.1-1.1v-1h1.4l2-2
+        l1.5-0.4L121.4,300.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Пензенская область" data-code="RU-PNZ" d="M111.5,306.3l1.2,0.6l0.2,1.6l1.4-0.5l1.2,1.2l2.2,0.9h1.5l2,2
+        v2.4l2.6,2.3l0.7-0.7h2.6l3.2,3.2l1.8,0.2l1.2,1.9v3.1l-1.3,1.3v1.7l1,1l-0.5,1.4l-1,0.4l-1.2,2.2l-1.5,2.2l-1.5-1.8l-1.9,0.5h-1.6
+        l-2.6-1.4l-2.9-1.2l-1.7-1.2l-0.6-2.2l-2.7,0.1l-1.9-1.8l-1.4-0.5l-1.1-1.1l-0.2-1.5l-1.9-1l0.7-1.3h2.1l0.3-4l-1-1.9l0.5-3.3
+        l-0.5-2L111.5,306.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Саратовская область" data-code="RU-SAR" d="M128.9,334.7l1,2l1.6,1.6h4.4l1.5,1.5l1.2,2.3v2.3l2.6,0.8
+        l0.8,3.4l2.3,2.3l-0.5,2.7l1.8,1.8l0.9,1.4l-0.1,1.4l-3.1-0.6l-1.6,1.6l-2.9,1l-2.5-1.4h-2.7l-1.3,1.9h-2.7h-2.9l-0.6,1.4l-1.6,1.6
+        l-0.3,2.4l-3.1-0.6l-1.8-1.8v-2.5l0.8-2.5l-1.3-1.3h-2.2l-0.1-2.5l-1.5-1.5l-0.4-1.9h-1.8l-1.2-1.2l-0.5-2.6l-1.8-0.7l-0.9,0.9
+        l-1.7-1.6l2.3-2.2l-0.4-3.5l-3-2.9l-2.6,0.1v-1.5l-1.7-0.9l-2.8-0.4l-0.8-3l0.2-2.2l0.9-0.9l-1-2.6l1.8-0.8l1.2-0.1l1.3-1.3l2.2-1.2
+        l2.5-1.5l1.9,1l0.2,1.5l1.1,1.1l1.4,0.5l1.9,1.8l2.7-0.1l0.6,2.2l1.7,1.2l2.9,1.2l2.6,1.4h1.6l1.9-0.5L128.9,334.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Ульяновская область" data-code="RU-ULY" d="M140,316l3.3,2.3v2.2l2.6-0.6l1.9,0.9l1.9,1.9l1.8,1.6l1.9-0.8
+        l1,1l0.7,3l1.8,1.8l0.6,1.6l-1.7,2.7l-2.4,1.1l-1.1,1.1l-1.9-2.6l-2.7-1.1l-1.2,1.2l-2.3-2.5l-1.6,1.6l-2.2-0.5l-1.7,1.7v2.9
+        l1.1,1.1l-0.4,2l-2.3,0.3l-1.5-1.5h-4.4l-1.6-1.6l-1-2l1.5-2.2l1.2-2.2l1-0.4l0.5-1.4l-1-1v-1.7l1.3-1.3v-3.1l-1.2-1.9l2-1.4
+        l1.2,1.3l3.3-0.4l0.4-1.8L140,316"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Самарская область" data-code="RU-SAM" d="M167.9,339.2l-0.9-2.1l0.6-1.6l-3.1-2.7h-2l-1.5,1.5l-3.3-3.3
+        l-1.7,2.7l-2.4,1.1l-1.1,1.1l-1.9-2.6l-2.7-1.1l-1.2,1.2l-2.3-2.5l-1.6,1.6l-2.2-0.5l-1.7,1.7v2.9l1.1,1.1l-0.4,2l-2.3,0.3l1.2,2.3
+        v2.3l2.6,0.8l0.8,3.4l2.3,2.3l-0.5,2.7l1.8,1.8l0.9,1.4h4.5l1.3-2.6l2.4-1.7l1.4,0.4l0.8-1.7l3.5-0.6l1.7-4l2.9-1.6l2.2-2.2
+        L167.9,339.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Курганская область" data-code="RU-KGN" d="M232.2,348.2l3.3-2.2l2,0.9h1.7l1.9,0.8l1.3-0.5l1.7,2.9l3-2.3
+        h2.7l1,1.3l-1.5,2.6l2.2,3.1l1.5,0.5v2.9l2,0.4l1.5,1.4h2.2l0.8,1.7l1.7,0.3l-0.4,2.4l5,3.1l0.4,3.8l-1.5,2.2h-3.2l-2.8,0.8
+        l-2.3-1.3l-2.8,0.5h-3.4l-3.3-1.7h-1.3l-1.5,1.5l-2.5,0.5l-2.4-1.3H237l-2.9-0.9l-4.3,0.1l0.7-1.8l1.9-1.9l-1-2.5h-2.5l-0.3-1.2
+        l-1.6-0.1l-1.5-1.5l0.5-1.7h1.7l1.2-1.2l-0.7-2.4l1.3-1.3h2.2l1.2-1.9l-0.4-3.2L232.2,348.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Башкортостан" data-code="RU-BA" d="M215.4,340.4l-1.6,1.6l-1.5-2.2h-1.8l-2.9-2.1l-1.6-2.3l-1.4,0.6
+        l-1.6-0.6l-1-3.4l-2.1-0.4l-1.1-2.3h-2.6l-2.6-2.1v-1.5l-1.6-0.6l-1.3,1.3l-4.9,1.4l-0.8,0.8l1.1,1.6v1.7l-2.6,2h-1.9l-1.5,0.7
+        l-0.8-0.8l-1.3,0.7l0.4,1.7v1.1l0.8,0.8l-1,1l-1.6,1.6H175l-0.4,1.3l-0.9,1.4l-1.5,0.6l0.6,1.2l-0.1,3.3l1,1l-0.7,3.5l1.4,0.9
+        l1.7,1.7l1.1,2.8v2.8l0.8,1.7l-0.7,1.7v2.4l-0.5,1.2l1.5,0.8l1.3-1.3h2.2l0.8,1.4l-0.8,1.9l-2.1,0.8l0.5,1l1.3,0.3l-0.4,2.5
+        l-0.8,0.8l0.4,2h1.2l0.3,1.1l1.5,1.5l1.5-0.7l1.1-1.1l1.3,0.7l0.5,1.3l1.4,1l1.6,0.4l1.6-1.2l1.1-2.5l0.8-1.3l2-0.9l0.3-1.9l1.7-3.1
+        h1.3v-2.2l1.7-2.2v-1.4l2.6-2.6l2-0.7v-0.9l2.1-0.2l0.9,1.2h1.5v-2.4l-0.9-2.8l-3.1-1l-1.3,0.9l-3.1-0.3l-1.6-2.6l-0.4-3.4l-1.2-1.2
+        l-0.5-2.4l2.8-2.1l1.9,0.6l2.1,1l1.4,1.4v1.7l2.6,1l1.7-1.7l2.9-0.7v-1.5l1.5-2.8l0.6-1.9L215.4,340.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Ярославская область" data-code="RU-YAR" d="M121.8,250.8l2.5-1.1l1.6-0.3l2.3-0.2l1.3,1.3l3.2,2.2l1.2-1.2
+        l2.4,2.4v5l3,3v2.2l-3.3,0.1l-0.8,1.8h-1.7l-2.4,2.6h-1.6l-0.7,1.8l-2.6-0.6l-1.2-1.2h-2.9l-1.8,1.8h-2.1l-1.1,1.1l-1.5-1.5
+        l-1.4-1.1l-0.2-1.3l-0.4-1.6l0.9-1.1l1.5-1.4l2.5-1.6l-0.9-2v-1.2l1.4-1.4l-0.6-2.2l0.7-1.6h1.8L121.8,250.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Костромская область" data-code="RU-KOS" d="M172.1,275.3l1.5-1.7l-2.9-2.6l-1.6,2.4l-2.8-0.7l-1.2,1.2
+        l-1.7-2.5l-4.7-2.4l-0.9-2.4l-2.5-2.5l-3.3-0.6l-1.7-3.6l-2.6,1.2l-2.8-1.2l-3.1,0.8l-2.8,1.2v2.2l-3.3,0.1l-0.8,1.8h-1.7l-2.4,2.6
+        h-1.6l-0.7,1.8l1.7,1.7h2.2l1.1,1.1l1.8-1.8l1,0.2l0.8,2.3l2.8,1.8h1.7v2.9l2.4,1.2v2.3l3,0.7l3.9-1l1.4-1.4h2.2l0.9,2.1l1.4,1.4
+        h2.4l0.9,0.9l2-2l3.1-1.1l1.3,1.3l1.5-1.6h3.6L172.1,275.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Ивановская область" data-code="RU-IVA" d="M120.4,270.3l1.8-1.8h2.9l1.2,1.2l2.6,0.6l1.7,1.7h2.2l1.1,1.1
+        l1.8-1.8l1,0.2l0.8,2.3l2.8,1.8h1.7v2.9l2.4,1.2v2.3h-2.6l-1,2.6h-2.6l-1.8-1.8l-1.4,1.4l-0.7,2.7l-1.6,1.6l-3.3,0.4l-2.8,0.9l1.1-4
+        l1.3-3.3l-3.3-3.3l-1.9-1.9l-3.2-1.1v-1.8l1.1-2L120.4,270.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Владимирская область" data-code="RU-VLA" d="M117.2,271.4l1.1-1.1h2.1l1.3,2.1l-1.1,2v1.8l3.2,1.1l1.9,1.9
+        l3.3,3.3l-1.3,3.3l-1.1,4l-2.6,0.4l-1.6,1.6l-2.1,0.4l-1.4,1.4l-1.6-2.6l-1.3-0.4l-0.3-1.7l-1.9-0.6l0.5-1.5l-1.2-1l0-1.8l0.8-0.4
+        l0.4-1.3l0.2-2.4l-1-1l-1.2-0.5l-0.6-1.2v-1.6l-1.2-0.5l-0.6-1.7l1.4-1.1l-0.1-1.7l1-1l0.5-1.6l1.4-0.7l0.2,1.3l1.4,1.1L117.2,271.4
+        "></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Нижегородская область" data-code="RU-NIZ" d="M118.9,296.1v-2.3l1.4-1.4l2.1-0.4l1.6-1.6l2.6-0.4l2.8-0.9
+        l3.3-0.4l1.6-1.6l0.7-2.7l1.4-1.4l1.8,1.8h2.6l1-2.6h2.6l3,0.7l3.9-1l1.4-1.4h2.2l0.9,2.1l1.4,1.4h2.4l0.9,0.9l2.7,2l3.3,3.3l-2,2
+        l-1.6,1.6l-2.7-1.6l-2.1,0.4l-1.5,1.5l-1.8,2.6l-3.4-2.1l-1.6,1.6l-2.6-0.1l0.2,2.8l-1.3,1.3l1.2,2.2l-3.7,2.1v3.1l-2.3,2l-1.1,1.8
+        h-1.3l-0.9-0.9l0.3-1.5l-2.1,0.1l-0.6,0.6l-3,0.1l-1,1.5l-2.1-0.6l-0.6-2.1L127,307v-2.4l-1.2-1.2l-0.6-1.8h-2.3l-1.4-1.4L121,299
+        v-1.2L118.9,296.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Чувашская Республика" data-code="RU-CU" d="M140.6,312.8l-0.7-1.5l1.1-1.8l2.3-2v-3.1l3.7-2.1l2.2,1.1h4.7
+        l0.3,2.3l1.4,1.4l-0.7,2l1.4,2.7l-3.1,0.8l-2.9,1.7v3.1l-2.4,0.9l-2.2-0.9l-2.5,1L140,316l-0.6-1.3L140.6,312.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Кировская область" data-code="RU-KIR" d="M154.6,296.5l1.8-2.6l1.5-1.5l2.1-0.4l2.7,1.6l3.6-3.6l-3.3-3.3
+        l-2.7-2l2-2l3.1-1.1l1.3,1.3l1.5-1.6h3.6l0.4-6l1.5-1.7l0.8-0.8v-2.3l1.8-0.9l-2.8-2.9l1.3-1.2l2.4,1.1l4.5-4.5l1.4-1.2l1,0.3
+        l2.4,2.9l-0.4,1.4l1.1,0.6l0.2,1.9l-1.6,1.6v2.6l-2.4,0.6v1.7l-1.7,1.7v1.9l1.3,1.3v1.9l0.6,2l-0.8,1.8l0.9,0.9l1.4-1.8l0.9-2.6
+        l2.2-0.6l2.3,1.1l1.4,1.4l2-1.9l1.1,1.1l0.6,1.4l1.9-0.2l1.2-1.2h2.1l1.2,1.2l2.3,1.1l1.7,1.7l1.4,1.2l-0.3,2.2l-2.1,1.8l-2,0.8
+        l-2.3,2.3v2.1l1.3,1.3l-0.7,2v2.1l-2.8,1.8h-2.2l-0.1-2.6l-2.6,0.1l-3-2.9l-2.3,1.7l-1.4,2.4l-0.7,2.2l-1.6,1.6h-2.2l-1.2-1.2
+        l-2.3,2.4v3.7l-2.1,2.1l-1.6,1.6L174,318l-2.1-2.4l-0.7-3.1v-2l-0.7-1.9v-4l-2.1-1.2l-0.9-3l-2.8-0.6l-2.1-1.2l-0.9,1.6l-1.4-1.4
+        L158,300l-2-1.3L154.6,296.5"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Марий Эл" data-code="RU-ME" d="M149.5,296l1.6-1.6l3.4,2.1l1.4,2.2l2,1.3l2.3-1.3l1.4,1.4
+        l0.9-1.6l2.1,1.2l2.8,0.6l0.9,3l2.1,1.2v4l0.7,1.9l-2.2,1.2l-1.6-1.6h-2.8l-1.2-1.2l-2.9,1.7l-4.1,1.1l-1.4-2.7l0.7-2l-1.4-1.4
+        l-0.3-2.3h-4.7l-2.2-1.1l-1.2-2.2l1.3-1.3l-0.2-2.8L149.5,296"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Татарстан" data-code="RU-TA" d="M184.8,328.7l1.1,1.6v1.7l-2.6,2h-1.9l-1.5,0.7l-0.8-0.8l-1.3,0.7
+        l0.4,1.7v1.1l0.8,0.8l-2.6,2.6H175l-1.4,2.7l-1.5,0.6l-1.5-1.4l1.5-1.5l-2.1-2.1h-2.1l-0.9-2.1l0.6-1.6l-3.1-2.7h-2l-1.5,1.5
+        l-3.3-3.3l-0.6-1.6l-1.8-1.8l-0.7-3l-1-1l-1.9,0.8l-3.8-3.6l-1.9-0.9l-2.6,0.6v-2.2l2.5-1l2.2,0.9l2.4-0.9v-3.1l2.9-1.7l3.1-0.8
+        l4.1-1.1l2.9-1.7l1.2,1.2h2.8l1.6,1.6l2.2-1.2v2l0.7,3.1l2.1,2.4l2.6,0.3l1.2,1.7l2.2,1l0.9,1.2l1.5,0l0.3,2.3l1.7,1.3l-1.7,1
+        l0.1,1.1L184.8,328.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Удмуртская Республика" data-code="RU-UD" d="M175.1,315.1l3.7-3.7v-3.7l2.3-2.4l1.2,1.2h2.2l1.6-1.6l0.7-2.2
+        l1.4-2.4l2.3-1.7l3,2.9l2.6-0.1l0.1,2.6h2.2l-0.6,2.8l-0.1,3.2l-1.6,2.8l-0.4,3.1l-1.4,3.2l-4.1,2.1v1.4l1.6,2.5l-1.3,1.3l-4.9,1.4
+        l-0.8,0.8l-2-0.7l-0.1-1.1l1.7-1l-1.7-1.3l-0.3-2.3l-1.5,0L180,321l-2.2-1l-1.2-1.7L174,318L175.1,315.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Коми" data-code="RU-KO" d="M296.1,228h-1.5l-2.5,2.2l-2.2,0.1l-1,2.4l-3.4-0.6l-0.9,1.5
+        l-1.5,1.5l-1.5,0.8l-2.9,1l-2.4,0.6l-2.9-1.5l-1.5,0.3l-1.7-1.5l-3.4-1.3l-3.4-2.2l-2.5-1l-4.1-1.6l-2-2l-2.5-0.3l-4-2.6l-2-2
+        l-3.1-1.4l-3-2.6l-2.8,0.3l-2.1,1.4l-13.2,0.1l-1.4,1.4l-0.7,1.9l-0.9,0.9v0.9l-0.9,0.9l-1.1,1.1l0.5,1.1l1.4,1.4l0.6,1.2l-0.8,1.7
+        l0.4,1.7l1,1l-1.1,2l-1.1,1.1l-0.8-0.8h-1.1l-1.6-1.3l-1.6-0.4l-1.3-0.8l-1.7,0.6l-1.5,0.8l-0.4-2l-2-2l-1.8-1.1l-2.2-0.4l-1.1-1.1
+        l-1.5-0.5l-1.8-1.3h-1.6l0.3,1.7v1.5l1.3,1.9l1.3,1.3l-0.5,1.8v1.8l-1.7,1.1l-0.5,1.9l0.9,0.9l0.3,2l-0.3,1.2l-1.8-0.4l-1.5,0.4
+        l-0.5,1.2l-0.6,0.6l0.3,1.4l-1.5,0.8l0.2,2.2l1.3,0.6l1.2,0.4l1.1,1.1l1.1-1.6l0.8,0.3l0.7-1.6l1.6-0.3h1.1l0.8,0.8l1.3-0.6l0.1,1.7
+        l1.1,1.1l-1.6,1.6l-1.1,0.5l-1.7,1.7l-2,1.2l-0.2,1.1l-1.5,1l-1,1l1.4,1.4l-1.1,1.8l-1.3,1l-1.1,1.3l-1.3-0.3l-0.3-1h-2l-1.1-0.3
+        l0.1,0.9l-1.6,0.4l0.2,1.9l-1.6,1.6v2.6l-2.4,0.6v1.7l-1.7,1.7v1.9l1.3,1.3v1.9l0.6,2l-0.8,1.8l0.9,0.9l1.4-1.8l0.9-2.6l2.2-0.6
+        l2.3,1.1l1.4,1.4l2-1.9l1.1,1.1l0.6,1.4l1.9-0.2l1.2-1.2h2.1l1.9-0.8v-1.5l-1.3-1.3l1.2-2.3l2.6,1.4l0.9-0.9l0.9,0.9l1.2-1.2
+        l1.6,0.6l0.7,1l-0.3,1.6l1.3,1.6l1.6-0.6l2.8,1.2l1.8,1.8l2-1l2.3,0.9l1.3-1.3l1.3,0.4l0.9,0.9l1.3-0.4l0.8-1.6h1.3l2.9,2l2.9,1.5
+        l3.2,1.2l4.4,0.7l0.7-1.8l1.2-1.2l0.4-2.2l3.1-3.1v-1.7l1-2l-0.5-2.2l1.7-3.2l2.6-1.6l0.3-2.3l3-1.9l-0.5-2.8l1.1-2.2l2.6-2.6
+        l1.9-1.9l1.6,0.6v2l2.2-0.3l2.4-2.4l2.4-1.2l1.3-1.5l2.4-0.4l3.3,0.1v-2.8l4.1-2.3l4.1-0.9h4.3l0.9-2.8h2.4l2.3-2.3l3-1.5l-2-2
+        l2.3-1v-1.6l-2.5-1.3l0.4-2.3l1-0.5l0.6-1.4L296.1,228"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Пермский край" data-code="RU-PER" d="M201.2,302.2l-2.8,1.8l-0.6,2.8l-0.1,3.2l-1.6,2.8l-0.4,3.1
+        l-1.4,3.2l-4.1,2.1v1.4l1.6,2.5l1.6,0.6v1.5l2.6,2.1h2.6l1.1,2.3l2.1,0.4l1,3.4l1.6,0.6l1.4-0.6l1.7-1.8l1-1v-2.2l0.9-1.7l0.8,0.8
+        h2.5l2.1-1l0.6-2.4l1.3-2.2h1.7l1.5,2.3l1-1l1.4-1.4l-1-1l-0.1-1.2l2.3-1.5l2.2,0.5l1.6-1.3l1.6-1.6l-1.4-1.4v-0.9l1.3-1.3l0.9-2.9
+        l-1.6-2.6v-3.2l2.1-1.8h2.2l1.7-1.7l1.9-2.9l2.6-2.3l1.4-3.5v-2.6l2.6-1.3v-2l-4.4-0.7l-3.2-1.2l-2.9-1.5l-2.9-2h-1.3l-0.8,1.6
+        l-1.3,0.4l-0.9-0.9l-1.3-0.4l-1.3,1.3l-2.3-0.9l-2,1l-1.8-1.8l-2.8-1.2l-1.6,0.6l-1.3-1.6l0.3-1.6l-0.7-1l-1.6-0.6L207,278l-0.9-0.9
+        l-0.9,0.9l-2.6-1.4l-1.2,2.3l1.3,1.3v1.5l-1.9,0.8l1.2,1.2l2.3,1.1l1.7,1.7l1.4,1.2l-0.3,2.2l-2.1,1.8l-2,0.8l-2.3,2.3v2.1l1.3,1.3
+        l-0.7,2V302.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Бурятия" data-code="RU-BU" d="M518.7,433.8l-4.4-0.6l-1.8-1.1l-5.8,0.8H503l-3,3l-3.3,0.8
+        l-3.2,0.9l-4.6-0.4l-3.1-1.3l-2-2l-1.8-3.9l-2.3-2.3l-3.3-1.3h-3.2l-3.6,0.9l-2.5-2.5h-4.9l-2.9-2.2l-1.5,1.5l-0.2-2.4l-1.2-1.2
+        l-0.5-2.2l1.4-1.4v-2.2l1.5-1.5l3.3-3.3l0.9-0.9l1.1-1.1l1.8,1.1l-0.4,1.7l2.4,1.1l1.4,1.3l3.1,1l1.4,1.4l1.6,0.9l1.8,1.8l4.1-0.9
+        l1.5,1.6l1.9,1.6h2v1.8l1.4,2.3h2.1h1.5l0.7,2.3l2.9-1.6h2.1v-3.7l2.9-2.9l3.4-4.1l1.7-4.4l4.5-4.5l5.1-6.1l0.8-9l1.8-6l-2.8-0.9
+        l-1.4-6.8l-1.2-5.6l1-1.8l1.3-1.3l-2.2-1.5l-2.1-0.7l-0.8-3.4l4-2.9h2V357l1.9-0.9l2.8,1l2.9-1v-2.5l2-1.4l1,1.1h3.2l1.9-1.3
+        l1.2,1.2l3.9,0.8l1.6-1.6l1.7,1l2.5-2.5h1.9v-5l2.3-1.1l1.4-2.9l2.4,0.6l1.1,1.1l-2.8,2.6v3.4l2.4,1.2l1,3l1.5,1.8l1,3.2l2.2,2.4
+        l2-0.8l2.8,1.4l1.9,1.9l0.8,2l-1.1,3.9l-2.9,0.9l-2.4,2.4l-1.8,2.9l-1.3,2.9l-2.1,2.1l-1.6,3.1l1,3.1l2,0.6v1.5l1.5,1.5l-0.9,3.1
+        l-4.8,4.8l-2.8,1.3l-1.7,1.7l-2.2,0.9l-0.6,3.6l-1.7,1.7l-1.9,0.8l-1.2,4.3h-2l-2.5-0.4l-3.3,3.3l-1.7,0.9l-1.4-0.6h-1.4l-1.4,1.4
+        v2.4l1,1.2l-1.6,0.7v4.5l2.2-0.3l1.5,1.5l-4.1,4.1l0.5,2.4H518.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Забайкальский край" data-code="RU-ZAB" d="M597.7,392.1l0.8-5.4l1-2.2l-1-4.1l-1.8-1.8l-1.6-1.6l-2,1.6
+        l-1.4-1.8l1-2.5l1.4-4.2l2-2l4-2.3l-1.8-3.2l-0.8-1.6h-2.2l-0.6-2.7l-1.1-1.6l1.9-1.1v-0.9h-1l-1.7-1.8l-1.4-0.2l0.3-3.2l-0.8-1.5
+        l-0.9-2.5l-2-1l-1.5,2l-1.5-0.6l-0.1-2.2l-1-1l-1.5-0.4l-1.6,1.6l-0.8,1.9l-2.6-0.7l-0.8-1.6l1.5-1.9l-0.9-1.5l-1.7,0.6l-2.2-0.6
+        l-1.5-1.5l0-1.5l-2.1-0.6v-2.2l-1.9-0.6l-2-2.6l-2.8-1l-0.6-2.9l-1.3-1.3l-1.6,1.2h-1.6l-1.2-1.2l-2-0.1l-2.2,2.2l0.9,0.9l-1,2.2
+        l1.1,1.1l-1,2.6l3.7,3.7l2-0.9v1.6l0.9,0.9l-0.5,2.5l-2,1.2l-1.1,2.2l-2.9-0.8l-1.9,1l-2.3-0.2v3.4l2.4,1.2l1,3l1.5,1.8l1,3.2
+        l2.2,2.4l2-0.8l2.8,1.4l1.9,1.9l0.8,2l-1.1,3.9l-2.9,0.9l-2.4,2.4l-1.8,2.9l-1.3,2.9l-2.1,2.1l-1.6,3.1l1,3.1l2,0.6v1.5l1.5,1.5
+        l-0.9,3.1l-2.9,2.8l-1.9,1.9l-2.8,1.3l-1.7,1.7l-2.2,0.9l-0.6,3.6l-1.7,1.7l-1.9,0.8l-0.7,2.4l-0.6,1.9h-2l-2.5-0.4l-3.3,3.3
+        l-1.7,0.9l-1.4-0.6h-1.4l-1.4,1.4v2.4l1,1.2l-1.6,0.7v4.5l2.2-0.3l1.5,1.5l-4.1,4.1l0.5,2.4l1.8,1.8l1,1.9l3.4,1.1l3.8-0.5h5.2
+        l3.7-1.1h4.1l1.6-1.6l3.1-3.1l4.1-1.9l2.9-2l2.2-2.2l1.1-3.7l4.6-4.6l3.2-1.4l2.4,0.9l2.7,1.4l3.5-2l2.5-1.5l3.4,0.6l4.7,0.4
+        l4.2-1.5l2.5-2.5l1.7-4l2.7-0.8v-3.5l-1.1-1.1l-1.9-3.7l1.4-3.5V392.1"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Иркутская область" data-code="RU-IRK" d="M558,320.9l-1-2.8l-1.6-0.2V316l-1.7-1.9l-1.4-1.4h-2v1.9
+        l-1.8,1.8l-2.8-0.4v-1.8l-1.2-1V311l-2.5-0.3l-2.8-1.3l-2.7,0.3l-2.7-0.4l-1.5,1.8l-0.8,2.5l-1.8,1.8l0.7,2.5l-0.9,2.8l-2.4,2.4v4.4
+        l-3.3,2.3v2.6l-1.4-2v-2.2l-1.7-1.7l-1.6,0.7l-0.4,2.1l-4.2,1.6h-2l-0.8,2.4l-1.3,1.9l-2.7,0.2l-3-3l-0.3-6.3l0.4-3.8v-3.6l0.5-3.2
+        v-3.1l-2.2-0.9l-1.6-0.6l-0.2-1.5l-0.7-1.7l-1.4-1.4v-1.7l1-1l0.3-2.3l-1.4-1.4h-1.8l-2-0.9V297l0.8-0.8l-0.9-0.9l-0.7-2.8l-1.6-2.8
+        l-1.9-1.3l-2.1,0.6l-2.1,0.2v-2.5l1.7-0.5v-1.6l-1.8-1.8l-0.7,1.4l-1.1,1.1l-1.5-0.3l-1.7,1.7l-1.7,0.6l-1,2.3v2.3l0.9,2.5l-0.7,2.1
+        v1.8l2.2,2.2l1.4,1.4l-0.6,1.8l-0.9,1.5l1.6,1.6l-1.6,1.6l-1.1,0.8v3.4l-1.3,0.8l-0.5,2.3l-2.2,0.9l0.6,3l-1,0.9l-0.4,2.8l0.6,2.5
+        l1.3,0.6l2.1,2.1l0.9-0.9l2,0.8v2.2l0.7,1.9l-1.4-0.2l-1,1.7l-0.8,1.5l0.4,1.2h2l1,2l0.7,1.8l-1.1,1.1l-1.2,1.9v1.6l-0.6,1.4h-1.9
+        l-1.6-1.6h-2.2l-0.8-1.5l-2-0.9l-0.4-1.3l-1.6-0.4l-2.2,1.4l-0.6,2.5l1.2,2.6l-1.7,2.5l-2.7,2.7l-1.9,2.7l-0.6,2.7l-1,2.3l1.8,1.8
+        l-1.7,1.2l-2.5-1.7l-1.2-2.9l-2.1-2.1l-1.9,1l-0.9,2.7l-3.2,1.2l-2.5-0.4l-2.7,0.6l-0.1,3.8l-1.5,1.5v3.6l1.8,1.8l1.2,2.9v1.7
+        l-1.9,1l-0.9,2.3h-1.8l-0.5,2.4l-0.9,2l1.4,2l0.1,2l-1,0.7v3l0.5,1.7l-0.9,1.6l0.3,2l-3.7,0.2v1.6l-1.6-0.3l-0.6,1.6l2.4,1.5
+        l3.6,3.6l1.7,1h2.3l1.9,1.4l2.9,0.4l2.4,2.3l1.6,0.8h2.8l1.1-1.1l2.4,2.4l5.4-5.4l2,1.4l-0.6,1.4l2.4,1.1l1.4,1.3l3.1,1l1.4,1.4
+        l1.6,0.9l1.8,1.8l4.1-0.9l3.4,3.2h2v1.8l1.4,2.3h3.6l0.7,2.3l2.9-1.6h2.1v-3.7l2.9-2.9l3.4-4.1l1.7-4.4l4.5-4.5l5.1-6.1l0.8-9l1.8-6
+        l-2.8-0.9l-2.7-12.4l1-1.8l1.3-1.3l-2.2-1.5l-2.1-0.7l-0.8-3.4l4-2.9h2V357l1.9-0.9l2.8,1l2.9-1v-2.5l2-1.4l1,1.1h3.2l1.9-1.3
+        l1.2,1.2l3.9,0.8l1.6-1.6l1.7,1l2.5-2.5h1.9v-5l2.3-1.1l1.4-2.9l2.4,0.6l1.1,1.1l-2.8,2.6l2.3,0.2l1.9-1l2.9,0.8l1.1-2.2l2-1.2
+        l0.5-2.5l-0.9-0.9v-1.6l-2,0.9l-3.7-3.7l1-2.6l-1.1-1.1l1-2.2l-0.9-0.9l2.2-2.2l2,0.1l1.2,1.2h1.6l1.6-1.2l0.4-1.4L558,320.9"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Тюменская область" data-code="RU-TYU" d="M275.8,375.2l-1.1-2.3h-3.2l-2.5-1.5l-2.8-0.3l-0.4-3.8l-5-3.1
+        l0.4-2.4l-1.7-0.3l-0.8-1.7h-2.2l-1.5-1.4l-2-0.4v-2.9l-1.5-0.5l-2.2-3.1l1.5-2.6l1.6-1.2l-0.7-2.3l1-1l-0.5-2.8l2.2-2.2l1.9,0.5
+        l1.5-1.5l1.7,0.7l2.9-1.5v-2.1l-0.6-1.7l0.7-2.4l1.8,1.4h2.7l2-0.6v-1.7l1-1l3.5,1l1.4-1.4h3.8l1.1-1.1l2-0.7l2.1-0.8l1-1l-0.1-2
+        h1.4l1.7,1.4l1.5,0.8l1.7,1.7h1.9l2.5,0.7l2,2l1.4,2.6l1.7,2.8v2.3l2.6,0.4v2.2l1.3,1.3l2.1,0.7l1.2,1.2h2.3l1.6,1.4h2.1l-1.1,1.6
+        l-2,2l-2.5,1.2h-3l-1.9-0.6l-2.2-1.1l-1.3,1.2h-2.1l-1.6-1l-1.4-0.7l-2.2-0.7l-1.7-0.6v-1.5l1.2-1.2l-2-2l-1.9,1.3l-1.1,1.9
+        l-1.5,1.5l-0.2,2l0.9,2.6l-2,1v1.4l1.7,0.9l1.2,1.2l0.6,1.5l1.9,1v1.7l-0.9,0.9l-2.4,0.4l-1.4,1.4l-1.8,1.8v2.2l-0.5,1.3l-1.3,1.3
+        l-1,0.2v1.7l-1.3,1.3l-0.7,1.5v1.5H275.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Свердловская область" data-code="RU-SVE" d="M249.8,347.8h-2.7l-3,2.3l-1.7-2.9l-1.3,0.5l-1.9-0.8h-1.7l-2-0.9
+        l-3.3,2.2l-1.3-1.3l-1.4-1.4l-1.8-1l-1.6,1.6l-1.7-1.7l-1.7-0.2l-0.4-1l-2.3-0.8l-0.7-1.3l-2.1-1.4l-1.7,0.7l-1.6,1.6l-1.5-2.2h-1.8
+        l-2.9-2.1l-1.6-2.3l1.7-1.8l1-1v-2.2l0.9-1.7l0.8,0.8h2.5l2.1-1l0.6-2.4l1.3-2.2h1.7l1.5,2.3l1-1l1.4-1.4l-1-1l-0.1-1.2l2.3-1.5
+        l2.2,0.5l1.6-1.3l1.6-1.6l-1.4-1.4v-0.9l1.3-1.3l0.9-2.9l-1.6-2.6v-3.2l2.1-1.8h2.2l1.7-1.7l1.9-2.9l2.6-2.3l1.4-3.5v-2.6l2.6-1.3
+        v-2l0.7-1.8l1.2-1.2l1.8,1.1v1.6l1,1l1.1,0.8l1.7,1.7l3,3l1.9,3.4l1.5,1.5v3.4l-1.3,1.7l0.7,3.9l-0.8,3.2l1.6,1.6v2.5l-1.5,1.5
+        l0.5,2.9l2.1,1.1l1.5,1.8l0.1,2h1.5l1.5,1.5l-0.8,1.5v2.9l1.4,1.4l-0.7,2.4l0.6,1.7v2.1l-2.9,1.5l-1.7-0.7l-1.5,1.5l-1.9-0.5
+        l-2.2,2.2l0.5,2.8l-1,1l0.7,2.3l-1.6,1.2L249.8,347.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Ханты-Мансийский автономный округ - Югра" data-code="RU-KHM" d="M273.4,251.3l-0.3,4.2l0.5,3.4l-1,3.1l-2.3,2.3l1.2,1.2l2.2,2.2
+        l2.5,2.5l3.4-0.8l2.7,1.1l2.7-1.1l2.9,1.5l2.9,2.5l-2.2,2.2l1.9,2.2l3.4,0.6l1.8-1.8l1.9,1.9l1.4-1.4h3.4l3,3l0.7,3.4v2.2l2.9,2.9
+        l-0.6,2.5l0.9,2.5l4.4-0.5h2.2l1.9,3h2.2l2.5,2.7l2.2-0.5l3.1,0.8l2,2l1.2-1.2l3.4,1.4l-0.9,2.4l2.7,1.4l2,2h4.7h4.4l1-1.8l2.3-1.3
+        l2.7-1.8l1,2.7l2.6,3.4l1.2-1.2l3.7,1.1l1.9,3.2l1.9-0.6h1.8l2.7,3.3l0,3.9l3.2,2.1l3.6,1.6l-1.9,3.1l-4.5,2l-2.9,2.9l-4.7-3.4
+        l-5,2.1l-0.9,3.1l-3.4-1.7l-2.4,0.6l-2.9-2.9l-3.2,1.2l-4.1-0.5l-1.1-1.6h-4.4l-3-1.3l-4.1,0.6l-1.5,3l-1.5,3.7l0.2,4l-4.2,1.2
+        l-3.4,2.5l-0.4,2.7l-3.6,2.1h-2.1l-1.6-1.4h-2.3l-1.2-1.2l-2.1-0.7l-1.3-1.3v-2.2l-2.6-0.4v-2.3l-1.7-2.8l-1.4-2.6l-2-2l-2.5-0.7
+        h-1.9l-1.7-1.7l-3.2-2.2h-1.4l0.1,2l-1,1l-4.1,1.5l-1.1,1.1H275l-1.4,1.4l-3.5-1l-1,1v1.7l-2,0.6h-2.7l-1.8-1.4l-1.4-1.4v-2.9
+        l0.8-1.5l-1.5-1.5h-1.5l-0.1-2l-1.5-1.8l-2.1-1.1l-0.5-2.9l1.5-1.5c0,0,0.4-2.1,0-2.5s-1.6-1.6-1.6-1.6l0.7-2.6l-0.5-4.5
+        c0,0,0.8-1.2,1.3-1.7c0.5-0.4,0-3.4,0-3.4l-1.5-1.5l-1.9-3.4l-3-3l-1.7-1.7l-2.1-1.8v-1.6l-1.8-1.1l0.4-2.2l3.1-3.1v-1.7l1-2
+        l-0.5-2.2l1.7-3.2l2.6-1.6l0.3-2.3l3-1.9l-0.5-2.8l1.1-2.2l2.6-2.6l1.9-1.9l1.6,0.6v2l2.2-0.3l2.4-2.4l2.4-1.2l1.3-1.5L273.4,251.3z
+        "></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Красноярский край" data-code="RU-KYA" d="M417.6,108.5l-1,1.3l-0.9,1.7l-0.8-0.3l0.6-2.2v-2.3l-2.5,0.8
+    c0,0-1.5,0.3-1.8,0.5c-0.3,0.1-2.1,0.7-2.1,0.7l-0.8,1.7l-0.5,1.5l-1,1.3l0.3,1.5l-2,1.5l0.9,0.8l1.4-0.5l1.2,1.6l0.1,1.5l1,1.3
+    l2.6,0.2l0.3,1.5l1.8-1.1l0.9,1.5l2.5,0.9l2.4-1.2l1.2-1.6l-0.9-1.8l-1.5-2.1l1.2-0.8l0.5-2l-0.6-2.2l0.2-2.2L417.6,108.5z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M384.4,174.7l-1.4,0.7c0,0,0.6,1.7,0.6,1.5c0-0.2,1-0.5,1-0.5
+    L384.4,174.7z"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M462.6,227.2l0.7,1.7l1,2.2l2.2,1.5l0.2,4.2l2.2,4v1.7l0.6,3.2
+    l0.7,4.9l-1.9,0.6l-1.3,2.1l-1.2,1.2l0.7,2.1l0.7-0.7l2.4,1v2.1l0.9,0.9l-0.9,0.8v2.2l2.2,1.2l0.7,3.5l2.6,2.6l-0.9,2.5l-1.5,2.4
+    l0.6,1.9v1.7l-0.8,0.8v2.5l1.3,0.6h2.1l1-1h1.2l1.1,1.3l2.3-0.9l1.7,0.8l1.4-1.4l1.9,0.1l0.1,1.5l-0.7,1.4l-1.1,1.1l-1.5-0.3
+    l-1.7,1.7l-1.7,0.6l-1,2.3v2.3l0.9,2.5l-0.7,2.1v1.8l2.2,2.2l1.4,1.4l-0.6,1.8l-0.9,1.5l1.6,1.6l-1.6,1.6l-1.1,0.8v3.4l-1.3,0.8
+    l-0.5,2.3l-2.2,0.9l0.6,3l-1,1l-0.4,2.8l0.6,2.5l1.3,0.6l2.1,2.1l0.9-0.9l2,0.8v2.2l0.7,1.9l-1.4-0.2l-1,1.7l-0.8,1.5l0.4,1.2h2l1,2
+    l0.7,1.8l-1.1,1.1l-1.2,1.9v1.6l-0.6,1.4h-1.9l-1.6-1.6h-2.2l-0.8-1.5l-2-0.9l-0.4-1.3l-1.6-0.4l-2.2,1.4l-0.6,2.5l1.2,2.6l-1.7,2.5
+    l-2.7,2.7l-1.9,2.7l-0.6,2.7l-1,2.3l1.8,1.8l-1.7,1.2l-2.5-1.7l-1.2-2.9l-2.1-2.1l-1.9,1l-0.9,2.7l-3.2,1.2l-2.5-0.4l-2.7,0.6
+    l-0.1,3.8l-1.5,1.5v3.6l1.8,1.8l1.2,2.9v1.7l-1.9,1l-0.9,2.3h-1.8l-0.5,2.4l-0.9,2l1.4,2l0.1,2l-1,0.7v3l0.5,1.7l-0.9,1.6l0.3,2
+    l-3.7,0.2v1.6l-1.6-0.3l-0.6,1.6l2.4,1.5l3.6,3.6l1.7,1l-0.7,1.6l-1.4-0.5l-1.1,1.1l-2.8-0.1l-2.4,2.4l-3.3-0.6l-1.2,1.2l-0.8,4.6
+    l-2.9,0.8v2.1l-1.9,1.9v3.2l-2.7,0.8l-3.7,3.2l-2.7,1.1h-2l-2.6-1.3h-2.9l-2.9-1l-2.2-2.2l0.9-1.3l1.1-2.8l2.3-1l2.1-2.1l-0.3-2.6
+    l2.1-2.1l0.8-2.6l-0.7-2.1v-2.4l-2.7-2.7l-0.8-3l-2.6-2.6l0.8-3.4l-0.8-1.6l-2.4,0.8l-3.7-0.4l-1.2,1.2l-2.5-0.5l-2.4-2.6l-1.4-2.4
+    l2.3-2.3l1.5-0.6l-0.2-3.6l-1.3-2.6l-1.8-0.6l-1-0.9l-0.4-2l0.6-2.7v-3.8l1.6-2.9l2.8-1.4L394,363l-3.4-1.1h-2.2l-0.6-2l-1.9-3
+    l1.2-3.2l4.1-4.4l-1.3-1.3l-3.7,0.3l-0.8-2.9l-2.4-2.4l-1.5-2.3l-3-0.8h-4.1l-3.4,0.9l-2.8-0.9l-0.8-2.5l2.3-2.3l-2.5-5.1l2.9-2.9
+    l4.5-2l1.9-3.1l-3.6-1.6l-3.2-2.1l0-3.9l3-3l1.1-1.1l0.2-2.9l1.8-1.8v-3.2l-1.9-2.7l1.3-2.4l1.8-2.3l1.7-1.7l-0.9-2l0.5-2.7l-0.5-3
+    l-1.5,1.5l-1.5-1.5l-2.9-0.6l-0.6-2.7l1.3-1.3l-0.3-2.9l-1.1-2.3l-1.5-1.5h-1.5l-1.4-2.5l1.1-0.9v-2.3l-0.9-1.5v-1.3l1.7-1.6
+    l-1.1-2.2l-2.8-1.6v-1.8l-1.1-1.1l1.1-1.9l-0.4-2.3l-1.2-1.2l0.1-2l1.8,0.4l0.5-1.6l1.4-1.4l0.8-2.4l-1-1.9h1l0.7-1.8l-1.2-2.9v-2
+    l-2-0.4l0.1-2.5c0,0-1.3,1.3-1.5,1.5c-0.2,0.2-0.8-0.8-0.8-0.8l-1.5,1.3l-0.8-0.8l-0.3-1.6l-2.4-0.4l-1.6-1.6l-0.3-1.4l-1.1-1.1
+    l-0.1-2.3l2.3-1.7l1.9-1.9l1-1.5h2.5v-4.4l0.3-3l-2.7-1.5l-0.8-1.6l-0.5,0.7l-0.8-1.7l1.7-1.7l2.4-0.4l-0.3-1.3l1.2-1.2l-0.4-1.6
+    l-1.8-1l-1.6-0.3l-1.1-1.1l-0.5-1.4h-1.2l-0.1-1.5l2.5,0.5l2.1-0.3l1.7,1.7l3.3,1.8l-0.9,2.5l0.8,0.8l2.2,2.2h3.4l0.5-2l-1.4-1.9
+    l0.1-1.8l-2.4-0.9l-1.8-2.9l-1-1l0.8-3l1.1-2.5l-1-1l-0.6-3.2l2.5-2.3h6l3,1.1v-0.8h4.9l3.3-1.4h2.4l1.3-1.3l-1.3-1.9l-1.5-0.5
+    l-1.3-1.3c0,0,0.5-0.5,1.5-1.5c1-1,1,1,1,1l1.5-0.4l-1-1.1l0.7-1.6l-1.1-1.1l1.3-1.8l1.8-1.4l-1.8-0.1l-0.1-1.9l3.5,0.1l1.4-2.9
+    l3.5-1.3l1.3-1.3l4.8-0.7l1.2-1.2l3.4-1l0.8-0.9l-2.3-0.8l1.3-1.3l3.3-0.8l2.8-0.4l0.6-1.4l2.3-0.4l-1.2,2.3v1.8l1.6-1.6l3.9,0.1
+    l0.4-2l2.5-0.5l2.5,0.5l-1.1-1.5l-1.5-1.1l-0.8-1.4h2.8l2.9-0.9h0.9l-0.3-2.2l-1-0.8v-3l0.6-2l1.9-4.7l2.3-1.6l2-2.2l2.5,1.5
+    l1.9-0.3l0.6,2.6l-2,2l-1.6,2.2l4,0.2l0.8-0.8h2.5l1.8,1.8l-1.6,1.6c0,0-0.1,1.6,0.6,1.6c0.8,0,2.8,0.9,2.8,0.9l0.6-2.2l-1.1-1.1
+    l2.8-1.5h2.5l2.6-1.8l1.5,1.5l2-1l1.5,1.5l1.3,2.5l1.5,1.3l0.9-1l1.3,1.3l1.7,1.7l-0.3,2.7l-2.5-0.5l1,1l2.5,1.4l1.6,2.7l-1.5,1.5
+    v2.5l-1.3,1.8l-1.2,2.5l-1.5,1.5l-2.5,3v1.3l-0.8,3.5l-1.9,1.9l-0.8,3.9l-3,0.8l-1,2.9l-2.1,2.1l-0.5,3.3l-0.6,2.3l2.3-1L452,187
+    l2.3-1.4c0,0,2-0.6,3.2-0.6c1.1,0,1.5-2.3,1.5-2.3l2.2-1.8l2-0.8l1.2-2.3l-1-1l-1.5-0.1l0.1-1l-0.1-2l1.9-0.1h1.5l0.3,2.2l1,0.8
+    l-0.3,1.2l-0.9,0.9l0.6,1.5l1.1,1.7l1.1,1.1l-0.4,2.5l0.9,1.9l2.6,1v1.3l3.4,2.5l1.6,1.6v3.1l1.8,3.4h2l0.2,2.6h-1l-0.5,1.8
+    l-2.4,2.4l-2.1,1.4l0.1,2.6v2l-1.9,0.7l-0.7,2.5l1.4,1.4v2.1l-0.8,1.7l-2.6-0.8l-1.9,0.6l-2.8,3.9l-2.7,1L462.6,227.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M444.1,136.7l-0.5,0.7l1,0.7l0.5-0.8L444.1,136.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M439.2,126.4l-1.2,0.7l1.6,0.8l1.1,0.8l1.3-0.3l-0.3-1.5l-1.3,0.3
+    L439.2,126.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M427.9,120.8v-1.6l0.1-2.9l-0.8-1.6l-1.2,0.1l-1.6,2l0.1,1.7
+    l-0.7,1.2l0.5,3.1l-1.4,1.4l0.1,3.1l-0.7,2.6l-0.6,2.6l1,0.6l2.2-1.7l1.3-0.8l2.9-1.5l2.3-0.2l2.9-2.2l1.4-2.6l-0.9-2.3l-1-1.7
+    l-1.4,0.6l-1.4-2.4l-1-1l-1.3,1.5L427.9,120.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M415.5,143.7l-1.2,1.4l-1.5,0.3l1.4,1l1.4-1.4L415.5,143.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M396.3,143.2l-0.6,0.9l0.8,0.7l1-1.5L396.3,143.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M374.6,164.4l-1.3,1l0.7,1.4l1.1-0.2L374.6,164.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M374.1,179.4l-0.2,1.3h2l1,1l0.1-1.7l-1.2-0.2L374.1,179.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M367.4,111.3l-0.7,0.7l0.8,0.5l1.3,0.9l0.3-1.2L367.4,111.3"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M360.4,191.4l-0.8,1l0.5,1.4l0.8,1l1.1-1.3l0.5-1.5l-1-1
+    L360.4,191.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M377.1,96.4l-1,0.2l-0.6,0.6l1,1l1.3-0.4l0.8-0.8L377.1,96.4"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M398.9,94.5l-0.9,0.9l0.7,0.7l0.7,0.7l1.5-1.4v-1L398.9,94.5"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M408,93.2l-0.3,1.9l-1.7,0.8l-2.6,1.7v2.4l1,1l-1.4,1.4l-0.9,1.8
+    l1.2,1.7l0.5,1.7l2.2,1.9l2-1.9h1.3l2-1.1l2.4-0.8l-0.7-2.3v-2.9l1.4-1.2l-1.2-1.2l-2.4-2.4l-0.9-1.9L408,93.2"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M402.4,109l-1.6-0.2l0.3,2.1v1.3l2.1,0.6l0.9,0.9l1.3-1.3l0.7-1.9
+    l-1.2-1L402.4,109"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" d="M377,157.7l-0.6,0.6l0.8,0.7l1.3-0.4L377,157.7"></path>
+    
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Томская область" data-code="RU-TOM" d="M367.4,329.8l1.4,3l1,2.2l-2.3,2.3l0.8,2.5l2.8,0.9l3.4-0.9h4.1
+        l3,0.8l1.5,2.3l2.4,2.4l0.8,2.9l3.7-0.3l1.3,1.3l-2.2,2.4l-2,2l-1.2,3.2l1.9,3l0.6,2h2.2l3.4,1.1l0.4,2.9l-2.8,1.4l-1.6,2.9v3.8
+        l-2.4,1l-2.7,2.7l-1.4-1.4l-2.8,1.5l-2.3-1h-2.7l-4.3,3.8H367l-2.6,1.3l-3.2-0.2l-3.3,3.5l-1.4-1.4l1.2-1.2l-1-1v-2.4l-0.5-3.2
+        l-1.6-0.8l-1.8,1.8l-3,0.8h-2.6l-2.2-3h-5.5l-2.5-3.5l-1.7-1.7l-2.1-2.1l-3.4-1.4l-2.9-1.5l-3.4-0.5h-3.1l-1.5-1.5l-2.8-0.7
+        l-0.8-2.2l-1.4-2.9l0.4-3.2l-1.5-1.5v-2.6l1.4-3.3l-0.4-1.2l3.6-2.1l0.4-2.7l3.4-2.5l4.2-1.2l-0.2-4l3-6.6l4.1-0.6l3,1.3h4.4
+        l1.1,1.6l4.1,0.5l3.2-1.2l2.9,2.9l2.4-0.6l3.4,1.7l0.9-3.1l5-2.1L367.4,329.8"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Кемеровская область" data-code="RU-KEM" d="M389.7,378.7l-0.4-2l0.6-2.7l-2.4,1l-2.7,2.7l-1.4-1.4l-2.8,1.5
+        l-2.3-1h-2.7l-4.3,3.8H367l-2.6,1.3l0.4,4.2l0.9,1.8l0.7,3.8l-0.5,5.4l1.6,2.4l1.5,2.9h2.3l1.6,3.1l1.4,1.4l0.5,2.4l2,1.2h1.9
+        l0.1,1.7l-1.9,0.9l1.1,1.9l0.3,2.5l0.8,2.1l2.5,2.2h2.5l2.2,1.1h1.2l0.1,2.3h1.7v-2.1l1.8-1.8l2.2-2.2L392,418l-0.8-1.6l0.3-1.4l1-1
+        l-1.2-1.6l-1.3-1.3l2.3-3.4v-2.7v-1l0.8-0.8v-1.6l-2.2-0.4l-1.5,1.5l-1.8-1.8l2.3-0.6v-2.3l0.6-2l-1.3-2.5l-0.9-2.5l1.9-1.6l2.3-2.3
+        l1.5-0.6v-3.3l-1.5-2.9l-1.8-0.6L389.7,378.7"></path>
+            <path fill="#EFEFEF" stroke="#FFFFFF" stroke-width="1.5" data-title="Республика Хакасия" data-code="RU-KK" d="M390.2,389.3l1.4,2.4l2.4,2.6l2.5,0.5l1.2-1.2l3.7,0.4l2.4-0.8
+        l0.8,1.6l-0.8,3.4l2.6,2.6l0.8,3l2.7,2.7v2.4l0.7,2.1l-0.8,2.6l-2.1,2.1l0.3,2.6l-2.1,2.1l-2.3,1l-1.1,2.8l-0.9,1.3l-2.7,1.4v2.8
+        l-2.4,2.4l-4.7-0.8l-1.1,1.1h-1.3L388,435h-2l-2.6-2.6l1.2-1.2l-0.6-2.5l3.4-3.4h1.7v-2.1l4-4L392,418l-0.8-1.6l0.3-1.4l1-1
+        l-1.2-1.6l-1.3-1.3l2.1-3.1l0.2-4l0.8-0.8v-1.6l-2.2-0.4l-1.5,1.5l-1.8-1.8l2.3-0.9v-2l0.6-2l-1.3-2.5l-0.9-2.5L390.2,389.3"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" data-title="Республика Адыгея" data-code="RU-AD" d="M32.7,366.7l-0.8-1.2l-1.4-1.4l-0.7,0.3v1.2l0.6,1.1l2.7,2.8h1.3
+        l0.4-0.5l1.4,0.9l0.7,1.7l-0.8,0.8l-1.4-0.1l-0.8,1.5h-1.2v2.1l0.5,1.2l-0.3,1H30l-1-0.5l-1.1,1.1l1.9,2.4l0.7,1.3l0.6-0.6l1.3-0.2
+        v-1l0.9-0.8l1.4-1.4l1.3-1.9l1.1-1.1l1.2-0.5l0.5,1.7l0.7-1.4v-2.8v-1.8l-0.9-0.6l-0.8-0.8l-1.1-0.6l-0.4-1.4l-1.6-0.5l-0.7,0.3
+        L32.7,366.7"></path>
+    
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" data-title="Республика Саха (Якутия)" data-code="RU-SA" d="M638.5,97.5l-2.4,2.4v1.8l1.2,1.2h-2.5l-2.3,1.8l-3.2,1.4
+    l-3.5-3.5l-1.7-1.7l-3.5,0.2l-4.2,0.6l-2.4,2.9l-2.7,2.7l-3.2,4.7v3.7l-2.5,3.2l-2.4,2.4l-2.7,0.1l-2.4-1.3l-3.4,1.9
+    c0,0,0.8,3.3,0.4,2.9c-0.4-0.4-2.4-2.5-2.4-2.5l-1.8,2h-2.8c0,0-1.7-0.6-0.9-1.4c0.8-0.8,1.9-2.3,1.9-2.3l-2.3-1.6l-3.8,1.6
+    l-2.7,1.3l-1.1,3.2l-0.5,1.8l0.8,4.1v2.4l-2.2,2l0.6-4.9l-2.4-0.8l-1.9,1.9l-2.2,1l0.9-3.4c0,0,2.4-0.9,2.4-1.6
+    c0-0.8-0.5-1.3-0.5-1.3l-3.7,1.6l-4.7,1.8l-1,2.9l-3.5,1.8h-2.4l-1.6,1.6l2.7,1.6l0.4,1.8l-2.8,2.5v2.7l1.5,1l1.3-3.3l0.9,0.8v2.8
+    l2.2,1.1l1.9,1.9l0.9,0.5l-1.9,1.9l-2.4-0.1l-1.4,1.5l-1.1,1.1l3,1.3v1.9l-2.8-0.8l-2.4,0.1l-3.3,0.8l-1.8,3.3l0.6,3.3h-3.2
+    l-2.8,0.8l-1.8-1.8l-3.2-0.4v2.3l1.6,1.6v1.8l0.8,1.9l1.3,4.2l-0.3,2.4l-2.9-1.5l-1.1,1.1l-2.7-0.5l-1.9-1.3l-2.5-2.5l-2.6,0.1v-2
+    c0,0-1.1-1.8-1.1-1.1s-1.4,1.3-1.4,1.3l-1.8-1.8l1-1l1.6-0.5v-2.8l-1.3-1.3l-2.4,1.5v-2.4l-1.5-1.5h-1.5l1-3.1l-3-1l-0.9,0.9
+    l-2.8-2.2c0,0-0.3,1.2-1.2,1.2s-0.8,2.3-0.8,2.3l-1,0.8l-1-1.1l-1,0.3l-0.5,1.5l-2-1.4l-1.3-1.3l-1.6,1.2l-1.5-1.5l-0.4,1.5
+    l-0.5,2.9l1.9,2.9l0.4,2.5c0,0,0.6,2.3,0,2.3s-3.4,0.5-3.4,0.5l-2.7,2.3l-2.7,1l-1.5-2.4l-0.4,1.4l-0.1,1h-3.9l-2.1-2.1l0.9-0.9
+    l-1-1.5l-3.8,1.1l-4.8,0.9l-3.2,1.6l-2.3,2.3l-1.2,1.2l1.8,1.6H475l-1.5-2.2v-2.5l-1.3-1.3l-1.6,2.2l-0.5,1.5l-2.5-1l-2.2-0.5
+    l0.3,2.2l1,0.8l-0.3,1.2l-0.9,0.9l0.6,1.5l1.1,1.7l1.1,1.1l-0.4,2.5l0.9,1.9l2.6,1v1.3l3.4,2.5l1.6,1.6v3.1l1.8,3.4h2l0.2,2.6h-1
+    l-0.5,1.8l-2.4,2.4l-2.1,1.4l0.1,4.6l-1.9,0.7l-0.7,2.5l1.4,1.4v2.1l-0.8,1.7l-2.6-0.8l-1.9,0.6l-2.8,3.9l-2.7,1v1l0.7,1.7l1,2.2
+    l2.2,1.5l0.2,4.2l2.2,4v1.7l0.6,3.2l0.7,4.9l-1.9,0.6l-1.3,2.1l-1.2,1.2l0.7,2.1l0.7-0.7l2.4,1v2.1l0.9,0.9l-0.9,0.8v2.2l2.2,1.2
+    l0.7,3.5l2.6,2.6l-0.9,2.5l-1.5,2.4l0.6,1.9v1.7l-0.8,0.8v2.5l1.3,0.6h2.1l1-1h1.2l1.1,1.3l2.3-0.9l1.7,0.8l1.4-1.4l1.9,0.1l0.1,1.5
+    l1.8,1.8v1.6l-1.7,0.5v2.5l2.1-0.2l2.1-0.6l1.9,1.3l1.6,2.8l0.7,2.8l0.9,0.9l-0.8,0.8v1.8l2,0.9h1.8l1.4,1.4l-0.3,2.3l-1,1v1.7
+    l1.4,1.4l0.7,1.7l0.2,1.5l1.6,0.6l2.2,0.9v3.1l-0.5,3.2v3.6l-0.4,3.8l0.3,6.3l3,3l2.7-0.2l1.3-1.9l0.8-2.4h2l4.2-1.6l0.4-2.1
+    l1.6-0.7l1.7,1.7v2.2l1.4,2v-2.6l3.3-2.3V323l2.4-2.4l0.9-2.8l-0.7-2.5l1.8-1.8l0.8-2.5l1.5-1.8l2.7,0.4l2.7-0.3l2.8,1.3l2.5,0.3
+    v2.3l1.2,1v1.8l2.8,0.4l1.8-1.8v-1.9h2l1.4,1.4l1.7,1.9v1.8l1.6,0.2l1,2.8l1.7,1.7l1.9,1.9l-0.4,1.4l1.3,1.3l0.6,2.9l2.8,1l2,2.6
+    l1.9,0.6v2.2l2.1,0.6l2.2-2.2l2.5-2.1h2.5l1.1-1.1l1.4,1.4l1.9,0.4l0.9-0.9h2.5l1,1.3h1.6l0.5-1.9l3.2,0.6l1.1-1.1l2.3-0.5l2.1,1
+    l2.7,2.7l2.1-0.9l2.3-0.6l1-1.4l1.7,0.8l1.3-1.3h1.4l1.3,1.3l1.3-1.3l3.7-3.7l2.7,0.4v-1.7l3.4-1.3l2.5,0.5l2.5-1.6l-0.2-2.6
+    l4.1-2.5l3.9-3.2l-1.4-3.3v-2.5l-1.7-1.7l1.5-1.5l0.4-3.3l-3.5-1.5h-2.8l-0.3-1.7l2-0.4l-1-2.1l0.6-3.9l-2.4-0.4l-2.4-2.5l2.1-0.5
+    l0.2-3l-0.9-0.9l-0.6-1.6l0.8-2l-1.6-1.6l1.3-1.8l-1.1-1.1v-2.7l2.6-1.3l1.7-1l2.1,0.2l1.7-1.7l2.3-0.9l0.3-2.2l-1.5-1.5l0.8-2.1
+    l2.9-0.6l3.9-3.9l-0.2-4.4l2.8-0.9v-1.4l-2.7-2.7l-0.6-1.9l-3-3l-1.9-0.4l-0.4-2.5l0.5-2.9l-1.5-1.5l2.3-3v-2.7l0.2-3.3l-1.2-1.2
+    l-0.6-2.4l-1.1-1.1l-0.1-2.9l2.2-0.5l1.9,0.5l2.5,1.3l2.5-1.3l2-0.6l2-2l1.4-2.5l1.9,0.1l1.1-0.7l0.8,0.8l1.1-0.4v-2.1l-0.2-3.5
+    l0.4-2.4l-1.9-1.9l-0.5-1.5l-1.7-1.7l-3-1.5l-0.8-1.8l-2.1-2.8v-1.5l-1-0.5l0.5-2.5l0.8-0.8l-1.4-1.4l0.4-2.2l3.3-1.3v-1.2l2.5,0.1
+    l-0.2-2.8l-1.9-0.6l-1.3-1.7l1.6-1.5h1.6v-2l1.6-1.1v-1.4l2-0.5l1.2,1.4l1.7-0.2l0.9-1.8l-0.6-1.6l1.7-2.8l0.6-1.8l1.7-0.3v-1.6
+    l-0.9-2.3l-2.1-1.2l-2-2v-2.3l-0.2-2.5l-1.9-1l-1.3-1.8v-2.1l1.5-0.3l-0.7-2.1l-2.1-0.6l0.4-1.9l2.2-0.9v-2.2l1-1h2.5l0.2-2.6h3.2
+    l1.3-1.3l-0.8-2.6l1.1-2.1l-1.5-2.5h-1.4l-1.3-2.7l-1.5-1.5h-2.1l-2.6,0.9l-2.4-1l-2.5-0.4v-2.9l-2-1.1l-1-2.5l1.5-2.4v-2.6l1.7-1.2
+    v-2.5l1.2-3l2.6-2l-2-3.3l-2.3-0.9l-0.6-1.6l-2.5-0.3l-3-1L638.5,97.5z"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" d="M549.2,100.9L549,100l1.7,0.8l0.9-0.9l1.2-1.2l1.8-1.8l1.1,1.3
+    h0.6l1.4-1.4l1.3-1.6l2.5-1.1l1.8,1.4l-1,2.9v1.6l-1.2,1.2l-1.9,0.9l-2.1,0.8h-2.1l-1.6,1.6l-2.5-0.9l-1.3-1.8L549.2,100.9"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" d="M545,103.3h-3.7l-1.2,1.2l-1.9,1.3l-1.4-1.4l-3.3,1l0.2,2.1
+    l0.9,0.9l1.3,1.3l0.9,0.9l-1.3,1l-1.7-1.5l-0.9,0.9l-1.3-1.3l-2.9,0.6l-1.3-0.7l-0.6,1.5l0.9,0.9L526,113v2.2l1.4,1.4l-0.3,1.6h1.3
+    l1.6,1.6l-0.5,1.8l2.1,1l2.8,0.1l1.2,1.1h2.1l2.4-0.7v-1.8l-1.5-1.4l0.8-0.8l1.2,1.2l2.1-3.9l2-2l0.9,0.9l1.8-1.8l0.6-1.7l-2.1-0.7
+    l-1.4,1.4l-1.7-1.3l-2.1-1.3l-2.1-1.5l0.7-1.5l1.1-1.1l0.9,2.9l1.3,1.3l2.2,0.4l1.4-0.6h1.2l1.1-1.1l-0.6-2.4H546l0.5-2.1v-1.5
+    L545,103.3"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" d="M546.9,123.6l-1,0.9l0.8,2.3l1.3,1.3l1.1-2.1v-1.7l-0.8-0.8
+    L546.9,123.6"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" d="M551.6,125.6l-1.3,1.3l0.7,1.8l1.3,1.3l-0.8,1.8l0.7,0.7l1-2.2
+    l2.6-0.6l2.3-0.9l3.1-1.8l-1.6-3h-2.2l-3.1-1l-1.4,1.3L551.6,125.6"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" d="M525.8,120.7l-1-1l-1.8-0.1l1.2,1.2l0.7,2.7h1.5v-1.5L525.8,120.7
+    "></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" d="M468.3,165.4l-2.1,2.1v1.4h1.8l0.6,1.4l1.5-0.7l1.7-1.7v-2.8h-2.2
+    L468.3,165.4"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" d="M543.2,84.5l-0.7,1.3l0.7,0.7l0.9-0.7L543.2,84.5"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" d="M536.8,134.7l-2.2-0.5l-0.7,0.6l1.3,0.6l1.6,1.3l0.7-0.9
+    L536.8,134.7"></path>
+    
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" data-title="Ленинградская область" data-code="RU-LEN" d="M103.3,194.1h11.6v3.7l1.4,4.7l4.8,13.8l3,1.4l1.8,3.4l1.4,5.3
+        l-1.8,3.9l-1.6,2.1l-1.6,0.2l-0.8,1.4l-2.4-0.4l-1.4,1.4l-1-3.8l-1-1l-1.5-0.5l0.8-1.6v-1.5l-1.6-0.7l-0.2-1.5l-1.8-0.1l-1.1,1.1
+        l-1.4-1.7l0.4-3.3l-1.1-0.3l-1.3-1.3l-1.2,1l-1.3,0.3l-2-0.8l-2-0.2h-2.9l-0.9-1.8l-1.1,0.5l-0.9,0.9l-1.7-0.2l-0.5-2.5l0.7-2.3
+        l-0.8-1.8l-0.1-1.8l-1.6-1.6l0.8-1.7l-1.5-1.8l2.5-1.5l3.4,0.8l0.5-1.9l1.1-1.1l2.2,1l1.8,1.9l2.8,0.9l1,2.3l-0.4,0.4v0.7l-0.6,2.3
+        l0.9-0.2l1.1,0.8l0.5-0.4h0.5l1.1-0.5v-1l0.6-0.7v-1l-0.3-0.4l-0.9,1l-0.3-3.7l-2.3-2v-4.3l2-0.5l0.6-0.6l-2.8-1.1L103.3,194.1"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" data-title="Республика Карелия" data-code="RU-KR" d="M114.9,194.1v3.7l1.4,4.7l4.8,13.8l3,1.4l1.8,3.4l1.4,5.3l2.9-1.6
+        l1.9-2.7l1.4,0.8l2.3-1.3l2.1-0.7l2.1,0.4l1.8,0.8l2.1-0.4l1.6,1l0.1,1.1l1.8,2l1-1.1l0.9-0.2l2.5-2.5l0.4-2l-0.3-1.7l2.1-0.6l1-2.6
+        l-2.4-2.4l0.3-3.2l0.6-1.4l1.6-0.8l0.8-1.8l-0.1-2l0.8-0.9l1,1.3l0.6-0.6l1.3,0.9l1.6-2.3l1.8-3.2l-1.9-6l2.3-2.3l1-4.5l2.5-2.5
+        l3.1-1l1.8-3.9l0.5-2.8l-1.8-1.8l1.4-1.4l-0.1-3.2l-1.6,0.1l-1.3-0.8l-2.1,0.5l-1.4-1.4l0.7-1.9l0.3-2.3l-6.1-5.5l-4.7,8.7l-2.2-1
+        l-4.4,3.5l-2,0.1v4.3l-2.3,0.9v3.3l-3,2.4h-3.5l-0.9,8.4v3.3l-5.3,1.9L114.9,194.1"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" data-title="Санкт-Петербург" data-code="RU-SPE" d="M104.5,207.8c0,0.1,0,0.1-0.1,0.1c-0.1,0.1,0,0.1,0,0.2
+        c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1-0.1,0.1s0,0.1-0.1,0.1c-0.1,0.1,0,0.2-0.1,0.2c-0.1,0.1,0,0.1-0.1,0.1
+        c-0.1,0.1,0,0.1,0,0.2c0,0.1,0,0.1-0.1,0.1c-0.1,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0.1,0.1,0.1,0.1,0.1
+        c0,0.1,0,0.1,0,0.2s0,0.1,0.1,0.1c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.1-0.1c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1-0.1,0.1-0.1
+        c0.1,0,0.2-0.1,0.2,0c0.1,0.1,0.1,0,0.1,0.1c0.1,0.1,0,0.1,0.1,0.1c0.1,0.1,0.1,0.1,0.1,0.1c0,0.1,0,0.1,0.1,0.1
+        c0.1,0.1,0.1,0,0.1,0.1c0.1,0.1,0.2-0.1,0.2,0c0.1,0.1,0.1,0.1,0.1,0.1c0.1,0,0.1,0,0.1,0.1c0.1,0.1,0.1,0.1,0.1,0.1
+        c0.1,0,0.1,0,0.2,0c0.1,0,0.2,0.1,0.2,0c0.1-0.1,0.1-0.1,0.1-0.1s0.2,0,0.2-0.1c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.1-0.1
+        c0.1-0.1,0.1,0,0.2,0c0.1,0,0.1,0,0.1-0.1c0.1-0.1,0.1,0,0.1-0.1c0.1-0.1,0.1,0,0.2-0.1c0.1,0,0.1-0.1,0.1-0.1c0-0.1,0-0.1,0-0.2
+        c0-0.1,0-0.1,0-0.2c0-0.1,0-0.2,0-0.2c0-0.1,0.1-0.1,0.1-0.1c0.1-0.1,0.1-0.1,0.1-0.1c0-0.1,0.1,0,0.1-0.1s0.1-0.1,0.1-0.1
+        c0-0.1,0.1-0.1,0.1-0.1c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1,0-0.3c0-0.1,0-0.1,0.1-0.1c0.1-0.1,0-0.1,0-0.2
+        c0-0.1,0-0.1,0-0.2c0-0.1-0.1-0.1-0.1-0.1c0-0.1,0-0.1-0.1-0.1c-0.1-0.1-0.1-0.1-0.1-0.1c0-0.1,0-0.1-0.1-0.1
+        c-0.1-0.1-0.1,0-0.2-0.1c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0.1-0.1,0.1c-0.1,0-0.1,0-0.2,0
+        c-0.1,0-0.2-0.1-0.2,0c-0.1,0.1-0.1,0.1-0.1,0.1c-0.1,0-0.2,0-0.2,0c-0.1,0-0.1,0.1-0.2,0.1c-0.1,0-0.1-0.1-0.2-0.1
+        c-0.1,0-0.2,0-0.3,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.2-0.1-0.2,0c-0.1,0.1-0.1,0.1-0.2,0.1c-0.1,0-0.1,0.1-0.1,0.1
+        c-0.1,0-0.1,0.1-0.1,0.1h-0.1v0.1h0.1"></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" data-code="RU-HR" data-title="Херсонская область" d="M17.3,337.4 17.9,336.4 18.2,335.5 18.6,335 19.3,334.3 20.1,334.2 21.9,334.6 23.2,333.9 26,330.6
+        27.4,325 25.9,322.4 25.2,321.4 24.4,319.8 23.8,319.1 23.6,318.3 23,317.5 21.9,316.9 21.8,316 20.5,316.3 19.7,316.9 18.7,318
+        17.7,317.8 16.9,318 17,318.9 17.3,319.7 16.4,319.9 16.2,319.1 15.5,319.7 15.1,319.8 14,319.1 13.8,317.9 13.4,318.4 12.7,317.2
+        11.7,317 11.2,316.6 10.4,316.8 9.7,317.5 9,316.7 8.2,317.4 8.1,318.3 7.8,319.2 6.9,318.9 6.7,318.1 5.8,318.3 6.2,319.6
+        6.7,320.3 6.9,321.1 5.5,321 5.1,318.9 4.8,317.6 5.5,316.6 4.4,316 4.2,316.9 4.2,319.2 4.5,320.4 5.1,321.1 5.9,322.3 6.2,323.6
+        7.3,324.6 7.6,325.9 8.2,327.1 8.2,326.1 9.4,326.4 8.4,325.3 7.6,324.1 9.1,324.7 9.8,325.9 10.7,326 11.3,326.8 11.6,327.7
+        11.5,329 12.8,329.1 13.3,328.9 14.3,328.4 15,329.1 15.2,329.9 15,330.9 15.1,331.7 15.7,332.5 17,332.2 18.2,333.3 17.2,333
+        16.5,333.7 17.5,333.8 17.2,334.8 17.9,334.2 18.7,333.6 18.8,334 18.1,334.7 17.8,335.6 17,336.2 16.8,336.7 16.8,337.1 "></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" data-code="RU-ZP" data-title="Запорожская область" d="M31.9,339.7 32.4,339.5 33.3,339.3 33.7,339.2 34.6,339 36,338.9 37.4,338.8 42.1,335.3 41,330.5
+        39.8,329.4 38.7,328.7 38,327.9 38.3,326.9 38.5,325.9 38.8,325.4 38.2,324.6 38,324.1 37.9,323.2 37.4,323.4 36.9,323.1
+        36.3,322.7 36.2,322.2 35.6,322 35,321.2 33.9,320.4 33.7,319.6 33.3,320.2 33.1,320.7 32.3,321.3 31.9,321.9 31.4,322 31.3,323
+        30.1,324.2 29.4,324.9 28.4,324.6 28.1,323.7 28.5,323.2 28,322.9 27.3,322.5 26.4,322.3 25.9,322.4 25.5,322.5 25.2,323.1
+        25.4,323.9 25.9,324.3 25.6,324.8 24.8,325.5 24.5,326 24.3,327 24.4,327.4 24.5,328.3 24.4,329.3 23.5,329.5 22.9,329.2 22,329.4
+        22.1,329.9 21.9,330.9 21.7,331.9 22.2,332.2 22.4,332.7 22.1,333.6 21.9,334.6 22.4,335 23.3,334.7 22.5,335.4 21.6,335.6
+        20.7,335.8 20.2,335.5 19.3,335.7 19.4,336.1 20.4,336.4 21.5,336.6 22.3,336.4 23.1,335.7 24.4,335.4 24.8,334.8 25.8,335.5
+        26.8,335.7 28.1,335.5 28.7,335.7 29.8,336.5 29.9,336.9 29.6,337.4 29.1,337.5 28.7,337.6 27.8,337.9 28,338.8 28.9,338.5
+        29.8,338.3 30.1,337.8 31,337.5 31.3,337 31.9,337.4 32,337.8 32.1,338.3 32.2,338.7 "></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" data-code="RU-DON" data-title="Донецкая Народная Республика" d="M52.5,340.8 51.4,341.3 50.8,341.5 50.6,341.6 50.3,341.7 49.2,341.2 47.9,340.7 47.5,340.9 46.5,341.3
+        45.8,341.7 45.1,342 43.7,343.5 42.9,342.2 42.5,342.7 41.2,343 42,342.4 40.7,341.3 39.8,341.1 39.2,340.7 38.3,340.4 37.3,340.3
+        36.3,340 35.2,339.3 35.5,338.8 36.4,338.5 36.6,337.6 36.5,337.1 36.8,336.1 37.9,335.4 38.5,335.7 39.1,336.1 40.1,336.3
+        40.3,335.3 39.7,335 39.6,334.6 39.9,333.9 39.3,333.2 39.1,332.3 39.3,331.4 39.7,330.8 39.6,330.4 39.9,329.8 40.2,329.2
+        40.7,329.1 41.5,328.5 41.7,327.9 42.4,328.7 42.6,329.6 43.4,329 44.7,328.2 44.9,327.2 45.1,326.2 45.9,326 46.2,325 46.1,324.5
+        46.8,323.5 47.7,323.2 47.7,323.7 48.4,324.5 49.9,324.6 50.8,324.4 51.7,324.1 52.1,324.1 52.5,324 54,324.1 54.1,323.7
+        54.2,323.5 55,324.3 56.6,325.8 57.3,326.5 57.4,332.6 56.1,337.1 55.4,339.7 54.2,340.8 "></path>
+            <path fill="#EFEFEF" stroke="FFFFFF" stroke-width="1.5" data-code="RU-LUG" data-title="Луганская Народная Республика" d="M53,339.9 52.3,341 52.8,341.3 53.4,342.2 54.9,342.8 55.1,343.7 57.5,346.3 60.3,343.5 60.5,343.3
+        60.9,343.1 61.2,343 61.6,342.7 62.2,342.4 61.7,339.6 62,339.2 62.3,338.9 62.7,338.6 63,338.2 63.5,337.8 63.8,337.9 65.3,338.1
+        65.2,336.1 65.7,336 66.5,335.9 66.9,335.9 67.3,335.8 67.6,335.8 67.9,335.8 68.2,335.7 68.4,335.7 68.7,335.6 69.9,335.5
+        70.1,335 70.2,334.6 70.5,334 70.6,333.7 70.8,333.3 71,333 71.1,332.8 71.3,332.6 71.5,332.4 71.8,332 69.4,331 69.4,329.8
+        69.4,328.7 69.4,328.3 68,326.6 67.6,326.1 67.2,325 67.1,324.3 67,324.1 66.9,323.8 66.8,323.6 66.8,323.2 65.5,322.5 64.9,322.1
+        64.6,321.8 64.1,321.2 63.7,320.7 63.2,320.2 62.9,319.8 62.4,321.1 61.6,321.7 61.3,322.2 60.4,322.4 59,322.6 58.3,323.7
+        57.6,324.7 57.2,325.3 56.4,325.9 57,326.7 56.3,327.8 55.5,328.4 56.1,329.2 55.7,329.7 55.5,330.7 54.6,330.9 54.1,330.9
+        53.7,331.5 53.5,332.4 53.6,333.3 53.4,334.3 52.5,334.5 52.5,334.9 52.6,335.4 52.8,336.3 52.3,336.4 53,337.6 52.8,338.6
+        52.8,339 "></path>
+      </svg>
+
+      <div class="purchase-scheme-info">
+        <div class="d-flex flex-column align-items-center text-center purchase-scheme-text">
+          <h2 class="purchase-scheme-title">Схема покупки автомобиля</h2>
+          <p class="purchase-scheme-subtitle">Процесс приобретения и расчёт доставки вашего нового автомобиля</p>
+        </div>
+    
+        <div class="row shipping-calculator">
+  
+          <div class="col d-flex flex-column justify-content-center">
+  
+            <div class="d-flex mb-4">
+              <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18.5" cy="18.5" r="18.5" fill="#234546"/>
+                <path d="M19.4814 12.8H20.5214V24H18.2334V15.456L15.7214 16.512V14.256L19.4814 12.8Z" fill="white"/>
+              </svg>
+              <p class="ms-3">Оставьте заявку на сайте <br> или позвоните нам</p>
+            </div>
+  
+            <div class="d-flex">
+              <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18.5" cy="18.5" r="18.5" fill="#234546"/>
+                <path d="M17.4536 21.824H22.3016V24H13.7096V22.368L16.9736 19.52C19.2616 17.504 19.7416 17.056 19.7416 16.24C19.7416 15.488 19.2136 14.784 18.0296 14.784C16.8936 14.784 16.3016 15.424 16.1256 16.56H13.8216C13.9816 14.128 15.7256 12.608 18.1256 12.608C20.5896 12.608 22.0616 14.224 22.0616 16.128C22.0616 17.856 20.8776 18.848 18.8616 20.608L17.4856 21.808L17.4536 21.824Z" fill="white"/>
+                </svg>
+                
+              <p class="ms-3">Поможем подобрать <br> автомобиль в Японии</p>
+            </div>    
+          </div>
+    
+          <div class="col d-flex flex-column justify-content-center">
+  
+            <div class="d-flex mb-4">
+              <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="19" cy="18.5" r="18.5" fill="#234546"/>
+                <path d="M21.1539 18.128C22.1939 18.56 22.8019 19.504 22.8019 20.768C22.8019 22.944 21.1219 24.192 18.6259 24.192C16.2899 24.192 14.3859 22.992 14.1939 20.512H16.5139C16.7059 21.616 17.4739 22.032 18.6099 22.032C19.9219 22.032 20.4979 21.456 20.4979 20.544C20.4979 19.776 20.0659 19.296 18.7539 19.296H17.2659V17.296H18.4659C19.4899 17.296 20.1619 17.008 20.1619 16.176C20.1619 15.376 19.6339 14.768 18.4179 14.768C17.4739 14.768 16.8339 15.12 16.6099 16.16H14.3059C14.5459 13.792 16.2899 12.608 18.4819 12.608C20.8179 12.608 22.4659 13.968 22.4659 15.872C22.4659 16.848 21.9859 17.696 21.1539 18.128Z" fill="white"/>
+              </svg>
+              <p class="ms-3">Заключение договора <br> и внесение предоплаты</p>
+            </div>
+  
+            <div class="d-flex">
+              <svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="19" cy="18.5" r="18.5" fill="#234546"/>
+                <path d="M23.7076 19.408V21.536L22.1396 21.552V24H19.8516V21.552H14.2996V19.408L18.7636 12.8H22.1396V19.392L23.7076 19.408ZM16.7476 19.392H19.8516V14.928H19.7076L16.7476 19.392Z" fill="white"/>
+              </svg>
+              <p class="ms-3">Покупка на аукционе <br> и доставка в Россию</p>
+            </div>
+            
+          </div>
+    
+          <div class="d-flex flex-column col">
+            
+            <div class="d-flex flex-column select-delivery-area">
+      
+              <label>Область доставки</label>
+              <select name="delivery_area" id="id_delivery_area">
+                <option value="">Куда доставляем?</option>
+                <option value="RU-AMU">Амурская область</option>
+                <option value="RU-KHA">Хабаровский край</option>
+                <option value="RU-MAG">Магаданская область</option>
+              </select>
+            </div>
+    
+            <div class="delivery-info">
+              <label>Стоимость доставки:</label>
+              <div class="delivery-price" id="id_delivery_price">0 ₽</div>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column col">
+            <div class="d-flex flex-column select-car-body-type">
+      
+              <label>Тип кузова авто</label>
+              <select name="car_body_type" id="id_car_body_type">
+                <option value="">Выберите кузов?</option>
+                <option value="sedan">СЕДАН</option>
+                <option value="hatchback">ХЭТЧБЕК</option>
+                <option value="crossover">КРОССОВЕР</option>
+                <option value="jeep">ДЖИП</option>
+                <option value="minibus">МИКРОАВТОБУС</option>
+                <option value="truck">ГРУЗОВИК</option>
+              </select>
+            </div> 
+  
+            <button type="button" class="btn general-button" style="padding: 12px 17px; border-radius:12px !important; font-weight: 600; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить звонок
+            </button>
+            <a class="download-sample" href="./static/img/logo-header.png" download>
+              <svg class="me-2" width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 11.875C18 12.0408 17.9342 12.1997 17.8169 12.3169C17.6997 12.4342 17.5408 12.5 17.375 12.5H15.5V13.75H16.75C16.9158 13.75 17.0747 13.8158 17.1919 13.9331C17.3092 14.0503 17.375 14.2092 17.375 14.375C17.375 14.5408 17.3092 14.6997 17.1919 14.8169C17.0747 14.9342 16.9158 15 16.75 15H15.5V16.25C15.5 16.4158 15.4342 16.5747 15.3169 16.6919C15.1997 16.8092 15.0408 16.875 14.875 16.875C14.7092 16.875 14.5503 16.8092 14.4331 16.6919C14.3158 16.5747 14.25 16.4158 14.25 16.25V11.875C14.25 11.7092 14.3158 11.5503 14.4331 11.4331C14.5503 11.3158 14.7092 11.25 14.875 11.25H17.375C17.5408 11.25 17.6997 11.3158 17.8169 11.4331C17.9342 11.5503 18 11.7092 18 11.875ZM7.6875 13.4375C7.6875 14.0177 7.45703 14.5741 7.0468 14.9843C6.63656 15.3945 6.08016 15.625 5.5 15.625H4.875V16.25C4.875 16.4158 4.80915 16.5747 4.69194 16.6919C4.57473 16.8092 4.41576 16.875 4.25 16.875C4.08424 16.875 3.92527 16.8092 3.80806 16.6919C3.69085 16.5747 3.625 16.4158 3.625 16.25V11.875C3.625 11.7092 3.69085 11.5503 3.80806 11.4331C3.92527 11.3158 4.08424 11.25 4.25 11.25H5.5C6.08016 11.25 6.63656 11.4805 7.0468 11.8907C7.45703 12.3009 7.6875 12.8573 7.6875 13.4375ZM6.4375 13.4375C6.4375 13.1889 6.33873 12.9504 6.16291 12.7746C5.9871 12.5988 5.74864 12.5 5.5 12.5H4.875V14.375H5.5C5.74864 14.375 5.9871 14.2762 6.16291 14.1004C6.33873 13.9246 6.4375 13.6861 6.4375 13.4375ZM13.3125 14.0625C13.3125 14.8084 13.0162 15.5238 12.4887 16.0512C11.9613 16.5787 11.2459 16.875 10.5 16.875H9.25C9.08424 16.875 8.92527 16.8092 8.80806 16.6919C8.69085 16.5747 8.625 16.4158 8.625 16.25V11.875C8.625 11.7092 8.69085 11.5503 8.80806 11.4331C8.92527 11.3158 9.08424 11.25 9.25 11.25H10.5C11.2459 11.25 11.9613 11.5463 12.4887 12.0738C13.0162 12.6012 13.3125 13.3166 13.3125 14.0625ZM12.0625 14.0625C12.0625 13.6481 11.8979 13.2507 11.6049 12.9576C11.3118 12.6646 10.9144 12.5 10.5 12.5H9.875V15.625H10.5C10.9144 15.625 11.3118 15.4604 11.6049 15.1674C11.8979 14.8743 12.0625 14.4769 12.0625 14.0625ZM3.625 8.75V3.125C3.625 2.79348 3.7567 2.47554 3.99112 2.24112C4.22554 2.0067 4.54348 1.875 4.875 1.875H12.375C12.4571 1.87494 12.5384 1.89105 12.6143 1.92241C12.6902 1.95378 12.7591 1.99979 12.8172 2.05781L17.1922 6.43281C17.2502 6.4909 17.2962 6.55985 17.3276 6.63572C17.359 6.71159 17.3751 6.7929 17.375 6.875V8.75C17.375 8.91576 17.3092 9.07473 17.1919 9.19194C17.0747 9.30915 16.9158 9.375 16.75 9.375C16.5842 9.375 16.4253 9.30915 16.3081 9.19194C16.1908 9.07473 16.125 8.91576 16.125 8.75V7.5H12.375C12.2092 7.5 12.0503 7.43415 11.9331 7.31694C11.8158 7.19973 11.75 7.04076 11.75 6.875V3.125H4.875V8.75C4.875 8.91576 4.80915 9.07473 4.69194 9.19194C4.57473 9.30915 4.41576 9.375 4.25 9.375C4.08424 9.375 3.92527 9.30915 3.80806 9.19194C3.69085 9.07473 3.625 8.91576 3.625 8.75ZM13 6.25H15.2414L13 4.00859V6.25Z" fill="white" fill-opacity="0.5"/>
+              </svg>    
+              Скачать образец договора
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="bg-consultation-for-auto">
+    <section class="d-flex flex-column justify-content-center align-items-center text-center consultation-for-auto">
+      <h2 class="consultation-for-auto-title">Остались вопросы?</h2>
+      <p class="consultation-for-auto-subtitle">Оставьте свои контактные данные и мы подберем <a href="#">идеальный автомобиль</a> именно для вас!</p>
+      <div class="d-flex">
+        <button type="button" class="btn general-button me-3" style="padding: 12px 17px; border-radius:12px !important; font-weight: 600; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Получить консультацию
+        </button>
+        <a class="d-flex align-items-center consultation-for-auto-button-whatsapp" href="https://wa.me/" target="_blank">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.70835 22.946C2.59051 22.8807 2.50199 22.7319 2.5 22.5959C2.4992 22.5412 2.8722 21.5273 3.32889 20.3428L4.15924 18.189L4.02501 17.9577C3.77811 17.5322 3.28598 16.4988 3.13251 16.0837C2.93706 15.5551 2.69174 14.576 2.59749 13.9483C2.50599 13.3391 2.49176 11.7611 2.57267 11.1969C2.92135 8.76568 3.92741 6.71238 5.57977 5.05965C7.23042 3.40863 9.30976 2.38653 11.6952 2.05366C12.2078 1.98211 13.8101 1.98211 14.3228 2.05366C17.3945 2.48232 20.0066 4.08936 21.7085 6.5976C22.6102 7.92662 23.1597 9.35392 23.4238 11.0532C23.5159 11.6455 23.5271 13.2609 23.4432 13.8251C23.0861 16.224 22.0488 18.3232 20.4207 19.9419C17.8818 22.466 14.2691 23.515 10.7303 22.7558C9.83373 22.5634 8.48852 22.0295 7.65111 21.5336L7.44583 21.412L5.22879 22.2058C4.00942 22.6424 2.96556 22.9998 2.90911 23C2.85266 23.0002 2.76231 22.9759 2.70835 22.946Z" fill="#25D366"/>
+            <path d="M17.2957 16.7795C16.9851 17.0865 16.6673 17.2824 16.2415 17.4292C15.8433 17.5666 15.1317 17.6031 14.709 17.5078C13.7237 17.2858 12.215 16.5034 10.9241 15.545C9.70423 14.6394 8.65404 13.3232 7.77971 11.6043C7.10124 10.2705 6.92121 9.41971 7.13801 8.57185C7.37637 7.63966 8.11144 6.87007 9.01802 6.60357C9.18267 6.55516 9.42696 6.53528 9.8569 6.53528C10.4097 6.53528 10.4737 6.5433 10.5785 6.62573C10.6512 6.68294 10.8849 7.09557 11.2145 7.74862L11.7355 8.78105L11.734 9.14465C11.7327 9.46973 11.7166 9.54225 11.5819 9.82916C11.4991 10.0057 11.304 10.3078 11.1484 10.5005L10.8655 10.851L11.0662 11.2512C11.5879 12.2918 12.3576 13.0522 13.4228 13.5794L13.7834 13.7579L14.0285 13.5366C14.5458 13.0696 15.0609 12.8452 15.5429 12.8766C15.8236 12.895 15.9063 12.9283 16.8687 13.411C17.4332 13.6941 17.9336 13.9684 17.9806 14.0206C18.0561 14.1043 18.0678 14.187 18.0799 14.7254C18.0927 15.2915 18.0855 15.3596 17.9805 15.6724C17.8326 16.1132 17.6168 16.4621 17.2957 16.7795Z" fill="white"/>
+          </svg>      
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <section class="about-us">
+    <div class="row">
+
+      <div class="col-7">
+
+        <div class="about-us-text">
+          <h2>О нас</h2>
+          <p>
+            Наша компания предлагает качественные автомобили прямо из Японии, Китая и Южной Кореи. Мы специализируемся на поиске и поставке автомобилей различных марок и моделей, чтобы удовлетворить потребности самых взыскательных клиентов.
+            <br>
+            <br>
+            Наши эксперты тщательно отбирают автомобили, чтобы гарантировать их надежность и качество. Мы предлагаем широкий выбор автомобилей, начиная от недорогих вариантов до премиум-класса, чтобы каждый клиент мог найти авто по своему вкусу и бюджету.
+          </p>
+        </div>
+
+        <div class="about-us-group-advantages">
+          <h3>Преимущества работы с нами</h3>
+          
+          <div class="row mb-3">
+
+            <div class="col">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="12" fill="#EFEFEF"/>
+                <path d="M28.0306 14.2194L24.2806 10.4694C24.2109 10.3997 24.1282 10.3445 24.0371 10.3069C23.9461 10.2693 23.8485 10.2499 23.75 10.25H16.25C15.8522 10.25 15.4706 10.408 15.1893 10.6893C14.908 10.9706 14.75 11.3522 14.75 11.75V13.25H13.25C12.8522 13.25 12.4706 13.408 12.1893 13.6893C11.908 13.9706 11.75 14.3522 11.75 14.75V28.25C11.75 28.6478 11.908 29.0294 12.1893 29.3107C12.4706 29.592 12.8522 29.75 13.25 29.75H23.75C24.1478 29.75 24.5294 29.592 24.8107 29.3107C25.092 29.0294 25.25 28.6478 25.25 28.25V26.75H26.75C27.1478 26.75 27.5294 26.592 27.8107 26.3107C28.092 26.0294 28.25 25.6478 28.25 25.25V14.75C28.2501 14.6515 28.2307 14.5539 28.1931 14.4629C28.1555 14.3718 28.1003 14.2891 28.0306 14.2194ZM23.75 28.25H13.25V14.75H20.4397L23.75 18.0603V25.985C23.75 25.9906 23.75 25.9953 23.75 26C23.75 26.0047 23.75 26.0094 23.75 26.015V28.25ZM26.75 25.25H25.25V17.75C25.2501 17.6515 25.2307 17.5539 25.1931 17.4629C25.1555 17.3718 25.1003 17.2891 25.0306 17.2194L21.2806 13.4694C21.2109 13.3997 21.1282 13.3445 21.0371 13.3069C20.9461 13.2693 20.8485 13.2499 20.75 13.25H16.25V11.75H23.4397L26.75 15.0603V25.25ZM21.5 22.25C21.5 22.4489 21.421 22.6397 21.2803 22.7803C21.1397 22.921 20.9489 23 20.75 23H16.25C16.0511 23 15.8603 22.921 15.7197 22.7803C15.579 22.6397 15.5 22.4489 15.5 22.25C15.5 22.0511 15.579 21.8603 15.7197 21.7197C15.8603 21.579 16.0511 21.5 16.25 21.5H20.75C20.9489 21.5 21.1397 21.579 21.2803 21.7197C21.421 21.8603 21.5 22.0511 21.5 22.25ZM21.5 25.25C21.5 25.4489 21.421 25.6397 21.2803 25.7803C21.1397 25.921 20.9489 26 20.75 26H16.25C16.0511 26 15.8603 25.921 15.7197 25.7803C15.579 25.6397 15.5 25.4489 15.5 25.25C15.5 25.0511 15.579 24.8603 15.7197 24.7197C15.8603 24.579 16.0511 24.5 16.25 24.5H20.75C20.9489 24.5 21.1397 24.579 21.2803 24.7197C21.421 24.8603 21.5 25.0511 21.5 25.25Z" fill="#0D1C12"/>
+                </svg>
+                
+
+              <h3>Таможенное оформление</h3>
+              <p>Растаможим технику, заберем с СВХ и отвезем в лабораторию</p>
+            </div>
+
+            <div class="col">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="12" fill="#EFEFEF"/>
+                <path d="M20 10.25C18.0716 10.25 16.1866 10.8218 14.5832 11.8932C12.9798 12.9645 11.7301 14.4873 10.9922 16.2688C10.2542 18.0504 10.0611 20.0108 10.4373 21.9021C10.8136 23.7934 11.7422 25.5307 13.1057 26.8943C14.4693 28.2579 16.2066 29.1865 18.0979 29.5627C19.9892 29.9389 21.9496 29.7458 23.7312 29.0078C25.5127 28.2699 27.0355 27.0202 28.1068 25.4168C29.1782 23.8134 29.75 21.9284 29.75 20C29.7473 17.415 28.7192 14.9366 26.8913 13.1087C25.0634 11.2808 22.585 10.2527 20 10.25ZM20 28.25C18.3683 28.25 16.7733 27.7661 15.4165 26.8596C14.0598 25.9531 13.0024 24.6646 12.378 23.1571C11.7536 21.6496 11.5902 19.9908 11.9085 18.3905C12.2269 16.7902 13.0126 15.3202 14.1664 14.1664C15.3202 13.0126 16.7902 12.2268 18.3905 11.9085C19.9909 11.5902 21.6497 11.7536 23.1571 12.378C24.6646 13.0024 25.9531 14.0598 26.8596 15.4165C27.7661 16.7733 28.25 18.3683 28.25 20C28.2475 22.1873 27.3775 24.2843 25.8309 25.8309C24.2843 27.3775 22.1873 28.2475 20 28.25ZM26 20C26 20.1989 25.921 20.3897 25.7803 20.5303C25.6397 20.671 25.4489 20.75 25.25 20.75H20C19.8011 20.75 19.6103 20.671 19.4697 20.5303C19.329 20.3897 19.25 20.1989 19.25 20V14.75C19.25 14.5511 19.329 14.3603 19.4697 14.2197C19.6103 14.079 19.8011 14 20 14C20.1989 14 20.3897 14.079 20.5303 14.2197C20.671 14.3603 20.75 14.5511 20.75 14.75V19.25H25.25C25.4489 19.25 25.6397 19.329 25.7803 19.4697C25.921 19.6103 26 19.8011 26 20Z" fill="#0D1C12"/>
+              </svg>
+                
+              <h3>Гибкий график работы</h3>
+              <p>Менеджеры доступны по телефону и WhatsApp</p>
+            </div>
+
+            <div class="col">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="12" fill="#EFEFEF"/>
+                <path d="M20 16.25C19.2583 16.25 18.5333 16.4699 17.9166 16.882C17.2999 17.294 16.8193 17.8797 16.5355 18.5649C16.2516 19.2502 16.1774 20.0042 16.3221 20.7316C16.4667 21.459 16.8239 22.1272 17.3483 22.6517C17.8728 23.1761 18.541 23.5333 19.2684 23.6779C19.9958 23.8226 20.7498 23.7484 21.4351 23.4645C22.1203 23.1807 22.706 22.7001 23.118 22.0834C23.5301 21.4667 23.75 20.7417 23.75 20C23.75 19.0054 23.3549 18.0516 22.6517 17.3483C21.9484 16.6451 20.9946 16.25 20 16.25ZM20 22.25C19.555 22.25 19.12 22.118 18.75 21.8708C18.38 21.6236 18.0916 21.2722 17.9213 20.861C17.751 20.4499 17.7064 19.9975 17.7932 19.561C17.88 19.1246 18.0943 18.7237 18.409 18.409C18.7237 18.0943 19.1246 17.88 19.561 17.7932C19.9975 17.7064 20.4499 17.751 20.861 17.9213C21.2722 18.0916 21.6236 18.38 21.8708 18.75C22.118 19.12 22.25 19.555 22.25 20C22.25 20.5967 22.0129 21.169 21.591 21.591C21.169 22.0129 20.5967 22.25 20 22.25ZM30.5 13.25H9.5C9.30109 13.25 9.11032 13.329 8.96967 13.4697C8.82902 13.6103 8.75 13.8011 8.75 14V26C8.75 26.1989 8.82902 26.3897 8.96967 26.5303C9.11032 26.671 9.30109 26.75 9.5 26.75H30.5C30.6989 26.75 30.8897 26.671 31.0303 26.5303C31.171 26.3897 31.25 26.1989 31.25 26V14C31.25 13.8011 31.171 13.6103 31.0303 13.4697C30.8897 13.329 30.6989 13.25 30.5 13.25ZM26.1547 25.25H13.8453C13.5935 24.3984 13.1326 23.6233 12.5047 22.9953C11.8767 22.3674 11.1016 21.9065 10.25 21.6547V18.3453C11.1016 18.0935 11.8767 17.6326 12.5047 17.0047C13.1326 16.3767 13.5935 15.6016 13.8453 14.75H26.1547C26.4065 15.6016 26.8674 16.3767 27.4953 17.0047C28.1233 17.6326 28.8984 18.0935 29.75 18.3453V21.6547C28.8984 21.9065 28.1233 22.3674 27.4953 22.9953C26.8674 23.6233 26.4065 24.3984 26.1547 25.25ZM29.75 16.7534C28.8504 16.3666 28.1334 15.6496 27.7466 14.75H29.75V16.7534ZM12.2534 14.75C11.8666 15.6496 11.1496 16.3666 10.25 16.7534V14.75H12.2534ZM10.25 23.2466C11.1496 23.6334 11.8666 24.3504 12.2534 25.25H10.25V23.2466ZM27.7466 25.25C28.1334 24.3504 28.8504 23.6334 29.75 23.2466V25.25H27.7466Z" fill="#0D1C12"/>
+              </svg>
+                
+              <h3>Фиксированная комиссия</h3>
+              <p>Японские авто 50 000 ₽, Корейские авто 100 000 ₽</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="12" fill="#EFEFEF"/>
+                <path d="M28.7244 18.3678L27.5 17.9591V13.25C27.5 12.8522 27.342 12.4706 27.0607 12.1893C26.7794 11.908 26.3978 11.75 26 11.75H20.75V10.25C20.75 10.0511 20.671 9.86032 20.5303 9.71967C20.3897 9.57902 20.1989 9.5 20 9.5C19.8011 9.5 19.6103 9.57902 19.4697 9.71967C19.329 9.86032 19.25 10.0511 19.25 10.25V11.75H14C13.6022 11.75 13.2206 11.908 12.9393 12.1893C12.658 12.4706 12.5 12.8522 12.5 13.25V17.9591L11.2756 18.3678C10.9769 18.4674 10.7172 18.6584 10.5331 18.9138C10.349 19.1692 10.25 19.4761 10.25 19.7909V22.25C10.25 28.0194 19.4272 30.38 19.8181 30.4775C19.9375 30.5073 20.0625 30.5073 20.1819 30.4775C20.5728 30.38 29.75 28.0194 29.75 22.25V19.7909C29.75 19.4761 29.651 19.1692 29.4669 18.9138C29.2828 18.6584 29.0231 18.4674 28.7244 18.3678ZM14 13.25H26V17.4594L20.2372 15.5384C20.0832 15.4871 19.9168 15.4871 19.7628 15.5384L14 17.4594V13.25ZM28.25 22.25C28.25 24.5853 26.03 26.2812 24.1672 27.2966C22.8408 28.0004 21.4441 28.5625 20 28.9738C18.5646 28.5668 17.176 28.01 15.8572 27.3125C12.4625 25.4703 11.75 23.5428 11.75 22.25V19.7909L19.25 17.2906V23.75C19.25 23.9489 19.329 24.1397 19.4697 24.2803C19.6103 24.421 19.8011 24.5 20 24.5C20.1989 24.5 20.3897 24.421 20.5303 24.2803C20.671 24.1397 20.75 23.9489 20.75 23.75V17.2906L28.25 19.7909V22.25Z" fill="#0D1C12"/>
+              </svg>
+                  
+              <h3>Доставка автомобиля в Россию</h3>
+              <p>Предлагаем разные варианты доставки авто на кораблях</p>
+            </div>
+
+            <div class="col">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="12" fill="#EFEFEF"/>
+                <path d="M29 12.5H11C10.6022 12.5 10.2206 12.658 9.93934 12.9393C9.65804 13.2206 9.5 13.6022 9.5 14V26C9.5 26.3978 9.65804 26.7794 9.93934 27.0607C10.2206 27.342 10.6022 27.5 11 27.5H29C29.3978 27.5 29.7794 27.342 30.0607 27.0607C30.342 26.7794 30.5 26.3978 30.5 26V14C30.5 13.6022 30.342 13.2206 30.0607 12.9393C29.7794 12.658 29.3978 12.5 29 12.5ZM29 14V16.25H11V14H29ZM29 26H11V17.75H29V26ZM27.5 23.75C27.5 23.9489 27.421 24.1397 27.2803 24.2803C27.1397 24.421 26.9489 24.5 26.75 24.5H23.75C23.5511 24.5 23.3603 24.421 23.2197 24.2803C23.079 24.1397 23 23.9489 23 23.75C23 23.5511 23.079 23.3603 23.2197 23.2197C23.3603 23.079 23.5511 23 23.75 23H26.75C26.9489 23 27.1397 23.079 27.2803 23.2197C27.421 23.3603 27.5 23.5511 27.5 23.75ZM21.5 23.75C21.5 23.9489 21.421 24.1397 21.2803 24.2803C21.1397 24.421 20.9489 24.5 20.75 24.5H19.25C19.0511 24.5 18.8603 24.421 18.7197 24.2803C18.579 24.1397 18.5 23.9489 18.5 23.75C18.5 23.5511 18.579 23.3603 18.7197 23.2197C18.8603 23.079 19.0511 23 19.25 23H20.75C20.9489 23 21.1397 23.079 21.2803 23.2197C21.421 23.3603 21.5 23.5511 21.5 23.75Z" fill="#0D1C12"/>
+              </svg>  
+                
+              <h3>Оплата в 3 этапа</h3>
+              <p>Авансовый платеж, перевод за автомобиль, таможенные платежи</p>
+            </div>
+
+            <div class="col">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="12" fill="#EFEFEF"/>
+                <path d="M30.5 17.75H29.4875L26.8831 11.8906C26.7653 11.6255 26.5731 11.4003 26.3298 11.2422C26.0865 11.0841 25.8026 11 25.5125 11H14.4875C14.1974 11 13.9135 11.0841 13.6702 11.2422C13.4269 11.4003 13.2347 11.6255 13.1169 11.8906L10.5125 17.75H9.5C9.30109 17.75 9.11032 17.829 8.96967 17.9697C8.82902 18.1103 8.75 18.3011 8.75 18.5C8.75 18.6989 8.82902 18.8897 8.96967 19.0303C9.11032 19.171 9.30109 19.25 9.5 19.25H10.25V26.75C10.25 27.1478 10.408 27.5294 10.6893 27.8107C10.9706 28.092 11.3522 28.25 11.75 28.25H14C14.3978 28.25 14.7794 28.092 15.0607 27.8107C15.342 27.5294 15.5 27.1478 15.5 26.75V25.25H24.5V26.75C24.5 27.1478 24.658 27.5294 24.9393 27.8107C25.2206 28.092 25.6022 28.25 26 28.25H28.25C28.6478 28.25 29.0294 28.092 29.3107 27.8107C29.592 27.5294 29.75 27.1478 29.75 26.75V19.25H30.5C30.6989 19.25 30.8897 19.171 31.0303 19.0303C31.171 18.8897 31.25 18.6989 31.25 18.5C31.25 18.3011 31.171 18.1103 31.0303 17.9697C30.8897 17.829 30.6989 17.75 30.5 17.75ZM14.4875 12.5H25.5125L27.8459 17.75H12.1541L14.4875 12.5ZM14 26.75H11.75V25.25H14V26.75ZM26 26.75V25.25H28.25V26.75H26ZM28.25 23.75H11.75V19.25H28.25V23.75ZM13.25 21.5C13.25 21.3011 13.329 21.1103 13.4697 20.9697C13.6103 20.829 13.8011 20.75 14 20.75H15.5C15.6989 20.75 15.8897 20.829 16.0303 20.9697C16.171 21.1103 16.25 21.3011 16.25 21.5C16.25 21.6989 16.171 21.8897 16.0303 22.0303C15.8897 22.171 15.6989 22.25 15.5 22.25H14C13.8011 22.25 13.6103 22.171 13.4697 22.0303C13.329 21.8897 13.25 21.6989 13.25 21.5ZM23.75 21.5C23.75 21.3011 23.829 21.1103 23.9697 20.9697C24.1103 20.829 24.3011 20.75 24.5 20.75H26C26.1989 20.75 26.3897 20.829 26.5303 20.9697C26.671 21.1103 26.75 21.3011 26.75 21.5C26.75 21.6989 26.671 21.8897 26.5303 22.0303C26.3897 22.171 26.1989 22.25 26 22.25H24.5C24.3011 22.25 24.1103 22.171 23.9697 22.0303C23.829 21.8897 23.75 21.6989 23.75 21.5Z" fill="#0D1C12"/>
+              </svg>
+                
+              <h3>Выдача авто в любой день</h3>
+              <p>Вы можете забрать авто в любой день с нашей стоянки</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-5 d-flex justify-content-end about-us-img-with-info">
+        <img src="/static/img/about-us/car-with-gradient.png" alt="car">
+
+        <div class="about-us-on-img-text">
+          <h3>«Лучшее предприятие отрасли 2023»</h3>
+          <p>По итогам <a href="#">экспертной оценки</a> финансово-экономических показателей предприятия и отрасли.</p>
+        </div>
+
+        <div class="about-us-text-on-img-medal">
+          <img src="/static/img/about-us/medal-company.png" alt="icon">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div>
+      footer
+    </div>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./static/vendor/jquery.js"></script>
+  <script src="./static/vendor/bootstrap.js"></script>
+  <script src="./static/vendor/slick.js"></script>
+</body>
+
+<script>
+  $('.slider-products-1').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.filter-catalog .custom-prev-arrow'),
+    nextArrow: $('.filter-catalog .custom-next-arrow'),
+  });
+
+  $('.slider-products-2').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.country-catalog .custom-prev-arrow'),
+    nextArrow: $('.country-catalog .custom-next-arrow'),
+  });
+</script>
+</html>
