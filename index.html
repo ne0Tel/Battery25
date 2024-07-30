@@ -1389,9 +1389,9 @@
                 </button>
                 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <li><button data-value="sedan" value="RU-AMU" class="dropdown-item" type="button" onclick="setMap('delivery-area', 'RU-AMU')">Амурская область</button></li>
-                  <li><button value="RU-KHA" class="dropdown-item" type="button" onclick="setMap('delivery-area', 'RU-KHA')">Хабаровский край</button></li>
-                  <li><button value="RU-MAG" class="dropdown-item" type="button" onclick="setMap('delivery-area', 'RU-MAG')">Магаданская область</button></li>
+                  <li><button data-value="sedan" value="RU-AMU" class="dropdown-item" type="button" onclick="setMap('delivery-area', 'RU-AMU', 'Амурская область')">Амурская область</button></li>
+                  <li><button value="RU-KHA" class="dropdown-item" type="button" onclick="setMap('delivery-area', 'RU-KHA', 'Хабаровский край')">Хабаровский край</button></li>
+                  <li><button value="RU-MAG" class="dropdown-item" type="button" onclick="setMap('delivery-area', 'RU-MAG', 'Магаданская область')">Магаданская область</button></li>
                 </ul>
               </div>
               
@@ -1427,12 +1427,12 @@
                 </button>
                 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <li><button value="sedan"class="dropdown-item" type="button" onclick="setMap('car-body', 'sedan')">СЕДАН</button></li>
-                  <li><button value="hatchback" class="dropdown-item" type="button" onclick="setMap('car-body', 'hatchback')">ХЭТЧБЕК</button></li>
-                  <li><button value="crossover" class="dropdown-item" type="button" onclick="setMap('car-body', 'crossover')">КРОССОВЕР</button></li>
-                  <li><button value="jeep" class="dropdown-item" type="button" onclick="setMap('car-body', 'jeep')">ДЖИП</button></li>
-                  <li><button value="minibus" class="dropdown-item" type="button" onclick="setMap('car-body', 'minibus')">МИКРОАВТОБУС</button></li>
-                  <li><button value="truck" class="dropdown-item" type="button" onclick="setMap('car-body', 'truck')">ГРУЗОВИК</button></li>
+                  <li><button value="sedan"class="dropdown-item" type="button" onclick="setMap('car-body', 'sedan', 'СЕДАН')">СЕДАН</button></li>
+                  <li><button value="hatchback" class="dropdown-item" type="button" onclick="setMap('car-body', 'hatchback', 'ХЭТЧБЕК')">ХЭТЧБЕК</button></li>
+                  <li><button value="crossover" class="dropdown-item" type="button" onclick="setMap('car-body', 'crossover', 'КРОССОВЕР')">КРОССОВЕР</button></li>
+                  <li><button value="jeep" class="dropdown-item" type="button" onclick="setMap('car-body', 'jeep', 'ДЖИП')">ДЖИП</button></li>
+                  <li><button value="minibus" class="dropdown-item" type="button" onclick="setMap('car-body', 'minibus', 'МИКРОАВТОБУС')">МИКРОАВТОБУС</button></li>
+                  <li><button value="truck" class="dropdown-item" type="button" onclick="setMap('car-body', 'truck', 'ГРУЗОВИК')">ГРУЗОВИК</button></li>
                 </ul>
               </div>
 
@@ -1691,9 +1691,9 @@
   },
 }
 
-function setMap(typeFiled, value) {
+function setMap(typeFiled, value, text) {
   
-  setFiled(typeFiled, value);
+  setFiled(typeFiled, value, text);
   
   if (currentDeliveryArea !== '' && currentCarBody !== '') {
 
@@ -1719,12 +1719,12 @@ function setMap(typeFiled, value) {
     }, 100);
   }
 
-  function setFiled(typeFiled, value) {
+  function setFiled(typeFiled, value, text) {
     if (typeFiled === "delivery-area") {
-      document.getElementById('id_delivery_area').innerHTML = value;
+      document.getElementById('id_delivery_area').innerHTML = text;
       currentDeliveryArea = value;
     } else {
-      document.getElementById('id_car_body_type').innerHTML = value;
+      document.getElementById('id_car_body_type').innerHTML = text
       currentCarBody = value;
     }
   }
