@@ -570,6 +570,7 @@
 
       <div class="product-card">
         <div class="product-card-car-rating">
+
           <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
           <div class="rating-product">4.7</div>
         </div>
@@ -1374,12 +1375,32 @@
             <div class="d-flex flex-column select-delivery-area">
       
               <label>Область доставки</label>
-              <select name="delivery_area" id="id_delivery_area">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span name="delivery_area" id="id_delivery_area" class="float-start">
+                    Куда доставляем?
+                  </span>
+                  <span class="float-end"> 
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5008 11.1259C9.2242 11.4025 8.77568 11.4025 8.49908 11.1259L4.49214 7.11896C4.21551 6.84237 4.21551 6.39388 4.49214 6.11725C4.76876 5.84064 5.21725 5.84064 5.49387 6.11725L8.99994 9.62334L12.506 6.11725C12.7827 5.84064 13.2311 5.84064 13.5078 6.11725C13.7844 6.39388 13.7844 6.84237 13.5078 7.11896L9.5008 11.1259Z" fill="white" fill-opacity="0.5"/>
+                    </svg>
+                  </span>
+                    
+                </button>
+                
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button value="RU-AMU" class="dropdown-item" type="button" onclick="setField('delivery-area', 'RU-AMU')">Амурская область</button></li>
+                  <li><button value="RU-KHA" class="dropdown-item" type="button" onclick="setField('delivery-area', 'RU-KHA')">Хабаровский край</button></li>
+                  <li><button value="RU-MAG" class="dropdown-item" type="button" onclick="setField('delivery-area', 'RU-MAG')">Магаданская область</button></li>
+                </ul>
+              </div>
+              
+              <!-- <select name="delivery_area" id="id_delivery_area">
                 <option value="">Куда доставляем?</option>
                 <option value="RU-AMU">Амурская область</option>
                 <option value="RU-KHA">Хабаровский край</option>
                 <option value="RU-MAG">Магаданская область</option>
-              </select>
+              </select> -->
             </div>
     
             <div class="delivery-info">
@@ -1393,9 +1414,29 @@
       
           <div class="d-flex flex-column col">
             <div class="d-flex flex-column select-car-body-type">
-      
+              
+              
               <label>Тип кузова авто</label>
-              <select name="car_body_type" id="id_car_body_type">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span name="car_body_type" id="id_car_body_type" class="float-start">Выберите кузов?</span>
+                  <span class="float-end"> <svg class="" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5008 11.1259C9.2242 11.4025 8.77568 11.4025 8.49908 11.1259L4.49214 7.11896C4.21551 6.84237 4.21551 6.39388 4.49214 6.11725C4.76876 5.84064 5.21725 5.84064 5.49387 6.11725L8.99994 9.62334L12.506 6.11725C12.7827 5.84064 13.2311 5.84064 13.5078 6.11725C13.7844 6.39388 13.7844 6.84237 13.5078 7.11896L9.5008 11.1259Z" fill="white" fill-opacity="0.5"/>
+                  </svg>
+                </span>
+                </button>
+                
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button value="sedan"class="dropdown-item" type="button" onclick="setField('car-body', 'sedan')">СЕДАН</button></li>
+                  <li><button value="hatchback" class="dropdown-item" type="button" onclick="setField('car-body', 'hatchback')">ХЭТЧБЕК</button></li>
+                  <li><button value="crossover" class="dropdown-item" type="button" onclick="setField('car-body', 'crossover')">КРОССОВЕР</button></li>
+                  <li><button value="jeep" class="dropdown-item" type="button" onclick="setField('car-body', 'jeep')">ДЖИП</button></li>
+                  <li><button value="minibus" class="dropdown-item" type="button" onclick="setField('car-body', 'minibus')">МИКРОАВТОБУС</button></li>
+                  <li><button value="truck" class="dropdown-item" type="button" onclick="setField('car-body', 'truck')">ГРУЗОВИК</button></li>
+                </ul>
+              </div>
+
+              <!-- <select name="car_body_type" id="id_car_body_type">
                 <option value="">Выберите кузов?</option>
                 <option value="sedan">СЕДАН</option>
                 <option value="hatchback">ХЭТЧБЕК</option>
@@ -1403,7 +1444,7 @@
                 <option value="jeep">ДЖИП</option>
                 <option value="minibus">МИКРОАВТОБУС</option>
                 <option value="truck">ГРУЗОВИК</option>
-              </select>
+              </select> -->
             </div> 
   
             <button type="button" class="btn general-button" style="padding: 12px 17px; border-radius:12px !important; font-weight: 600; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -1615,6 +1656,8 @@
 <!-- Калькулятор доставки -->
 <script>
   let prevElementMap = null;
+  let currentDeliveryArea = '';
+  let currentCarBody = '';
   let tablePrice = {
   "RU-AMU": {
     "sedan": 20000,
@@ -1648,11 +1691,11 @@
   },
 }
 
-document.addEventListener('change', () =>  {
+document.querySelector(".shipping-calculator").addEventListener('change', () =>  {
+  console.log(document.getElementById('id_delivery_area').value);
+  if (currentDeliveryArea !== '' && currentCarBody !== '') {
 
-  if (document.getElementById('id_delivery_area').value !== '' && document.getElementById('id_car_body_type').value !== '') {
-
-    insertPriceDelivery(document.getElementById('id_delivery_area').value, document.getElementById('id_car_body_type').value);
+    insertPriceDelivery(currentDeliveryArea, currentCarBody);
     changeColorMap(prevElementMap);
   }
 
@@ -1674,5 +1717,16 @@ document.addEventListener('change', () =>  {
     }, 100);
   }
 });
+</script>
+<script>
+  function setField(typeFiled, value) {
+    if (typeFiled === "delivery-area") {
+      document.getElementById('id_delivery_area').innerHTML = value;
+      currentDeliveryArea = value;
+    } else {
+      document.getElementById('id_car_body_type').innerHTML = value;
+      currentCarBody = value;
+    }
+  }
 </script>
 </html>
