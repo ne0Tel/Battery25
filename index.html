@@ -1389,9 +1389,9 @@
                 </button>
                 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <li><button value="RU-AMU" class="dropdown-item" type="button" onclick="setField('delivery-area', 'RU-AMU')">Амурская область</button></li>
-                  <li><button value="RU-KHA" class="dropdown-item" type="button" onclick="setField('delivery-area', 'RU-KHA')">Хабаровский край</button></li>
-                  <li><button value="RU-MAG" class="dropdown-item" type="button" onclick="setField('delivery-area', 'RU-MAG')">Магаданская область</button></li>
+                  <li><button data-value="sedan" value="RU-AMU" class="dropdown-item" type="button" onclick="setMap('delivery-area', 'RU-AMU')">Амурская область</button></li>
+                  <li><button value="RU-KHA" class="dropdown-item" type="button" onclick="setMap('delivery-area', 'RU-KHA')">Хабаровский край</button></li>
+                  <li><button value="RU-MAG" class="dropdown-item" type="button" onclick="setMap('delivery-area', 'RU-MAG')">Магаданская область</button></li>
                 </ul>
               </div>
               
@@ -1427,12 +1427,12 @@
                 </button>
                 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <li><button value="sedan"class="dropdown-item" type="button" onclick="setField('car-body', 'sedan')">СЕДАН</button></li>
-                  <li><button value="hatchback" class="dropdown-item" type="button" onclick="setField('car-body', 'hatchback')">ХЭТЧБЕК</button></li>
-                  <li><button value="crossover" class="dropdown-item" type="button" onclick="setField('car-body', 'crossover')">КРОССОВЕР</button></li>
-                  <li><button value="jeep" class="dropdown-item" type="button" onclick="setField('car-body', 'jeep')">ДЖИП</button></li>
-                  <li><button value="minibus" class="dropdown-item" type="button" onclick="setField('car-body', 'minibus')">МИКРОАВТОБУС</button></li>
-                  <li><button value="truck" class="dropdown-item" type="button" onclick="setField('car-body', 'truck')">ГРУЗОВИК</button></li>
+                  <li><button value="sedan"class="dropdown-item" type="button" onclick="setMap('car-body', 'sedan')">СЕДАН</button></li>
+                  <li><button value="hatchback" class="dropdown-item" type="button" onclick="setMap('car-body', 'hatchback')">ХЭТЧБЕК</button></li>
+                  <li><button value="crossover" class="dropdown-item" type="button" onclick="setMap('car-body', 'crossover')">КРОССОВЕР</button></li>
+                  <li><button value="jeep" class="dropdown-item" type="button" onclick="setMap('car-body', 'jeep')">ДЖИП</button></li>
+                  <li><button value="minibus" class="dropdown-item" type="button" onclick="setMap('car-body', 'minibus')">МИКРОАВТОБУС</button></li>
+                  <li><button value="truck" class="dropdown-item" type="button" onclick="setMap('car-body', 'truck')">ГРУЗОВИК</button></li>
                 </ul>
               </div>
 
@@ -1691,8 +1691,10 @@
   },
 }
 
-document.querySelector(".shipping-calculator").addEventListener('change', () =>  {
-  console.log(document.getElementById('id_delivery_area').value);
+function setMap(typeFiled, value) {
+  
+  setFiled(typeFiled, value);
+  
   if (currentDeliveryArea !== '' && currentCarBody !== '') {
 
     insertPriceDelivery(currentDeliveryArea, currentCarBody);
@@ -1705,7 +1707,7 @@ document.querySelector(".shipping-calculator").addEventListener('change', () => 
       prev.setAttribute('stroke', '#FFFFFF');
     } 
 
-    prevElementMap = document.querySelector( `path[data-code=${document.getElementById('id_delivery_area').value}]`);
+    prevElementMap = document.querySelector( `path[data-code=${currentDeliveryArea}]`);
 
     prevElementMap.setAttribute('fill', '#464646');
     prevElementMap.setAttribute('stroke', '#1B1B1B');
@@ -1716,10 +1718,8 @@ document.querySelector(".shipping-calculator").addEventListener('change', () => 
         odometer_1.innerHTML = tablePrice[code][carBodyType];
     }, 100);
   }
-});
-</script>
-<script>
-  function setField(typeFiled, value) {
+
+  function setFiled(typeFiled, value) {
     if (typeFiled === "delivery-area") {
       document.getElementById('id_delivery_area').innerHTML = value;
       currentDeliveryArea = value;
@@ -1728,5 +1728,8 @@ document.querySelector(".shipping-calculator").addEventListener('change', () => 
       currentCarBody = value;
     }
   }
+}
+
+
 </script>
 </html>
