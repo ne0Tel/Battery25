@@ -1,19 +1,43 @@
 @font-face {
   font-family: 'EastmanRomanTria';
-  src: url(../fonts/EastmanRomanTrial-Bold.otf) format('otf');
+  src: url(/static/fonts/EastmanRomanTrial-Bold.otf) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url(../fonts/Inter-Bold.ttf) format('ttf');
+  src: url(/static/fonts/Inter-Bold.ttf) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Stolzl';
-  src: url(../fonts/stolzl_book.otf) format('otf'),
-       url(../fonts/stolzl_medium.otf) format('otf'),
-       url(../fonts/stolzl_bold.otf) format('otf');
+  src: url(/static/fonts/stolzl_book.otf) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Stolzl';
+  src: url(/static/fonts/stolzl_medium.otf) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  src: url(/static/fonts/stolzl_bold.otf) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 *,
 *::before,
@@ -54,14 +78,14 @@ h1 {
 h2 {
   font-family: 'Stolzl', sans-serif;
   font-size: 32px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   color: #0D1C12;
 }
 
 h3 {
   font-family: 'Stolzl', sans-serif;
   font-size: 16px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   color: #0D1C12;
 }
 
@@ -89,7 +113,7 @@ section {
   border-radius: 24px !important;
   background: #77BB58 !important;
   font-size: 18px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   text-align: center !important;
   color: #FFFFFF !important;
   border: none !important;
@@ -104,6 +128,7 @@ section {
 
 .filter-catalog-button {
   padding: 8px 16px !important;
+  font-size: 16px !important;
   border-radius: 12px !important;
   background: #EFEFEF !important;
   text-align: center !important;
@@ -146,7 +171,7 @@ section {
 
 .product-card h2 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500 !important;
   color: #FFFFFF;
 }
 
@@ -159,12 +184,13 @@ section {
 
 .product-card-price {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500 !important; 
   color: #FFFFFF;
 }
 
 .product-card-button {
   padding: 12px 20px;
+  font-weight: 500 !important;
   border-radius: 12px;
   background-color: #234546;
   color: #FFFFFF !important;
@@ -236,7 +262,7 @@ header hr {
 }
 
 .header-contact a {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -322,7 +348,7 @@ header .navbar .nav-link:hover {
 
 .rating-site #id_average_rating {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #FFFFFF;
 }
 
@@ -344,6 +370,7 @@ header .navbar .nav-link:hover {
 
 .filter-catalog {
   position: relative;
+  font-size: 16px;
   margin-bottom: 60px !important;
 }
 
@@ -440,7 +467,7 @@ select {
 }
 
 .delivery-price {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
 }
 
@@ -474,13 +501,17 @@ select {
   color: #77BB58 !important;
 }
 
+.consultation-for-auto p {
+  font-size: 18px;
+}
+
 .consultation-for-auto-title {
   color: #FFFFFF;
   margin-bottom: 16px;
 }
 
 .consultation-for-auto-subtitle {
-  max-width: 405px;
+  max-width: 490px;
   margin-bottom: 32px !important;
 }
 
@@ -536,7 +567,7 @@ select {
   color: #FFFFFF;
   max-width: 334px;
   bottom: 20px;
-  right: 0;
+  right: 26px;
 }
 
 .about-us-on-img-text h3 {
