@@ -134,13 +134,13 @@ section {
   text-align: center !important;
   color: #000000 !important;
   border: none !important;
-  outline: none !important;
-  transition: background-color .5s ease-in-out;
+  outline: 0px solid #77BB58  !important;
+  transition: outline .1s ease-in-out;
 }
 
 .filter-catalog-button:hover {
-  background: #b0b0b0 !important;
-  transition: background-color .5s ease-in-out;
+  outline: 2px solid #77BB58 !important;
+  transition: outline .1s ease-in-out;
 }
 
 .product-card {
@@ -371,6 +371,7 @@ header .navbar .nav-link:hover {
 .filter-catalog {
   position: relative;
   font-size: 16px;
+  padding-top: 2px; /* Для outline кнопок filter-catalog-button */
   margin-bottom: 60px !important;
 }
 
@@ -480,8 +481,8 @@ select {
 .purchase-scheme-info {
   position: absolute;
   top: 50%;
-  left: 28%;
-  transform: translate(-18%, -50%);
+  left: 17%;
+  transform: translate(-9%, -50%);
 }
 
 
