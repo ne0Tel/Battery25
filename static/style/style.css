@@ -135,12 +135,12 @@ section {
   color: #000000 !important;
   border: none !important;
   outline: 0px solid #77BB58  !important;
-  transition: outline .1s ease-in-out;
+  transition: outline .3s ease-in-out;
 }
 
 .filter-catalog-button:hover {
   outline: 2px solid #77BB58 !important;
-  transition: outline .1s ease-in-out;
+  transition: outline .3s ease-in-out;
 }
 
 .product-card {
@@ -488,7 +488,7 @@ select {
 .shipping-calculator .dropdown {
   color: rgba(255, 255, 255, 0.5);
   background-color: #234546;
-
+  width: 240px;
   border: none !important;
   border-radius: 12px;
   cursor: pointer;
@@ -536,6 +536,13 @@ select {
   font-size: 24px;
 }
 
+.delivery-price .odometer-digit {
+  padding-right: 2px !important;
+}
+
+.delivery-price .odometer-value {
+  text-align: center !important;
+}
 
 .download-sample {
   color: rgba(255, 255, 255, 0.5) !important;
@@ -546,7 +553,7 @@ select {
 .purchase-scheme-info {
   position: absolute;
   top: 50%;
-  left: 19%;
+  left: 17%;
   transform: translate(-9%, -50%);
 }
 
