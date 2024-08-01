@@ -542,6 +542,7 @@ select {
 
 .delivery-price .odometer-value {
   text-align: center !important;
+  width: 17px;
 }
 
 .download-sample {
