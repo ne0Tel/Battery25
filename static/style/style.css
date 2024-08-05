@@ -662,10 +662,22 @@ select {
   position: relative;
   background-color: #0D3334;
   padding: 32px 40px;
+  border-radius: 32px;
+  margin-bottom: 60px !important;
 }
 
 .reviews h2 {
   color: #FFFFFF;
+}
+
+.reviews a {
+  color: #161616 !important;
+  transition: color .5s ease-in-out;
+}
+
+.reviews a:hover {
+  color: #77BB58 !important;
+  transition: color .5s ease-in-out;
 }
 
 .reviews .card-video {
@@ -682,13 +694,13 @@ select {
 }
 
 .reviews .custom-prev-arrow {
-  top: 52%;
+  top: 32%;
   background-color: #FFFFFF;
   border: 4px solid #0D3334;
 }
 
 .reviews .custom-next-arrow {
-  top: 52%;
+  top: 32%;
   background-color: #FFFFFF;
   border: 4px solid #0D3334;
 }
@@ -710,16 +722,52 @@ select {
   transition: color .5s ease-in-out;
 }
 
+.reviews .social-links {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+}
+
+.reviews .social-links > *:not(:last-child) {
+  margin-right: 20px;
+}
+
 .reviews .social-links .social-links-item {
   padding: 16px;
   border-radius: 16px;
   background-color: #F6F6F6;
 }
 
+.reviews .social-links .social-links-item .social-reviews {
+  margin-top: 4px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .reviews .social-links .social-links-item h2 {
   margin: 0px;
   margin-right: 12px;
   color: #0D1C12;
+}
+
+.reviews .element-rounding {
+
+}
+
+.reviews .element-rounding-square {
+}
+
+.reviews .element-rounding-rectangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 882px;
+  height: 131px;
+  z-index: 1;
+  border-top-left-radius: 20px;
+  background-color: #FFFFFF;
 }
 
 
