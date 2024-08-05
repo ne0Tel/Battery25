@@ -655,3 +655,334 @@ select {
 .about-us-on-img-text a {
   color: #77BB58 !important;
 }
+
+
+/* ------------Reviews------------ */
+.reviews {
+  position: relative;
+  background-color: #0D3334;
+  padding: 32px 40px;
+}
+
+.reviews h2 {
+  color: #FFFFFF;
+}
+
+.reviews .card-video {
+  max-width: 251px;
+}
+
+.reviews .slider-reviews {
+  margin-bottom: 32px;
+}
+
+.reviews .slider-reviews .slick-track {
+  display: flex !important; 
+  justify-content: space-between !important; 
+}
+
+.reviews .custom-prev-arrow {
+  top: 52%;
+  background-color: #FFFFFF;
+  border: 4px solid #0D3334;
+}
+
+.reviews .custom-next-arrow {
+  top: 52%;
+  background-color: #FFFFFF;
+  border: 4px solid #0D3334;
+}
+
+.reviews iframe {
+  width: 267px;
+  height: 178px;
+  border-radius: 16px;
+}
+
+.reviews .slider-reviews .card-video  {
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: color .5s ease-in-out;
+}
+
+.reviews .slider-reviews .card-video:hover  {
+  color: #77BB58;
+  transition: color .5s ease-in-out;
+}
+
+.reviews .social-links .social-links-item {
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #F6F6F6;
+}
+
+.reviews .social-links .social-links-item h2 {
+  margin: 0px;
+  margin-right: 12px;
+  color: #0D1C12;
+}
+
+
+/* ------------Video Reviews------------ */
+
+.video-reviews {
+  position: relative;
+  margin-bottom: 100px !important;
+}
+
+.video-reviews .custom-prev-arrow {
+  top: 58%;
+}
+
+.video-reviews .custom-next-arrow {
+  top: 58%;
+}
+
+.video-reviews .card-video {
+  max-width: 267px;
+}
+
+.video-reviews .slider-video-reviews .slick-track  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-reviews iframe {
+  width: 267;
+  height: 150;
+  border-radius: 16px;
+}
+
+
+/* ------------Popular Articles------------ */
+
+.popular-articles {
+  position: relative;
+  margin-bottom: 60px !important;
+}
+
+.popular-articles .custom-prev-arrow {
+  top: 30%;
+}
+
+.popular-articles .custom-next-arrow {
+  top: 30%;
+}
+
+.popular-articles .slider-popular-articles .slick-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-articles {
+  max-width: 267px;
+}
+
+.card-articles img {
+  max-width: 100%;
+  border-radius: 16px;
+  margin-bottom: 8px;
+}
+
+.articles-info {
+  margin-top: 28px;
+}
+
+.articles-info span {
+  color: rgba(13, 28, 18, 0.5) !important;
+}
+
+.date-publish {
+  margin-right: 12px;
+}
+
+.time-read {
+}
+
+
+/* ------------Form Feedback------------ */
+
+.form-feedback {
+  background-color: #0D3334;
+  border-radius: 32px;
+  position: relative;
+}
+
+.form-feedback .contacts {
+  padding: 40px 40px 28px 40px;
+}
+
+.form-feedback .contacts h2 {
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.form-feedback .contacts a {
+  color: #FFFFFF !important;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.form-feedback .contacts .form-contact-click p {
+ color: rgba(255, 255, 255, 0.5);
+ margin-bottom: 8px !important;
+}
+
+.form-feedback .contacts .form-contact-click > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form-feedback .contacts .form-contact-click .social-links a {
+  display: block;
+  width: 48px !important;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #234546;
+  margin-right: 8px;
+  transition: background-color .5s ease-in-out;
+}
+
+.form-feedback .contacts .form-contact-click .social-links a:hover {
+  background-color: #489494;
+  transition: background-color .5s ease-in-out;
+}
+
+.form-feedback .contacts .form-contact-click .social-links .btns-social-links {
+  display: flex;
+}
+
+.form-feedback .contacts .form-wp h3 {
+  font-size: 18px !important;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.form-feedback .contacts .form-wp p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback label {
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #29AAEB !important;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback input {
+  padding: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #234546;
+  border: none !important;
+  outline: none !important;
+  border-radius: 12px;
+  color: #ffffff !important;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback .form-check-input{
+  margin-right: 12px !important;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback input::placeholder {
+  font-weight: 400;
+  font-size: 16px !important;
+  color: #757575;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback .form-control-area {
+  padding: 16px;
+  max-width: 100%;
+  max-height: 101px;
+  font-weight: 400;
+  font-size: 16px;
+  border: none !important;
+  outline: none !important;
+  background-color: #234546;
+  color: #ffffff ;
+  border-radius: 12px;
+  resize: none;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback textarea::placeholder {
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px !important;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback #id_textarea_feedback {
+  margin: 24px 0px;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback .form-control-area {
+  width: 100%;
+}
+
+.form-feedback .element-rounding {
+
+}
+
+.form-feedback .element-rounding-rectangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 256px;
+  height: 86px;
+  border-top-left-radius: 20px;
+  background-color: #FFFFFF;
+}
+
+.form-feedback .element-rounding-rectangle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 256px;
+  width: 40px;
+  height: 86px;
+  border-bottom-right-radius: 20px;
+  background-color: #0D3334;
+}
+
+.form-feedback .element-rounding-rectangle::before {
+  content: "";
+  position: absolute;
+  bottom: 86px;
+  right: 0;
+  width: 40px;
+  height: 86px;
+  border-bottom-right-radius: 20px;
+  background-color: #0D3334;
+}
+
+.form-feedback .element-rounding-square::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 256px;
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 20px;
+  background-color: #FFFFFF;
+}
+.form-feedback .element-rounding-square::before {
+  content: "";
+  position: absolute;
+  bottom: 86px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 20px;
+  background-color: #FFFFFF;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback .general-button {
+  position: absolute; 
+  width: 240px;
+  bottom: 0; 
+  right:0; 
+  z-index:10;
+}
