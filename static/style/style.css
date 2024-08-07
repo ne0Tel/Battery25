@@ -212,7 +212,9 @@ section {
 
 .product-card-car-rating {
   position: relative;
-  margin-bottom: 16px;  
+  margin-bottom: 16px;
+  max-width: 312px;
+  max-height: 175px;  
 }
 
 .rating-product {
@@ -263,11 +265,49 @@ section {
   z-index: 1000;
 }
 
+
+/* ------------Preloader------------ */
+
+
+.lds-dual-ring,
+.lds-dual-ring:after {
+  box-sizing: border-box;
+}
+.lds-dual-ring {
+  display: none; 
+  /*  inline-block */
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6.4px solid #FFFFFF;
+  border-color: #FFFFFF transparent #FFFFFF transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* ------------Header------------ */
 
 header { 
   padding-top: 12px !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 16px;
   position: relative;
 }
 
