@@ -571,7 +571,7 @@ select {
 /* ------------Consultation For Auto------------ */
 
 .bg-consultation-for-auto {
-  background-image: url('/static/img/consultation-for-auto/bg-consultation-for-auto.png');
+  background-image: url('../img/consultation-for-auto/bg-consultation-for-auto.png');
   margin-bottom: 100px;
 }
 
