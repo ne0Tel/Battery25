@@ -143,6 +143,10 @@ section {
   transition: outline .3s ease-in-out;
 }
 
+.filter-catalog-button-active {
+  outline: 2px solid #77BB58 !important;
+}
+
 .product-card {
   padding: 8px 8px 16px 8px;
   background-color: #0D3334;
@@ -768,7 +772,7 @@ select {
   width: 879px;
   height: 163px;
   z-index: 1;
-  border-top-left-radius: 20px;
+  border-top-left-radius: 30px;
   background-color: #FFFFFF;
 }
 
@@ -975,6 +979,10 @@ select {
   outline: none !important;
   border-radius: 12px;
   color: #ffffff !important;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback .form-control:focus{
+  box-shadow: none;
 }
 
 .form-feedback .contacts .form-wp #id_form_feedback .form-check-input{

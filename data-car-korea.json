@@ -1,0 +1,951 @@
+{
+  "car-500k": {
+
+    "car-1": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/mashina_seryj_mokryj_147750_1920x1080.jpg",
+      "id": "1",
+      "price": "500000",
+      "rating": "4.5",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-2": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/bmw_avtomobil_bamper_191131_1920x1080.jpg",
+      "id": "2",
+      "price": "500000",
+      "rating": "4.4",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-3": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/mercedesbenz_sclass_w222_112850_1920x1080.jpg",
+      "id": "3",
+      "price": "500000",
+      "rating": "4.9",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-4": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/bmw_fary_avtomobil_124112_1920x1080.jpg",
+      "id": "4",
+      "price": "500000",
+      "rating": "3.2",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-5": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/mashina_krasnyj_sportkar_142598_1920x1080.jpg",
+      "id": "5",
+      "price": "500000",
+      "rating": "4.5",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-6": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/bmw_sport_mashiny_77639_1920x1080.jpg",
+      "id": "6",
+      "price": "500000",
+      "rating": "4.9",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-7": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/bmw_e34_krasnyj_96487_1920x1080.jpg",
+      "id": "7",
+      "price": "500000",
+      "rating": "5.0",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-8": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_aventador_lp7504_108049_1920x1080.jpg",
+      "id": "8",
+      "price": "500000",
+      "rating": "4.9",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-9": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_huracan_lamborghini_avtomobil_1017392_1920x1080.jpg",
+      "id": "9",
+      "price": "500000",
+      "rating": "4.6",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-10": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/ferrari_f430_ferrari_avtomobil_1018286_1920x1080.jpg",
+      "id": "10",
+      "price": "500000",
+      "rating": "4.1",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-11": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/mitsubishi_3000gt_mitsubishi_avtomobil_267727_1920x1080.jpg",
+      "id": "11",
+      "price": "500000",
+      "rating": "4.7",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    },
+    "car-12": {
+      "brand": "Subaru",
+      "model": "LEVORG VN5",
+      "img": "https://images.wallpaperscraft.ru/image/single/mazda_rx_7_mazda_avtomobil_262288_1920x1080.jpg",
+      "id": "12",
+      "price": "500000",
+      "rating": "4.6",
+      "year": "2021",
+      "bodyType": "hybrid",
+      "mileage": "10000" 
+    }
+  },
+
+  "car-600k": {
+
+    "car-1": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "1",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-2": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "2",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-3": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "3",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-4": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "4",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-5": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "5",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-6": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "6",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-7": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "7",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-8": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "8",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-9": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "9",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-10": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "10",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-11": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "11",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-12": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "12",
+      "price": "600000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    }
+  },
+
+  "car-100kk": {
+    "car-1": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "1",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-2": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "2",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-3": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "3",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-4": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "4",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-5": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "5",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-6": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "6",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-7": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "7",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-8": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "8",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-9": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "9",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-10": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "10",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-11": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "11",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-12": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "12",
+      "price": "1000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    }
+  },
+
+  "car-200kk": {
+    "car-1": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "1",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-2": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "2",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-3": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "3",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-4": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "4",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-5": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "5",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-6": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "6",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-7": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "7",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-8": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "8",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-9": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "9",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-10": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "10",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-11": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "11",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-12": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "12",
+      "price": "2000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    }
+  },
+
+  "car-300kk": {
+
+    "car-1": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "1",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-2": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "2",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-3": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "3",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-4": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "4",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-5": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "5",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-6": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "6",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-7": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "7",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-8": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "8",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-9": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "9",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-10": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "10",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-11": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "11",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-12": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "12",
+      "price": "3000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    }
+  },
+
+  "car-400kk": {
+
+    "car-1": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "1",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-2": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "2",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-3": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "3",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-4": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "4",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-5": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "5",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-6": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "6",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-7": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "7",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-8": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "8",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-9": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "9",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-10": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "10",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-11": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "11",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-12": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "12",
+      "price": "4000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    }
+  },
+
+  "car-500kk": {
+
+    "car-1": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "1",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-2": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "2",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-3": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "3",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-4": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "4",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-5": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "5",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-6": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "6",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-7": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "7",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-8": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "8",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-9": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "9",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-10": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "10",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-11": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "11",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    },
+    "car-12": {
+      "brand": "",
+      "model": "",
+      "img": "",
+      "id": "12",
+      "price": "5000000",
+      "rating": "",
+      "year": "",
+      "bodyType": "",
+      "mileage": "" 
+    }
+  }
+}
