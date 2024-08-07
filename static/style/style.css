@@ -49,6 +49,8 @@ body {
   font-family: 'Stolzl', sans-serif !important;
   font-weight: 400 !important;
   font-size: 14px !important;
+  overflow-y: auto !important;
+  padding-right: 0px !important;
 }
 
 ul,
@@ -721,12 +723,6 @@ select {
 
 .reviews a {
   color: #161616 !important;
-  transition: color .5s ease-in-out;
-}
-
-.reviews a:hover {
-  color: #77BB58 !important;
-  transition: color .5s ease-in-out;
 }
 
 .reviews .card-video {
