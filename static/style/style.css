@@ -267,6 +267,22 @@ section {
   z-index: 1000;
 }
 
+.video-player {
+  width: 267px;
+  height: 150px;
+}
+
+.tooltip .tooltip-arrow::before {
+  display: none !important;
+}
+
+.tooltip .tooltip-inner {
+  padding: 8px 12px !important;
+  background-color: #0D1C12 !important;
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
 
 /* ------------Preloader------------ */
 
@@ -478,7 +494,22 @@ header .navbar .nav-link:hover {
 
 /* ------------Country Catalog------------ */
 
-.country-catalog {
+.country-catalog-korea {
+  position: relative;
+  margin-bottom: 60px !important;
+}
+
+.country-catalog-china {
+  position: relative;
+  margin-bottom: 60px !important;
+}
+
+.country-catalog-japan {
+  position: relative;
+  margin-bottom: 60px !important;
+}
+
+.country-catalog-europe {
   position: relative;
   margin-bottom: 60px !important;
 }
@@ -597,9 +628,8 @@ select {
 }
 
 .download-sample {
-  color: rgba(255, 255, 255, 0.5) !important;
-  font-size: 12px;
-  margin-top: 12px;
+  color: #77BB58 !important;
+  font-size: 14px;
 }
 
 .purchase-scheme-info {
@@ -614,6 +644,8 @@ select {
 
 .bg-consultation-for-auto {
   background-image: url('../img/consultation-for-auto/bg-consultation-for-auto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 100px;
 }
 
@@ -654,7 +686,7 @@ select {
 }
 
 .about-us-text {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .about-us-text h2 {
@@ -677,29 +709,40 @@ select {
   margin-bottom: 8px;
 }
 
+.about-us-group-advantages >.row:not(:last-child) {
+  margin-bottom: 44px !important;
+}
+
 .about-us-img-with-info {
   position: relative;
 }
 
+.about-us .about-us-img-with-info .img-bg-with-info {
+  max-width: 440px;
+  max-height: 518px;
+}
+
 .about-us-text-on-img-medal {
   position: absolute;
-  bottom: 15px;
-  left: 90px;
+  bottom: 122px;
+  left: 15px;
 }
 
 .about-us-on-img-text {
   position: absolute;
   color: #FFFFFF;
   max-width: 334px;
-  bottom: 20px;
-  right: 26px;
+  bottom: 132px;
+  right: -16px;
 }
 
 .about-us-on-img-text h3 {
+  font-size: 14px !important;
   color: #FFFFFF;
 }
 
 .about-us-on-img-text p {
+  font-size: 12px !important;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -856,11 +899,96 @@ select {
 }
 
 
+/* ------------Shorts Youtube------------ */
+
+.shorts-youtube {
+  position: relative;
+  margin-bottom: 100px !important;
+}
+
+.shorts-youtube .slick-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shorts-youtube .video-shorts-youtbe iframe {
+  border-radius: 16px;
+}
+
+.shorts-youtube .video-shorts-youtbe {
+  margin-bottom: 8px;
+}
+
+.card-shorts {
+}
+
+.video-shorts-youtbe {
+  max-width: 150px;
+  height: 265px;
+}
+
+
+
+/* ------------Promotions And Discounts------------ */
+
+.promotions-and-discounts {
+  margin-bottom: 100px !important;
+}
+
+.promotions-and-discounts .commission-discount {
+  position: relative;
+  background-color: #F6F7F9;
+  padding: 40px;
+  width: 680px;
+  border-radius: 32px;
+}
+
+.promotions-and-discounts .commission-discount svg {
+  cursor: pointer;
+}
+
+.promotions-and-discounts .commission-discount .img-commission-discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.promotions-and-discounts .referral-promotion {
+  position: relative;
+  background-color: #F6F7F9;
+  padding: 40px;
+  width: 680px;
+  border-radius: 32px;
+}
+
+.promotions-and-discounts .referral-promotion .img-referral-promotion {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.promotions-and-discounts .general-button {
+  padding: 12px 24px;
+  font-size: 14px !important;
+  border-radius: 12px !important;
+  background-color: #FFFFFF !important;
+  color: #0D1C12 !important;
+  -webkit-box-shadow: 0px 0px 23px 1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 23px 1px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 23px 1px rgba(34, 60, 80, 0.2);
+  transition: background-color .5s ease-in-out;
+}
+
+.promotions-and-discounts .general-button:hover {
+  transition: background-color .5s ease-in-out;
+  background-color: #f2f2f2 !important;
+}
+
 /* ------------Video Reviews------------ */
 
 .video-reviews {
   position: relative;
-  margin-bottom: 100px !important;
+  margin-bottom: 160px !important;
 }
 
 .video-reviews .custom-prev-arrow {
@@ -891,7 +1019,7 @@ select {
 
 .popular-articles {
   position: relative;
-  margin-bottom: 60px !important;
+  margin-bottom: 100px !important;
 }
 
 .popular-articles .custom-prev-arrow {
