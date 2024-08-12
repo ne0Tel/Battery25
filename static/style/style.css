@@ -279,9 +279,14 @@ section {
 .tooltip .tooltip-inner {
   padding: 8px 12px !important;
   background-color: #0D1C12 !important;
+  max-width: 300px;
   font-family: 'Stolzl', sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+
+.tooltip .tooltip-inner strike {
+  color: #878787;
 }
 
 /* ------------Preloader------------ */
@@ -425,17 +430,6 @@ header .navbar .nav-link:hover {
   color: #FFFFFF;
 }
 
-.rating-site p {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.rating-site #id_average_rating {
-  font-size: 18px;
-  font-weight: 500;
-  color: #FFFFFF;
-}
-
 .award-company-status {
   position: absolute;
   max-width: 354px;
@@ -449,6 +443,23 @@ header .navbar .nav-link:hover {
   color: #000000;
 }
 
+.cars-in-stock .company-advantages h2 {
+  color: #FFFFFF;
+}
+
+.cars-in-stock .company-advantages h2 {
+  color: #FFFFFF;
+  margin-bottom: 4px !important;
+}
+
+.cars-in-stock .company-advantages p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cars-in-stock .company-advantages > *:not(:last-child) {
+  margin-right: 40px;
+}
 
 /* ------------Filter Catalog------------ */
 
