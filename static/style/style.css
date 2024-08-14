@@ -267,11 +267,6 @@ section {
   z-index: 1000;
 }
 
-.video-player {
-  width: 267px;
-  height: 150px;
-}
-
 .tooltip .tooltip-arrow::before {
   display: none !important;
 }
@@ -288,6 +283,76 @@ section {
 .tooltip .tooltip-inner strike {
   color: #878787;
 }
+
+/* ------------Shorts------------ */
+
+.youtube-shorts-modal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.youtube-shorts-modal #id_close_shorts {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  padding: 0px;
+  border: 0px;
+  border-radius: 50%;
+}
+
+.youtube-shorts-modal .splide__slide  .btns-shorts-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 30px;
+}
+
+.youtube-shorts-modal .splide__slide  .btns-shorts-active > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.youtube-shorts-modal .splide__slide  .btns-shorts-active > * {
+  cursor: pointer;
+}
+
+.youtube-shorts-modal-show {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal-container {
+  width: 100% !important;
+  padding-right: calc(1.5rem * .5) !important;
+  padding-left: calc(1.5rem * .5) !important;
+  margin: 0px auto !important;
+  display: flex;
+  justify-content: center;
+}
+
+.splide {
+}
+
+.splide__track {
+}
+
+.splide__list {
+}
+
+.shorts-slider-video .splide__slide {
+  display: flex;
+  justify-content: center;
+}
+
 
 /* ------------Preloader------------ */
 
@@ -922,8 +987,11 @@ select {
   justify-content: space-between;
 }
 
-.shorts-youtube .video-shorts-youtbe iframe {
+.shorts-youtube .video-shorts-youtube video {
   border-radius: 16px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
 }
 
 .shorts-youtube .video-shorts-youtbe {
@@ -932,12 +1000,6 @@ select {
 
 .card-shorts {
 }
-
-.video-shorts-youtbe {
-  max-width: 150px;
-  height: 265px;
-}
-
 
 
 /* ------------Promotions And Discounts------------ */
