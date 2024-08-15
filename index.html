@@ -5038,12 +5038,13 @@ function setMap(typeFiled, value, text) {
 <script>
   // Вертикальный слайдер для Shorts
   const shortsSplider = new Splide('.splide', {
+    type: 'loop',
     direction: 'ttb',
     height: '800px',
     arrows: false,
     pagination: false,
-  })
-  .mount();
+    wheel: true,
+  }).mount();
 
   const sliderShorts = document.querySelectorAll('.slider-shorts-youtube .slick-slide');
   const sliderSlickShorts = [];
@@ -5054,11 +5055,11 @@ function setMap(typeFiled, value, text) {
     }
     countSliderShorts++;
     sliderShorts[i].querySelector('video').setAttribute('id', `id_slider_shorts_youtube_${countSliderShorts}`);
-
-
   }
 
 
+  
+  
   // Инициализация видеоплееров Plyr
   const players = document.querySelectorAll('.splide__slide video');
 
@@ -5071,7 +5072,7 @@ function setMap(typeFiled, value, text) {
       title: `video_${index}`,
       sources: [
       {
-        src: `./static/video/video_${index+1}.mp4`,
+        src: `./static/video/video_1.mp4`,
         type: 'video/mp4',
       }],
     }
@@ -5084,13 +5085,13 @@ function setMap(typeFiled, value, text) {
   const btnCloseShorts = document.getElementById('id_close_shorts');
   
   // Инициализация кнопоки выключения звука
-  const btnVolume = document.querySelectorAll('.volume-btn');
-  btnVolume.forEach((btn)=> {
+  const btnsVolume = document.querySelectorAll('.volume-btn');
+  btnsVolume.forEach((btn)=> {
     btn.addEventListener("click", mutedVideo);
   })
 
   // Открыть модальное окно
-  document.querySelector('.logo-footer').addEventListener('click', ()=> {
+  document.querySelector('#id_slider_shorts_youtube_1').addEventListener('click', ()=> {
     modalShorts.classList.add('youtube-shorts-modal-show');
     videoPlayback();
   });

@@ -1001,6 +1001,17 @@ select {
 .card-shorts {
 }
 
+.splide__list > * {
+  padding-bottom: 20px;
+}
+
+.splide__list > *:not(:first-child) {
+  margin-top: -10px;
+}
+
+.plyr__video-wrapper  {
+  border-radius: 32px !important;
+}
 
 /* ------------Promotions And Discounts------------ */
 
