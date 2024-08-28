@@ -48,7 +48,7 @@
   </div>
 
   <div class="d-flex align-items-center award-company-status">
-    <img class="me-3" style="width: 28px; height: 28px;" src="./static/img/cars-in-stock/medal-best-enterprise.png" alt="icon">
+    <img class="me-3" style="width: 28px; height: 28px;" src="{% static 'img/cars-in-stock/medal-best-enterprise.png' %}" alt="icon">
     <p>Наша компания получила статус «Лучшее предприятие отрасли 2023»</p>
   </div>
 </section>
@@ -58,17 +58,17 @@
   <div class="d-flex fileter-catalog-country">
 
     <button class="filter-catalog-button">
-      <img class="me-2" src="/static/img/every-catalog/filter-korea.png" alt="icon">
+      <img class="me-2" src="{% static 'img/every-catalog/filter-korea.png' %}" alt="icon">
       Из Кореи
     </button>
 
     <button class="filter-catalog-button">
-      <img class="me-2" src="/static/img/every-catalog/filter-china.png" alt="icon">
+      <img class="me-2" src="{% static 'img/every-catalog/filter-china.png' %}" alt="icon">
       из Китая
     </button>
 
     <button class="filter-catalog-button">
-      <img class="me-2" src="/static/img/every-catalog/filter-japan.png" alt="icon">
+      <img class="me-2" src="{% static 'img/every-catalog/filter-japan.png' %}" alt="icon">
       из Японии
     </button>
   </div>
@@ -121,7 +121,7 @@
     <div class="product-card">
       
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="/static/img/every-catalog/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -140,27 +140,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="/static/img/every-catalog/81df958c-279b-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -180,7 +160,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="/static/img/every-catalog/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/81df958c-279b-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -200,7 +180,27 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
+        <div class="rating-product">4.7</div>
+      </div>
+
+
+      <div class="product-card-info">
+        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+        
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="m-0 product-card-price">2 115 600 ₽</p>
+          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-car-rating">
+        <img class="product-card-img" src="{% static 'img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -219,7 +219,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="/static/img/every-catalog/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -238,7 +238,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="/static/img/every-catalog/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -257,7 +257,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="/static/img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -360,7 +360,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -379,7 +379,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -398,7 +398,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -417,7 +417,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -436,7 +436,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -455,7 +455,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -474,27 +474,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -514,7 +494,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -534,7 +514,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -554,7 +534,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -574,7 +554,27 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
+        <div class="rating-product">4.7</div>
+      </div>
+
+      <div class="product-card-info">
+        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+        
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="m-0 product-card-price">2 115 600 ₽</p>
+          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-car-rating">
+
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -669,7 +669,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -688,7 +688,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -707,7 +707,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -726,7 +726,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -745,7 +745,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -764,7 +764,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -783,27 +783,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -823,7 +803,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -843,7 +823,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -863,7 +843,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -883,7 +863,27 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
+        <div class="rating-product">4.7</div>
+      </div>
+
+      <div class="product-card-info">
+        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+        
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="m-0 product-card-price">2 115 600 ₽</p>
+          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-car-rating">
+
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -967,7 +967,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -986,7 +986,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1005,7 +1005,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1024,7 +1024,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1043,7 +1043,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1062,7 +1062,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1081,27 +1081,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1121,7 +1101,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1141,7 +1121,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1161,7 +1141,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1181,7 +1161,27 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
+        <div class="rating-product">4.7</div>
+      </div>
+
+      <div class="product-card-info">
+        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+        
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="m-0 product-card-price">2 115 600 ₽</p>
+          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-car-rating">
+
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1264,7 +1264,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1283,7 +1283,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1302,7 +1302,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1321,7 +1321,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1340,7 +1340,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1359,7 +1359,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1378,27 +1378,7 @@
 
     <div class="product-card">
       <div class="product-card-car-rating">
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1418,7 +1398,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1438,7 +1418,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{ % static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1458,7 +1438,7 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -1478,7 +1458,27 @@
     <div class="product-card">
       <div class="product-card-car-rating">
 
-        <img class="product-card-img" src="./static/img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png" alt="car">
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
+        <div class="rating-product">4.7</div>
+      </div>
+
+      <div class="product-card-info">
+        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
+        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
+        
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="m-0 product-card-price">2 115 600 ₽</p>
+          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-car-rating">
+
+        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
       </div>
 
@@ -2263,7 +2263,7 @@
             </svg>    
               
             <p class="ms-3">Заключение договора <br> 
-              <a class="download-sample" href="./static/img/logo-header.png" download="">
+              <a class="download-sample" href="{% static 'img/logo-header.png' %}" download="">
                 <svg class="me-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.5 11.875C17.5 12.0408 17.4342 12.1997 17.3169 12.3169C17.1997 12.4342 17.0408 12.5 16.875 12.5H15V13.75H16.25C16.4158 13.75 16.5747 13.8158 16.6919 13.9331C16.8092 14.0503 16.875 14.2092 16.875 14.375C16.875 14.5408 16.8092 14.6997 16.6919 14.8169C16.5747 14.9342 16.4158 15 16.25 15H15V16.25C15 16.4158 14.9342 16.5747 14.8169 16.6919C14.6997 16.8092 14.5408 16.875 14.375 16.875C14.2092 16.875 14.0503 16.8092 13.9331 16.6919C13.8158 16.5747 13.75 16.4158 13.75 16.25V11.875C13.75 11.7092 13.8158 11.5503 13.9331 11.4331C14.0503 11.3158 14.2092 11.25 14.375 11.25H16.875C17.0408 11.25 17.1997 11.3158 17.3169 11.4331C17.4342 11.5503 17.5 11.7092 17.5 11.875ZM7.1875 13.4375C7.1875 14.0177 6.95703 14.5741 6.5468 14.9843C6.13656 15.3945 5.58016 15.625 5 15.625H4.375V16.25C4.375 16.4158 4.30915 16.5747 4.19194 16.6919C4.07473 16.8092 3.91576 16.875 3.75 16.875C3.58424 16.875 3.42527 16.8092 3.30806 16.6919C3.19085 16.5747 3.125 16.4158 3.125 16.25V11.875C3.125 11.7092 3.19085 11.5503 3.30806 11.4331C3.42527 11.3158 3.58424 11.25 3.75 11.25H5C5.58016 11.25 6.13656 11.4805 6.5468 11.8907C6.95703 12.3009 7.1875 12.8573 7.1875 13.4375ZM5.9375 13.4375C5.9375 13.1889 5.83873 12.9504 5.66291 12.7746C5.4871 12.5988 5.24864 12.5 5 12.5H4.375V14.375H5C5.24864 14.375 5.4871 14.2762 5.66291 14.1004C5.83873 13.9246 5.9375 13.6861 5.9375 13.4375ZM12.8125 14.0625C12.8125 14.8084 12.5162 15.5238 11.9887 16.0512C11.4613 16.5787 10.7459 16.875 10 16.875H8.75C8.58424 16.875 8.42527 16.8092 8.30806 16.6919C8.19085 16.5747 8.125 16.4158 8.125 16.25V11.875C8.125 11.7092 8.19085 11.5503 8.30806 11.4331C8.42527 11.3158 8.58424 11.25 8.75 11.25H10C10.7459 11.25 11.4613 11.5463 11.9887 12.0738C12.5162 12.6012 12.8125 13.3166 12.8125 14.0625ZM11.5625 14.0625C11.5625 13.6481 11.3979 13.2507 11.1049 12.9576C10.8118 12.6646 10.4144 12.5 10 12.5H9.375V15.625H10C10.4144 15.625 10.8118 15.4604 11.1049 15.1674C11.3979 14.8743 11.5625 14.4769 11.5625 14.0625ZM3.125 8.75V3.125C3.125 2.79348 3.2567 2.47554 3.49112 2.24112C3.72554 2.0067 4.04348 1.875 4.375 1.875H11.875C11.9571 1.87494 12.0384 1.89105 12.1143 1.92241C12.1902 1.95378 12.2591 1.99979 12.3172 2.05781L16.6922 6.43281C16.7502 6.4909 16.7962 6.55985 16.8276 6.63572C16.859 6.71159 16.8751 6.7929 16.875 6.875V8.75C16.875 8.91576 16.8092 9.07473 16.6919 9.19194C16.5747 9.30915 16.4158 9.375 16.25 9.375C16.0842 9.375 15.9253 9.30915 15.8081 9.19194C15.6908 9.07473 15.625 8.91576 15.625 8.75V7.5H11.875C11.7092 7.5 11.5503 7.43415 11.4331 7.31694C11.3158 7.19973 11.25 7.04076 11.25 6.875V3.125H4.375V8.75C4.375 8.91576 4.30915 9.07473 4.19194 9.19194C4.07473 9.30915 3.91576 9.375 3.75 9.375C3.58424 9.375 3.42527 9.30915 3.30806 9.19194C3.19085 9.07473 3.125 8.91576 3.125 8.75ZM12.5 6.25H14.7414L12.5 4.00859V6.25Z" fill="#77BB58"/>
                 </svg>
@@ -2489,7 +2489,7 @@
     </div>
 
     <div class="col-4 d-flex justify-content-end about-us-img-with-info">
-      <img class="img-bg-with-info" src="./static/img/about-us/car-with-gradient.png" alt="car">
+      <img class="img-bg-with-info" src="{% static 'img/about-us/car-with-gradient.png' %}" alt="car">
 
       <div class="about-us-on-img-text">
         <h3>«Лучшее предприятие отрасли 2023»</h3>
@@ -2497,7 +2497,7 @@
       </div>
 
       <div class="about-us-text-on-img-medal">
-        <img src="./static/img/about-us/medal-company.png" alt="icon">
+        <img src="{% static 'img/about-us/medal-company.png' %}" alt="icon">
       </div>
     </div>
   </div>
@@ -2578,7 +2578,7 @@
   <div class="row">
     <div class="col-4 d-flex align-items-center">
 
-      <img src="./static/img/reviews/youtube-chanel.png" alt="icon">
+      <img src="{% static 'img/reviews/youtube-chanel.png' %}" alt="icon">
 
       <a target="_blank" style="font-size: 24px; color:#FFFFFF !important; margin-right:12px;" href="https://www.youtube.com/">Батарейка 25 rus Life</a>
         
@@ -2597,11 +2597,11 @@
               
               <div style="margin-right: 40px;">
                 <div class="social-rating-starts">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/empty-star.png" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/empty-star.png' %}" alt="icon">
                 </div>
                 <div class="social-reviews">225 оценок</div>
               </div>
@@ -2630,11 +2630,11 @@
               
               <div style="margin-right: 40px;">
                 <div class="social-rating-starts">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/half-star.png" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/half-star.png' %}" alt="icon">
                 </div>
                 <div class="social-reviews">96 оценок</div>
               </div>
@@ -2674,11 +2674,11 @@
               
               <div style="margin-right: 40px;">
                 <div class="social-rating-starts">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/full-star.png" alt="icon">
-                  <img src="./static/img/reviews/half-star.png" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/full-star.png' %}" alt="icon">
+                  <img src="{% static 'img/reviews/half-star.png' %}" alt="icon">
                 </div>
                 <div class="social-reviews">90 оценок</div>
               </div>
@@ -2981,7 +2981,7 @@
           </button>
         </div>
 
-        <img class="img-commission-discount" src="./static/img/promotions-and-discounts/commission-discount.png" alt="img">
+        <img class="img-commission-discount" src="{% static 'img/promotions-and-discounts/commission-discount.png' %}" alt="img">
       </div>
     </div>
     
@@ -2999,7 +2999,7 @@
           </button>
         </div>
 
-        <img class="img-referral-promotion" src="./static/img/promotions-and-discounts/referral-promotion.png" alt="img">
+        <img class="img-referral-promotion" src="{% static 'img/promotions-and-discounts/referral-promotion.png' %}" alt="img">
       </div>
     </div>
   </div>
@@ -3024,7 +3024,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-1.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-1.png' %}" alt="article"> 
         <p>Обзор Toyota RAIZE</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
@@ -3047,7 +3047,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-2.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-2.png' %}" alt="article">
         <p>Обзор Nissan Serena C27</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
@@ -3070,7 +3070,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-3.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-3.png' %}" alt="article">
         <p>Обзор Subaru XV</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
@@ -3093,7 +3093,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-4.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-4.png' %}" alt="article">
         <p>Самые популярные авто для города</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
@@ -3116,7 +3116,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-5.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-5.png' %}" alt="article">
         <p>Переоформление электронного ПТС на нового собственника: по...</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
@@ -3139,7 +3139,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-1.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-1.png' %}" alt="article">
         <p>Обзор Toyota RAIZE</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
