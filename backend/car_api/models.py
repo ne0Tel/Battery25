@@ -163,7 +163,7 @@ class MainPageCarsModel(models.Model):
 
     brand = models.CharField(verbose_name='Марка машины', max_length=255) # сделать модель отдельно default = ''
     model = models.CharField(verbose_name='Модель машины', max_length=255)
-    img = models.ManyToManyField(PhotoCarsModel, null=True, verbose_name='Фотографии авто') # on delete 
+    img = models.ManyToManyField(PhotoCarsModel, null=True, verbose_name='Фотографии авто') # on delete
     price = models.IntegerField(verbose_name='Цена') # default = 1000000
     rating = models.FloatField(verbose_name='Оценка') # default = 4.9
     year = models.IntegerField(verbose_name='Год') # выбрать отдельную модель 

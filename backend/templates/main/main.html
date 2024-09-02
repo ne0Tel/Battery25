@@ -7,7 +7,7 @@
 
   <div class="overlay-img">
 
-    <h1>КУПИТЬ АВТО ИЗ ЯПОНИИ,  КИТАЯ, КОРЕИ В НАЛИЧИИ И ПОД ЗАКАЗ</h1>
+    <h1>{{ poster.title }}</h1>
 
     <div class="d-flex align-items-center" style="margin-top: 60px; margin-bottom: 89px">
 
@@ -25,23 +25,23 @@
           <svg class="me-3" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M25.6255 12.5617L20.7036 16.8087L22.2031 23.1601C22.2859 23.5049 22.2645 23.8665 22.1419 24.1992C22.0192 24.5319 21.8007 24.8207 21.514 25.0293C21.2272 25.2379 20.8851 25.3568 20.5308 25.371C20.1765 25.3852 19.826 25.2941 19.5234 25.1092L14 21.7098L8.47327 25.1092C8.17077 25.293 7.82064 25.3833 7.46696 25.3685C7.11328 25.3538 6.77186 25.2347 6.48571 25.0263C6.19956 24.818 5.98147 24.5296 5.85889 24.1975C5.73631 23.8654 5.71473 23.5045 5.79687 23.1601L7.30187 16.8087L2.37999 12.5617C2.11235 12.3304 1.91879 12.0253 1.82347 11.6847C1.72816 11.344 1.73533 10.9828 1.84407 10.6462C1.95282 10.3096 2.15833 10.0124 2.43493 9.79191C2.71154 9.57138 3.04698 9.43724 3.39937 9.40623L9.85249 8.8856L12.3419 2.86122C12.4766 2.5329 12.7059 2.25206 13.0007 2.05441C13.2955 1.85676 13.6424 1.75122 13.9973 1.75122C14.3522 1.75122 14.699 1.85676 14.9938 2.05441C15.2886 2.25206 15.5179 2.5329 15.6526 2.86122L18.1409 8.8856L24.5941 9.40623C24.9471 9.43609 25.2836 9.56948 25.5612 9.7897C25.8388 10.0099 26.0452 10.3072 26.1547 10.6442C26.2641 10.9812 26.2716 11.343 26.1763 11.6843C26.081 12.0256 25.8871 12.3312 25.6189 12.5628L25.6255 12.5617Z" fill="#FFF156"/>
           </svg>  
-          <h2>4.9</h2>
+          <h2>{{ poster.clients_rate }}</h2>
         </div>
         <p>рейтинг клиентов</p>
       </div>
 
       <div class="text-center">
-        <h2>7+</h2>
+        <h2>{{ poster.market_age }}</h2>
         <p>лет на рынке</p>
       </div>
 
       <div class="text-center">
-        <h2>4 000 +</h2>
+        <h2>{{ poster.brought_auto }}</h2>
         <p>авто привезли</p>
       </div>
 
       <div class="text-center">
-        <h2>Каждый 3</h2>
+        <h2>{{ poster.repeated_appeal }}</h2>
         <p>обращается к нам повторно</p> 
       </div>
     </div>
@@ -357,8 +357,29 @@
       
   </button>
   <div class="slider-products-korea">
+    {% for car in korea %}
+      <div class="product-card">
+        <div class="product-card-car-rating">
+          <img class="product-card-img" src="/media/{{car.img.all.0}}" alt="{{ car.brand }} {{ car.model }}">
+          <div>{{car.img}}</div>
+          <div class="rating-product">{{car.rating}}</div>
+        </div>
 
-    <div class="product-card">
+        <div class="product-card-info">
+          <h2 class="product-card-title">{{ car.brand }} {{ car.model }}</h2>
+          <p class="m-0 product-card-subtitle">{{car.year}} • {{car.body_type}} • {{car.mileage}} км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">{{ car.price }} ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+    <!-- <div class="product-card">
       <div class="product-card-car-rating">
         <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
@@ -375,221 +396,8 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="d-flex justify-content-center">
@@ -667,7 +475,29 @@
   </button>
   <div class="slider-products-china">
 
-    <div class="product-card">
+    {% for car in china %}
+      <div class="product-card">
+        <div class="product-card-car-rating">
+          <img class="product-card-img" src="/media/{{car.img.all.0}}" alt="{{ car.brand }} {{ car.model }}">
+          <div>{{car.img}}</div>
+          <div class="rating-product">{{car.rating}}</div>
+        </div>
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">{{ car.brand }} {{ car.model }}</h2>
+          <p class="m-0 product-card-subtitle">{{car.year}} • {{car.body_type}} • {{car.mileage}} км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">{{ car.price }} ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+    <!-- <div class="product-card">
       <div class="product-card-car-rating">
         <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
@@ -684,221 +514,8 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="d-flex justify-content-center">
@@ -965,7 +582,29 @@
   </button>
   <div class="slider-products-japan">
 
-    <div class="product-card">
+    {% for car in japan %}
+      <div class="product-card">
+        <div class="product-card-car-rating">
+          <img class="product-card-img" src="/media/{{car.img.all.0}}" alt="{{ car.brand }} {{ car.model }}">
+          <div>{{car.img}}</div>
+          <div class="rating-product">{{car.rating}}</div>
+        </div>
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">{{ car.brand }} {{ car.model }}</h2>
+          <p class="m-0 product-card-subtitle">{{car.year}} • {{car.body_type}} • {{car.mileage}} км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">{{ car.price }} ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+    <!-- <div class="product-card">
       <div class="product-card-car-rating">
         <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
@@ -982,221 +621,8 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="d-flex justify-content-center">
@@ -1262,7 +688,29 @@
   </button>
   <div class="slider-products-europe">
 
-    <div class="product-card">
+    {% for car in europe %}
+      <div class="product-card">
+        <div class="product-card-car-rating">
+          <img class="product-card-img" src="/media/{{car.img.all.0}}" alt="{{ car.brand }} {{ car.model }}">
+          <div>{{car.img}}</div>
+          <div class="rating-product">{{car.rating}}</div>
+        </div>
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">{{ car.brand }} {{ car.model }}</h2>
+          <p class="m-0 product-card-subtitle">{{car.year}} • {{car.body_type}} • {{car.mileage}} км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">{{ car.price }} ₽</p>
+            <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+    <!-- <div class="product-card">
       <div class="product-card-car-rating">
         <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
         <div class="rating-product">4.7</div>
@@ -1279,221 +727,8 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/81df958c-279b-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/ec5f1384-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/4503665a-2798-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{ % static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-card-car-rating">
-
-        <img class="product-card-img" src="{% static 'img/every-catalog/Cars-Korea/5568fa76-279a-11ef-a698-31ca6a59cdec.png' %}" alt="car">
-        <div class="rating-product">4.7</div>
-      </div>
-
-      <div class="product-card-info">
-        <h2 class="product-card-title">Subaru LEVORG VN5</h2>
-        <p class="m-0 product-card-subtitle">2021 • Гибрит • 10 000 км</p>
-        
-        <div class="d-flex align-items-center justify-content-between">
-          <p class="m-0 product-card-price">2 115 600 ₽</p>
-          <button type="button" class="btn product-card-button" style="padding: 12px 17px; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="d-flex justify-content-center">
@@ -2387,7 +1622,7 @@
       <button type="button" class="btn general-button me-3" style="padding: 12px 17px; border-radius:12px !important; font-weight: 600; font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Получить консультацию
       </button>
-      <a class="d-flex align-items-center consultation-for-auto-button-whatsapp" href="https://wa.me/" target="_blank">
+      <a class="d-flex align-items-center consultation-for-auto-button-whatsapp" href="{{ contacts.whatsapp_link }}" target="_blank">
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2.70835 22.946C2.59051 22.8807 2.50199 22.7319 2.5 22.5959C2.4992 22.5412 2.8722 21.5273 3.32889 20.3428L4.15924 18.189L4.02501 17.9577C3.77811 17.5322 3.28598 16.4988 3.13251 16.0837C2.93706 15.5551 2.69174 14.576 2.59749 13.9483C2.50599 13.3391 2.49176 11.7611 2.57267 11.1969C2.92135 8.76568 3.92741 6.71238 5.57977 5.05965C7.23042 3.40863 9.30976 2.38653 11.6952 2.05366C12.2078 1.98211 13.8101 1.98211 14.3228 2.05366C17.3945 2.48232 20.0066 4.08936 21.7085 6.5976C22.6102 7.92662 23.1597 9.35392 23.4238 11.0532C23.5159 11.6455 23.5271 13.2609 23.4432 13.8251C23.0861 16.224 22.0488 18.3232 20.4207 19.9419C17.8818 22.466 14.2691 23.515 10.7303 22.7558C9.83373 22.5634 8.48852 22.0295 7.65111 21.5336L7.44583 21.412L5.22879 22.2058C4.00942 22.6424 2.96556 22.9998 2.90911 23C2.85266 23.0002 2.76231 22.9759 2.70835 22.946Z" fill="#25D366"/>
           <path d="M17.2957 16.7795C16.9851 17.0865 16.6673 17.2824 16.2415 17.4292C15.8433 17.5666 15.1317 17.6031 14.709 17.5078C13.7237 17.2858 12.215 16.5034 10.9241 15.545C9.70423 14.6394 8.65404 13.3232 7.77971 11.6043C7.10124 10.2705 6.92121 9.41971 7.13801 8.57185C7.37637 7.63966 8.11144 6.87007 9.01802 6.60357C9.18267 6.55516 9.42696 6.53528 9.8569 6.53528C10.4097 6.53528 10.4737 6.5433 10.5785 6.62573C10.6512 6.68294 10.8849 7.09557 11.2145 7.74862L11.7355 8.78105L11.734 9.14465C11.7327 9.46973 11.7166 9.54225 11.5819 9.82916C11.4991 10.0057 11.304 10.3078 11.1484 10.5005L10.8655 10.851L11.0662 11.2512C11.5879 12.2918 12.3576 13.0522 13.4228 13.5794L13.7834 13.7579L14.0285 13.5366C14.5458 13.0696 15.0609 12.8452 15.5429 12.8766C15.8236 12.895 15.9063 12.9283 16.8687 13.411C17.4332 13.6941 17.9336 13.9684 17.9806 14.0206C18.0561 14.1043 18.0678 14.187 18.0799 14.7254C18.0927 15.2915 18.0855 15.3596 17.9805 15.6724C17.8326 16.1132 17.6168 16.4621 17.2957 16.7795Z" fill="white"/>
@@ -2503,12 +1738,11 @@
   </div>
 </section>
 
-<!-- <section class="reviews">
+<section class="reviews">
 
   <div class="d-flex align-items-center justify-content-center mb-4">
     <h2>Отзывы</h2>
   </div>
-
 
   <button class="custom-prev-arrow">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2522,14 +1756,26 @@
       </svg>
       
   </button>
+  
   <div class="slider-reviews">
 
-    <div class="card-video">
-      <iframe width="267" height="150" src="https://www.youtube.com/embed/rQqJdKuWyyI?si=xUHAeTzHViLGI9e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Honda Stepwgn</p>
-    </div>
+    {% for video in yt_reviews %}
+      <div class="card-video"> 
+        <div class="position-relative">
+          <img src="{% static 'img/popular-articles/img-articles-2.png' %}" alt="video {{ video.title }}">
 
-    <div class="card-video">
+          <a class="button-play-video-reviews"  target="_blank" href="{{ video.cover_url }}">
+            <svg width="46" height="60" viewBox="0 0 46 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 55.6185V4.6524C0 1.4222 3.63099 -0.475755 6.28325 1.36808L44.1217 27.6731C46.4525 29.2935 46.4007 32.7586 44.0225 34.3086L6.18406 58.9696C3.52332 60.7037 0 58.7944 0 55.6185Z"/>
+            </svg>     
+          </a>
+        </div>
+
+        <p>{{ video.title }}</p>
+      </div>
+    {% endfor %}
+
+    <!-- <div class="card-video">
       <iframe width="267" height="150" src="https://www.youtube.com/embed/rQqJdKuWyyI?si=xUHAeTzHViLGI9e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p>Nissan Dayz</p>
     </div>
@@ -2572,7 +1818,7 @@
     <div class="card-video">
       <iframe width="267" height="150" src="https://www.youtube.com/embed/rQqJdKuWyyI?si=xUHAeTzHViLGI9e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p>Nissan Cube</p>
-    </div>
+    </div> -->
   </div>
 
   <div class="row">
@@ -2714,9 +1960,9 @@
     <div class="element-rounding-square"></div>
     <div class="element-rounding-rectangle"></div>
   </div>
-</section> -->
+</section>
 
-<!-- <section class="video-reviews">
+<section class="video-reviews">
 
   <div class="d-flex align-items-center justify-content-between mb-4">
     <h2>Обзоры</h2>
@@ -2745,7 +1991,27 @@
   </button>
   <div class="slider-video-reviews">
     
-    <div class="card-video">
+    {% for video in yt_reviews %}
+      <div class="card-video"> 
+        <div class="position-relative">
+          <img src="{% static 'img/popular-articles/img-articles-2.png' %}" alt="video {{ video.title }}">
+
+          <a class="button-play-video-reviews"  target="_blank" href="{{ video.cover_url }}">
+            <svg width="46" height="60" viewBox="0 0 46 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 55.6185V4.6524C0 1.4222 3.63099 -0.475755 6.28325 1.36808L44.1217 27.6731C46.4525 29.2935 46.4007 32.7586 44.0225 34.3086L6.18406 58.9696C3.52332 60.7037 0 58.7944 0 55.6185Z"/>
+            </svg>     
+          </a>
+        </div>
+
+        <p>{{ video.title }}</p>
+      </div>
+    {% endfor %}
+    
+    <!-- <div class="card-video">
+      <iframe width="267" height="150" src="https://www.youtube.com/embed/rQqJdKuWyyI?si=xUHAeTzHViLGI9e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div> -->
+    
+    <!-- <div class="card-video">
       <iframe width="267" height="150" src="https://www.youtube.com/embed/rQqJdKuWyyI?si=xUHAeTzHViLGI9e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     
@@ -2780,14 +2046,10 @@
     <div class="card-video">
       <iframe width="267" height="150" src="https://www.youtube.com/embed/rQqJdKuWyyI?si=xUHAeTzHViLGI9e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    
-    <div class="card-video">
-      <iframe width="267" height="150" src="https://www.youtube.com/embed/rQqJdKuWyyI?si=xUHAeTzHViLGI9e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    
+     -->
 
   </div>
-</section> -->
+</section>
 
 <section class="shorts-youtube">
 
@@ -2815,7 +2077,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_1.mp4" type="video/mp4">
+          <source src="{% static 'video/video_1.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2824,7 +2086,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_2.mp4" type="video/mp4">
+          <source src="{% static 'video/video_2.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2833,7 +2095,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_3.mp4" type="video/mp4">
+          <source src="{% static 'video/video_3.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2842,7 +2104,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_4.mp4" type="video/mp4">
+          <source src="{% static 'video/video_4.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2851,7 +2113,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_1.mp4" type="video/mp4">
+          <source src="{% static 'video/video_1.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2860,7 +2122,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_2.mp4" type="video/mp4">
+          <source src="{% static 'video/video_2.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2869,7 +2131,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_3.mp4" type="video/mp4">
+          <source src="{% static 'video/video_3.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2878,7 +2140,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_4.mp4" type="video/mp4">
+          <source src="{% static 'video/video_4.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2887,7 +2149,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_1.mp4" type="video/mp4">
+          <source src="{% static 'video/video_1.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2896,7 +2158,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_2.mp4" type="video/mp4">
+          <source src="{% static 'video/video_2.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2905,7 +2167,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_3.mp4" type="video/mp4">
+          <source src="{% static 'video/video_3.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2914,7 +2176,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_4.mp4" type="video/mp4">
+          <source src="{% static 'video/video_4.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2923,7 +2185,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_1.mp4" type="video/mp4">
+          <source src="{% static 'video/video_1.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2932,7 +2194,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_2.mp4" type="video/mp4">
+          <source src="{% static 'video/video_2.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2941,7 +2203,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_3.mp4" type="video/mp4">
+          <source src="{% static 'video/video_3.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -2950,7 +2212,7 @@
     <div class="card-shorts">
       <div class="video-shorts-youtube">
         <video width="150" height="265">
-          <source src="./static/video/video_4.mp4" type="video/mp4">
+          <source src="{% static 'video/video_4.mp4' %}" type="video/mp4">
         </video>
       </div>
       <p>АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
@@ -3162,7 +2424,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-2.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-2.png' %}" alt="article">
         <p>Обзор Nissan Serena C27</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
@@ -3185,7 +2447,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-3.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-3.png' %}" alt="article">
         <p>Обзор Subaru XV</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
@@ -3208,7 +2470,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-4.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-4.png' %}" alt="article">
         <p>Самые популярные авто для города</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
@@ -3231,7 +2493,7 @@
 
     <div class="card-articles">
       <a href="#">
-        <img src="./static/img/popular-articles/img-articles-5.png" alt="article">
+        <img src="{% static 'img/popular-articles/img-articles-5.png' %}" alt="article">
         <p>Переоформление электронного ПТС на нового собственника: по...</p>
         <div class="d-flex align-items-center articles-info">
           <div class="date-publish">
@@ -3292,7 +2554,7 @@
           <p class="">Мы в соцсетях</p>
 
           <div class="btns-social-links">
-            <a target="_blank" href="https://wa.me/">
+            <a target="_blank" href="{{ contacts.whatsapp_link }}">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_67_866)">
                 <path d="M0.23811 23.9383C0.103435 23.8636 0.00227693 23.6936 1.47015e-06 23.5382C-0.000913498 23.4757 0.425373 22.3169 0.947304 20.9632L1.89627 18.5018L1.74287 18.2374C1.4607 17.751 0.89826 16.5701 0.722866 16.0957C0.499497 15.4915 0.219131 14.3725 0.111413 13.6552C0.00684344 12.9589 -0.00942146 11.1556 0.0830519 10.5108C0.481544 7.73221 1.63132 5.38558 3.51974 3.49674C5.40619 1.60986 7.78259 0.441754 10.5087 0.0613207C11.0946 -0.0204402 12.9258 -0.0204402 13.5117 0.0613207C17.0223 0.551221 20.0075 2.38783 21.9525 5.2544C22.9831 6.77328 23.6111 8.40448 23.9129 10.3465C24.0181 11.0234 24.031 12.8696 23.935 13.5144C23.527 16.256 22.3415 18.6551 20.4808 20.505C17.5792 23.3897 13.4504 24.5886 9.40609 23.7209C8.38141 23.501 6.84403 22.8908 5.88698 22.3241L5.65237 22.1852L3.11862 23.0924C1.72505 23.5913 0.53207 23.9998 0.467553 24C0.403036 24.0002 0.299787 23.9725 0.23811 23.9383Z" fill="#25D366"/>
@@ -3305,7 +2567,7 @@
                 </defs>
               </svg>   
             </a>
-            <a target="_blank" href="https://t.me/">
+            <a target="_blank" href="{{ contacts.telegram_link }}">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_67_871)">
                 <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#29AAEB"/>
@@ -3318,7 +2580,7 @@
                 </defs>
               </svg>  
             </a>
-            <a target="_blank" href="https://www.instagram.com/">
+            <a target="_blank" href="{{ contacts.instagram_link }}">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.0292 0H11.9745C5.36218 0 0.00183105 5.36035 0.00183105 11.9727V12.0273C0.00183105 18.6397 5.36218 24 11.9745 24H12.0292C18.6415 24 24.0018 18.6397 24.0018 12.0273V11.9727C24.0018 5.36035 18.6415 0 12.0292 0Z" fill="url(#paint0_radial_67_878)"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7126 4.8833H8.28638C6.23473 4.8833 4.56567 6.55236 4.56567 8.604V15.398C4.56567 17.4496 6.23473 19.1187 8.28638 19.1187H15.7126C17.7643 19.1187 19.4333 17.4496 19.4333 15.398V8.604C19.4333 6.55236 17.7643 4.8833 15.7126 4.8833ZM5.87822 8.604C5.87822 7.27632 6.95869 6.19585 8.28638 6.19585H15.7126C17.0403 6.19585 18.1208 7.27632 18.1208 8.604V15.398C18.1208 16.7256 17.0403 17.8061 15.7126 17.8061H8.28638C6.95869 17.8061 5.87822 16.7256 5.87822 15.398V8.604ZM12.0004 15.461C13.9082 15.461 15.4613 13.9088 15.4613 12.0001C15.4613 10.0914 13.9091 8.53925 12.0004 8.53925C10.0917 8.53925 8.5395 10.0914 8.5395 12.0001C8.5395 13.9088 10.0917 15.461 12.0004 15.461ZM12.0004 9.85263C13.1851 9.85263 14.1487 10.8162 14.1487 12.001C14.1487 13.1857 13.1851 14.1493 12.0004 14.1493C10.8156 14.1493 9.85205 13.1857 9.85205 12.001C9.85205 10.8162 10.8156 9.85263 12.0004 9.85263ZM16.7144 8.16592C16.7144 8.68051 16.2958 9.09841 15.7822 9.09841C15.2677 9.09841 14.85 8.68051 14.85 8.16592C14.85 7.65133 15.2677 7.23343 15.7822 7.23343C16.2966 7.23343 16.7144 7.65133 16.7144 8.16592Z" fill="white"/>
@@ -3346,7 +2608,7 @@
         <h3>Оставить заявку</h3>
         <p>Оставьте свою заявку и наш менеджер свяжется с Вами для уточнения деталей.</p>
 
-        <form class="mt-4" id="id_form_feedback">
+        <form method="post" class="mt-4" id="id_form_feedback">
           
           <div class="row">
             <div id="id_name_feedback" class="col-6">
@@ -3385,4 +2647,1411 @@
 
 </section>
 
+<iframe width="343" height="609" src="https://www.youtube.com/embed/J0r__S1x_1U" title="Изобретение беговой дорожки." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<!-- Shorts -->
+<div id="id_youtube_shorts_modal" class="youtube-shorts-modal">
+  <div class="modal-container">
+    <button id="id_close_shorts">
+      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="60" height="60" rx="30" fill="#234546"/>
+        <path d="M37.5459 35.954C37.7572 36.1653 37.876 36.452 37.876 36.7509C37.876 37.0497 37.7572 37.3364 37.5459 37.5477C37.3346 37.7591 37.0479 37.8778 36.749 37.8778C36.4501 37.8778 36.1635 37.7591 35.9521 37.5477L30 31.5937L24.0459 37.5459C23.8346 37.7572 23.5479 37.8759 23.249 37.8759C22.9501 37.8759 22.6635 37.7572 22.4521 37.5459C22.2408 37.3345 22.1221 37.0479 22.1221 36.749C22.1221 36.4501 22.2408 36.1635 22.4521 35.9521L28.4062 29.9999L22.454 24.0459C22.2427 23.8345 22.1239 23.5479 22.1239 23.249C22.1239 22.9501 22.2427 22.6635 22.454 22.4521C22.6654 22.2408 22.952 22.122 23.2509 22.122C23.5498 22.122 23.8364 22.2408 24.0478 22.4521L30 28.4062L35.954 22.4512C36.1654 22.2398 36.452 22.1211 36.7509 22.1211C37.0498 22.1211 37.3364 22.2398 37.5478 22.4512C37.7591 22.6625 37.8778 22.9492 37.8778 23.248C37.8778 23.5469 37.7591 23.8336 37.5478 24.0449L31.5937 29.9999L37.5459 35.954Z" fill="white" fill-opacity="0.6"/>
+      </svg>
+    </button>
+
+    <div class="shorts-slider-video splide" aria-labelledby="carousel-heading">
+      <div class="splide__track">
+          <ul class="splide__list">
+              
+          </ul>
+      </div>
+    </div>      
+  </div>
+</div>
+
+<!-- Слайдеры -->
+<script>
+  $('.slider-products-korea').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.country-catalog-korea .custom-prev-arrow'),
+    nextArrow: $('.country-catalog-korea .custom-next-arrow'),
+  });
+  
+  $('.slider-products-china').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.country-catalog-china .custom-prev-arrow'),
+    nextArrow: $('.country-catalog-china .custom-next-arrow'),
+  });
+  
+  $('.slider-products-japan').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.country-catalog-japan .custom-prev-arrow'),
+    nextArrow: $('.country-catalog-japan .custom-next-arrow'),
+  });
+  
+  $('.slider-products-europe').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.country-catalog-europe .custom-prev-arrow'),
+    nextArrow: $('.country-catalog-europe .custom-next-arrow'),
+  });
+  
+  $('.slider-reviews').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.reviews .custom-prev-arrow'),
+    nextArrow: $('.reviews .custom-next-arrow'),
+  });
+
+  $('.slider-video-reviews').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.video-reviews .custom-prev-arrow'),
+    nextArrow: $('.video-reviews .custom-next-arrow'),
+  });
+
+  $('.slider-popular-articles').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.popular-articles .custom-prev-arrow'),
+    nextArrow: $('.popular-articles .custom-next-arrow'),
+  });
+
+  $('.slider-shorts-youtube').slick({
+    slidesToShow: 8,
+    slidesToScroll: 8,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.shorts-youtube .custom-prev-arrow'),
+    nextArrow: $('.shorts-youtube .custom-next-arrow'),
+  });
+</script>
+
+<!-- Получение данных для слайдера с каталогом -->
+<script>
+  // Данные на весь код пока используются одни для всех типов каталогов
+  const data = {
+    "car-500k": {
+  
+      "car-1": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_seryj_mokryj_147750_1920x1080.jpg",
+        "id": "1",
+        "price": "500000",
+        "rating": "4.5",
+        "year": "2013",
+        "bodyType": "Гибрид",
+        "mileage": "10500" 
+      },
+      "car-2": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_avtomobil_bamper_191131_1920x1080.jpg",
+        "id": "2",
+        "price": "500000",
+        "rating": "4.4",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "23000" 
+      },
+      "car-3": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mercedesbenz_sclass_w222_112850_1920x1080.jpg",
+        "id": "3",
+        "price": "500000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "50000" 
+      },
+      "car-4": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_fary_avtomobil_124112_1920x1080.jpg",
+        "id": "4",
+        "price": "500000",
+        "rating": "3.2",
+        "year": "2020",
+        "bodyType": "Гибрид",
+        "mileage": "40000" 
+      },
+      "car-5": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_krasnyj_sportkar_142598_1920x1080.jpg",
+        "id": "5",
+        "price": "500000",
+        "rating": "4.5",
+        "year": "2015",
+        "bodyType": "Гибрид",
+        "mileage": "90000" 
+      },
+      "car-6": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_sport_mashiny_77639_1920x1080.jpg",
+        "id": "6",
+        "price": "500000",
+        "rating": "4.9",
+        "year": "2003",
+        "bodyType": "Гибрид",
+        "mileage": "30530" 
+      },
+      "car-7": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_e34_krasnyj_96487_1920x1080.jpg",
+        "id": "7",
+        "price": "500000",
+        "rating": "5.0",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-8": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_aventador_lp7504_108049_1920x1080.jpg",
+        "id": "8",
+        "price": "500000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-9": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_huracan_lamborghini_avtomobil_1017392_1920x1080.jpg",
+        "id": "9",
+        "price": "500000",
+        "rating": "4.6",
+        "year": "2007",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-10": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/ferrari_f430_ferrari_avtomobil_1018286_1920x1080.jpg",
+        "id": "10",
+        "price": "500000",
+        "rating": "4.1",
+        "year": "2023",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-11": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mitsubishi_3000gt_mitsubishi_avtomobil_267727_1920x1080.jpg",
+        "id": "11",
+        "price": "500000",
+        "rating": "4.7",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-12": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mazda_rx_7_mazda_avtomobil_262288_1920x1080.jpg",
+        "id": "12",
+        "price": "500000",
+        "rating": "4.6",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      }
+    },
+  
+    "car-600k": {
+  
+      "car-1": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/toyota_supra_toyota_avtomobil_905778_1920x1080.jpg",
+        "id": "1",
+        "price": "600000",
+        "rating": "4.5",
+        "year": "2013",
+        "bodyType": "Гибрид",
+        "mileage": "10500" 
+      },
+      "car-2": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/honda_s2000_honda_avtomobil_1133977_1920x1080.jpg",
+        "id": "2",
+        "price": "600000",
+        "rating": "4.4",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "23000" 
+      },
+      "car-3": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mustang_gt_mustang_avtomobil_1191100_1920x1080.jpg",
+        "id": "3",
+        "price": "600000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "50000" 
+      },
+      "car-4": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/porsche_panamera_porsche_avtomobil_983268_1920x1080.jpg",
+        "id": "4",
+        "price": "600000",
+        "rating": "3.2",
+        "year": "2020",
+        "bodyType": "Гибрид",
+        "mileage": "40000" 
+      },
+      "car-5": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/ford_mustang_ford_avtomobil_333059_1920x1080.jpg",
+        "id": "5",
+        "price": "600000",
+        "rating": "4.5",
+        "year": "2015",
+        "bodyType": "Гибрид",
+        "mileage": "90000" 
+      },
+      "car-6": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mercedes_slk_mercedes_avtomobil_408750_1920x1080.jpg",
+        "id": "6",
+        "price": "600000",
+        "rating": "4.9",
+        "year": "2003",
+        "bodyType": "Гибрид",
+        "mileage": "30530" 
+      },
+      "car-7": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_e34_krasnyj_96487_1920x1080.jpg",
+        "id": "7",
+        "price": "600000",
+        "rating": "5.0",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-8": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/honda_s2000_honda_avtomobil_556885_1920x1080.jpg",
+        "id": "8",
+        "price": "600000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-9": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_huracan_lamborghini_avtomobil_1017392_1920x1080.jpg",
+        "id": "9",
+        "price": "600000",
+        "rating": "4.6",
+        "year": "2007",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-10": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/honda_s2000_honda_avtomobil_557890_1920x1080.jpg",
+        "id": "10",
+        "price": "600000",
+        "rating": "4.1",
+        "year": "2023",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-11": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mitsubishi_3000gt_mitsubishi_avtomobil_267727_1920x1080.jpg",
+        "id": "11",
+        "price": "600000",
+        "rating": "4.7",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-12": {
+        "brand": "Daewoo",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mazda_rx_7_mazda_avtomobil_262288_1920x1080.jpg",
+        "id": "12",
+        "price": "600000",
+        "rating": "4.6",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      }
+    },
+  
+    "car-1kk": {
+      "car-1": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_seryj_mokryj_147750_1920x1080.jpg",
+        "id": "1",
+        "price": "1000000",
+        "rating": "4.5",
+        "year": "2013",
+        "bodyType": "Гибрид",
+        "mileage": "10500" 
+      },
+      "car-2": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_avtomobil_bamper_191131_1920x1080.jpg",
+        "id": "2",
+        "price": "1000000",
+        "rating": "4.4",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "23000" 
+      },
+      "car-3": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mercedesbenz_sclass_w222_112850_1920x1080.jpg",
+        "id": "3",
+        "price": "1000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "50000" 
+      },
+      "car-4": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_fary_avtomobil_124112_1920x1080.jpg",
+        "id": "4",
+        "price": "1000000",
+        "rating": "3.2",
+        "year": "2020",
+        "bodyType": "Гибрид",
+        "mileage": "40000" 
+      },
+      "car-5": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_krasnyj_sportkar_142598_1920x1080.jpg",
+        "id": "5",
+        "price": "1000000",
+        "rating": "4.5",
+        "year": "2015",
+        "bodyType": "Гибрид",
+        "mileage": "90000" 
+      },
+      "car-6": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_sport_mashiny_77639_1920x1080.jpg",
+        "id": "6",
+        "price": "1000000",
+        "rating": "4.9",
+        "year": "2003",
+        "bodyType": "Гибрид",
+        "mileage": "30530" 
+      },
+      "car-7": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_e34_krasnyj_96487_1920x1080.jpg",
+        "id": "7",
+        "price": "1000000",
+        "rating": "5.0",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-8": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_aventador_lp7504_108049_1920x1080.jpg",
+        "id": "8",
+        "price": "1000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-9": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_huracan_lamborghini_avtomobil_1017392_1920x1080.jpg",
+        "id": "9",
+        "price": "1000000",
+        "rating": "4.6",
+        "year": "2007",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-10": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/ferrari_f430_ferrari_avtomobil_1018286_1920x1080.jpg",
+        "id": "10",
+        "price": "1000000",
+        "rating": "4.1",
+        "year": "2023",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-11": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mitsubishi_3000gt_mitsubishi_avtomobil_267727_1920x1080.jpg",
+        "id": "11",
+        "price": "1000000",
+        "rating": "4.7",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-12": {
+        "brand": "KIA",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mazda_rx_7_mazda_avtomobil_262288_1920x1080.jpg",
+        "id": "12",
+        "price": "1000000",
+        "rating": "4.6",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      }
+    },
+  
+    "car-2kk": {
+      "car-1": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_seryj_mokryj_147750_1920x1080.jpg",
+        "id": "1",
+        "price": "2000000",
+        "rating": "4.5",
+        "year": "2013",
+        "bodyType": "Гибрид",
+        "mileage": "10500" 
+      },
+      "car-2": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_avtomobil_bamper_191131_1920x1080.jpg",
+        "id": "2",
+        "price": "2000000",
+        "rating": "4.4",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "23000" 
+      },
+      "car-3": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mercedesbenz_sclass_w222_112850_1920x1080.jpg",
+        "id": "3",
+        "price": "2000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "50000" 
+      },
+      "car-4": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_fary_avtomobil_124112_1920x1080.jpg",
+        "id": "4",
+        "price": "2000000",
+        "rating": "3.2",
+        "year": "2020",
+        "bodyType": "Гибрид",
+        "mileage": "40000" 
+      },
+      "car-5": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_krasnyj_sportkar_142598_1920x1080.jpg",
+        "id": "5",
+        "price": "2000000",
+        "rating": "4.5",
+        "year": "2015",
+        "bodyType": "Гибрид",
+        "mileage": "90000" 
+      },
+      "car-6": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_sport_mashiny_77639_1920x1080.jpg",
+        "id": "6",
+        "price": "2000000",
+        "rating": "4.9",
+        "year": "2003",
+        "bodyType": "Гибрид",
+        "mileage": "30530" 
+      },
+      "car-7": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_e34_krasnyj_96487_1920x1080.jpg",
+        "id": "7",
+        "price": "2000000",
+        "rating": "5.0",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-8": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_aventador_lp7504_108049_1920x1080.jpg",
+        "id": "8",
+        "price": "2000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-9": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_huracan_lamborghini_avtomobil_1017392_1920x1080.jpg",
+        "id": "9",
+        "price": "2000000",
+        "rating": "4.6",
+        "year": "2007",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-10": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/ferrari_f430_ferrari_avtomobil_1018286_1920x1080.jpg",
+        "id": "10",
+        "price": "2000000",
+        "rating": "4.1",
+        "year": "2023",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-11": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mitsubishi_3000gt_mitsubishi_avtomobil_267727_1920x1080.jpg",
+        "id": "11",
+        "price": "2000000",
+        "rating": "4.7",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-12": {
+        "brand": "Hyundai",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mazda_rx_7_mazda_avtomobil_262288_1920x1080.jpg",
+        "id": "12",
+        "price": "2000000",
+        "rating": "4.6",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      }
+    },
+  
+    "car-3kk": {
+      "car-1": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_seryj_mokryj_147750_1920x1080.jpg",
+        "id": "1",
+        "price": "3000000",
+        "rating": "4.5",
+        "year": "2013",
+        "bodyType": "Гибрид",
+        "mileage": "10500" 
+      },
+      "car-2": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_avtomobil_bamper_191131_1920x1080.jpg",
+        "id": "2",
+        "price": "3000000",
+        "rating": "4.4",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "23000" 
+      },
+      "car-3": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mercedesbenz_sclass_w222_112850_1920x1080.jpg",
+        "id": "3",
+        "price": "3000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "50000" 
+      },
+      "car-4": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_fary_avtomobil_124112_1920x1080.jpg",
+        "id": "4",
+        "price": "3000000",
+        "rating": "3.2",
+        "year": "2020",
+        "bodyType": "Гибрид",
+        "mileage": "40000" 
+      },
+      "car-5": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_krasnyj_sportkar_142598_1920x1080.jpg",
+        "id": "5",
+        "price": "3000000",
+        "rating": "4.5",
+        "year": "2015",
+        "bodyType": "Гибрид",
+        "mileage": "90000" 
+      },
+      "car-6": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_sport_mashiny_77639_1920x1080.jpg",
+        "id": "6",
+        "price": "3000000",
+        "rating": "4.9",
+        "year": "2003",
+        "bodyType": "Гибрид",
+        "mileage": "30530" 
+      },
+      "car-7": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_e34_krasnyj_96487_1920x1080.jpg",
+        "id": "7",
+        "price": "3000000",
+        "rating": "5.0",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-8": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_aventador_lp7504_108049_1920x1080.jpg",
+        "id": "8",
+        "price": "3000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-9": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_huracan_lamborghini_avtomobil_1017392_1920x1080.jpg",
+        "id": "9",
+        "price": "3000000",
+        "rating": "4.6",
+        "year": "2007",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-10": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/ferrari_f430_ferrari_avtomobil_1018286_1920x1080.jpg",
+        "id": "10",
+        "price": "3000000",
+        "rating": "4.1",
+        "year": "2023",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-11": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mitsubishi_3000gt_mitsubishi_avtomobil_267727_1920x1080.jpg",
+        "id": "11",
+        "price": "3000000",
+        "rating": "4.7",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-12": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mazda_rx_7_mazda_avtomobil_262288_1920x1080.jpg",
+        "id": "12",
+        "price": "3000000",
+        "rating": "4.6",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      }
+    },
+  
+    "car-4kk": {
+      "car-1": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_seryj_mokryj_147750_1920x1080.jpg",
+        "id": "1",
+        "price": "4000000",
+        "rating": "4.5",
+        "year": "2013",
+        "bodyType": "Гибрид",
+        "mileage": "10500" 
+      },
+      "car-2": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_avtomobil_bamper_191131_1920x1080.jpg",
+        "id": "2",
+        "price": "4000000",
+        "rating": "4.4",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "23000" 
+      },
+      "car-3": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mercedesbenz_sclass_w222_112850_1920x1080.jpg",
+        "id": "3",
+        "price": "4000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "50000" 
+      },
+      "car-4": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_fary_avtomobil_124112_1920x1080.jpg",
+        "id": "4",
+        "price": "4000000",
+        "rating": "3.2",
+        "year": "2020",
+        "bodyType": "Гибрид",
+        "mileage": "40000" 
+      },
+      "car-5": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_krasnyj_sportkar_142598_1920x1080.jpg",
+        "id": "5",
+        "price": "4000000",
+        "rating": "4.5",
+        "year": "2015",
+        "bodyType": "Гибрид",
+        "mileage": "90000" 
+      },
+      "car-6": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_sport_mashiny_77639_1920x1080.jpg",
+        "id": "6",
+        "price": "4000000",
+        "rating": "4.9",
+        "year": "2003",
+        "bodyType": "Гибрид",
+        "mileage": "30530" 
+      },
+      "car-7": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_e34_krasnyj_96487_1920x1080.jpg",
+        "id": "7",
+        "price": "4000000",
+        "rating": "5.0",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-8": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_aventador_lp7504_108049_1920x1080.jpg",
+        "id": "8",
+        "price": "4000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-9": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_huracan_lamborghini_avtomobil_1017392_1920x1080.jpg",
+        "id": "9",
+        "price": "4000000",
+        "rating": "4.6",
+        "year": "2007",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-10": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/ferrari_f430_ferrari_avtomobil_1018286_1920x1080.jpg",
+        "id": "10",
+        "price": "4000000",
+        "rating": "4.1",
+        "year": "2023",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-11": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mitsubishi_3000gt_mitsubishi_avtomobil_267727_1920x1080.jpg",
+        "id": "11",
+        "price": "4000000",
+        "rating": "4.7",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-12": {
+        "brand": "Genesis",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mazda_rx_7_mazda_avtomobil_262288_1920x1080.jpg",
+        "id": "12",
+        "price": "4000000",
+        "rating": "4.6",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      }
+    },
+  
+    "car-5kk": {
+      "car-1": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_seryj_mokryj_147750_1920x1080.jpg",
+        "id": "1",
+        "price": "5000000",
+        "rating": "4.5",
+        "year": "2013",
+        "bodyType": "Гибрид",
+        "mileage": "10500" 
+      },
+      "car-2": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_avtomobil_bamper_191131_1920x1080.jpg",
+        "id": "2",
+        "price": "5000000",
+        "rating": "4.4",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "23000" 
+      },
+      "car-3": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mercedesbenz_sclass_w222_112850_1920x1080.jpg",
+        "id": "3",
+        "price": "5000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "50000" 
+      },
+      "car-4": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_fary_avtomobil_124112_1920x1080.jpg",
+        "id": "4",
+        "price": "5000000",
+        "rating": "3.2",
+        "year": "2020",
+        "bodyType": "Гибрид",
+        "mileage": "40000" 
+      },
+      "car-5": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mashina_krasnyj_sportkar_142598_1920x1080.jpg",
+        "id": "5",
+        "price": "5000000",
+        "rating": "4.5",
+        "year": "2015",
+        "bodyType": "Гибрид",
+        "mileage": "90000" 
+      },
+      "car-6": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_sport_mashiny_77639_1920x1080.jpg",
+        "id": "6",
+        "price": "5000000",
+        "rating": "4.9",
+        "year": "2003",
+        "bodyType": "Гибрид",
+        "mileage": "30530" 
+      },
+      "car-7": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/bmw_e34_krasnyj_96487_1920x1080.jpg",
+        "id": "7",
+        "price": "5000000",
+        "rating": "5.0",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-8": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_aventador_lp7504_108049_1920x1080.jpg",
+        "id": "8",
+        "price": "5000000",
+        "rating": "4.9",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-9": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/lamborghini_huracan_lamborghini_avtomobil_1017392_1920x1080.jpg",
+        "id": "9",
+        "price": "5000000",
+        "rating": "4.6",
+        "year": "2007",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-10": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/ferrari_f430_ferrari_avtomobil_1018286_1920x1080.jpg",
+        "id": "10",
+        "price": "5000000",
+        "rating": "4.1",
+        "year": "2023",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-11": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mitsubishi_3000gt_mitsubishi_avtomobil_267727_1920x1080.jpg",
+        "id": "11",
+        "price": "5000000",
+        "rating": "4.7",
+        "year": "2024",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      },
+      "car-12": {
+        "brand": "Subaru",
+        "model": "LEVORG VN5",
+        "img": "https://images.wallpaperscraft.ru/image/single/mazda_rx_7_mazda_avtomobil_262288_1920x1080.jpg",
+        "id": "12",
+        "price": "5000000",
+        "rating": "4.6",
+        "year": "2021",
+        "bodyType": "Гибрид",
+        "mileage": "10000" 
+      }
+    }
+  }
+
+  function spreadingIDandEvents (nameCountry) {
+
+    const buttonsFilter = document.querySelectorAll(`.country-catalog-${nameCountry} .filter-catalog-button`);
+    for (let i = 0; i < buttonsFilter.length; i++ ) {
+      buttonsFilter[i].addEventListener('click', () => {
+        for (let j = 0; j < buttonsFilter.length; j++) buttonsFilter[j].classList.remove("filter-catalog-button-active");
+        buttonsFilter[i].classList.add("filter-catalog-button-active");
+        filterPrice(parseInt(buttonsFilter[i].innerHTML.replace(/\D/g, '')), nameCountry);
+      });
+    }
+
+    const productCards =  document.querySelectorAll(`.country-catalog-${nameCountry} .slick-slide`);
+    let countSlide = 0;
+    for (let i = 0; i < productCards.length; i++) {
+      if (productCards[i].classList.contains('slick-cloned')) { 
+        continue;
+      }
+      if (countSlide === 12) break;
+      countSlide++;
+
+      // Добавление каждому элементу с классом product-card-car-rating прелодер div с классом lds-dual-ring
+      productCards[i].querySelector('.product-card-car-rating').setAttribute("id", `id_product_card_car_rating_${nameCountry}_${countSlide}`);
+      const newDiv = document.createElement("div");
+      newDiv.classList.add('lds-dual-ring');
+      document.getElementById(`id_product_card_car_rating_${nameCountry}_${countSlide}`).append(newDiv);
+
+      productCards[i].querySelector('.product-card-img').setAttribute("id", `id_product_card_img_${nameCountry}_${countSlide}`);
+      productCards[i].querySelector('.rating-product').setAttribute("id", `id_rating_product_${nameCountry}_${countSlide}`);
+      productCards[i].querySelector('.product-card-title').setAttribute("id", `id_product_card_title_${nameCountry}_${countSlide}`);
+      productCards[i].querySelector('.product-card-subtitle').setAttribute("id", `id_product_card_subtitle_${nameCountry}_${countSlide}`);
+      productCards[i].querySelector('.product-card-price').setAttribute("id", `id_product_card_price_${nameCountry}_${countSlide}`);
+    }
+  }
+  spreadingIDandEvents('korea');
+  spreadingIDandEvents('china');
+  spreadingIDandEvents('japan');
+  spreadingIDandEvents('europe');
+
+  function fetchCards (priceProduct, nameCountry) {
+    const preloaders = document.querySelectorAll('.lds-dual-ring');
+
+    const regex = /(\d{1,3}(?:\s\d{3})*)/g;
+
+    for (let i = 0; i < 12; i++) {
+      preloaders[i].style.display = "block";
+      document.getElementById(`id_product_card_img_${nameCountry}_${i+1}`).setAttribute("src", `${data[`car-${priceProduct}`][`car-${i+1}`].img}`);
+      document.getElementById(`id_rating_product_${nameCountry}_${i+1}`).innerHTML = data[`car-${priceProduct}`][`car-${i+1}`].rating;
+      document.getElementById(`id_product_card_title_${nameCountry}_${i+1}`).innerHTML = `${data[`car-${priceProduct}`][`car-${i+1}`].brand} ${data[`car-${priceProduct}`][`car-${i+1}`].model}`;
+      document.getElementById(`id_product_card_subtitle_${nameCountry}_${i+1}`).innerHTML = `${data[`car-${priceProduct}`][`car-${i+1}`].year} • ${data[`car-${priceProduct}`][`car-${i+1}`].bodyType} • ${data[`car-${priceProduct}`][`car-${i+1}`].mileage}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ') + ' км';
+      document.getElementById(`id_product_card_price_${nameCountry}_${i+1}`).innerHTML = `${data[`car-${priceProduct}`][`car-${i+1}`].price}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ') + ' ₽';
+    }
+
+    for (let i = 0; i < 12; i++) {
+      let img = document.getElementById(`id_product_card_img_${nameCountry}_${i+1}`);
+      img.onload = () => {
+        preloaders[i].style.display = "none";
+      }
+    }
+  }
+
+  function filterPrice (price, nameCountry) {
+    if (price >= 500000) {
+      fetchCards('500k', nameCountry); 
+    }
+    if (price >=600000) {
+      fetchCards('600k', nameCountry);
+    }
+    if (price >= 1000000) {
+      fetchCards('1kk', nameCountry);
+    } 
+    if (price >= 2000000) {
+      fetchCards('2kk', nameCountry);
+    }
+    if (price >= 3000000) {
+      fetchCards('3kk', nameCountry);
+    }
+    if (price >= 4000000) {
+      fetchCards('4kk', nameCountry);
+    }
+    if (price >= 5000000) {
+      fetchCards('5kk', nameCountry);
+    }
+  }
+</script>
+
+<!-- Калькулятор доставки -->
+<script>
+  let prevElementMap = null;
+  let currentDeliveryArea = '';
+  let currentCarBody = '';
+  let tablePrice = {
+  "RU-AMU": {
+    "sedan": 20000,
+    "hatchback": 20000,
+    "crossover": 25000,
+    "jeep": 30000,
+    "minibus": 30000,
+    "truck": 30000,
+
+    "dayDelivery": 2,
+  },
+  "RU-KHA": {
+    "sedan": 25000,
+    "hatchback": 25000,
+    "crossover": 30000,
+    "jeep": 35000,
+    "minibus": 35000,
+    "truck": 35000,
+
+    "dayDelivery": 4,
+  },
+  "RU-MAG": {
+    "sedan": 120000,
+    "hatchback": 120000,
+    "crossover": 120000,
+    "jeep": 130000,
+    "minibus": 145000,
+    "truck": 145000,
+
+    "dayDelivery": 25,
+  },
+}
+
+function setMap(typeFiled, value, text) {
+  
+  setFiled(typeFiled, value, text);
+  
+  if (currentDeliveryArea !== '' && currentCarBody !== '') {
+
+    insertPriceDelivery(currentDeliveryArea, currentCarBody);
+    changeColorMap(prevElementMap);
+  }
+
+  function changeColorMap (prev) {
+    if (prev !== null) {
+      prev.setAttribute('fill', "#EFEFEF");
+      prev.setAttribute('stroke', '#FFFFFF');
+    } 
+
+    prevElementMap = document.querySelector( `path[data-code=${currentDeliveryArea}]`);
+
+    prevElementMap.setAttribute('fill', '#464646');
+    prevElementMap.setAttribute('stroke', '#1B1B1B');
+  } 
+
+  function insertPriceDelivery (code, carBodyType) {
+    setTimeout(function () {
+        odometer_1.innerHTML = tablePrice[code][carBodyType];
+    }, 100);
+  }
+
+  function setFiled(typeFiled, value, text) {
+    if (typeFiled === "delivery-area") {
+      document.getElementById('id_delivery_area').innerHTML = text;
+      currentDeliveryArea = value;
+    } else {
+      document.getElementById('id_car_body_type').innerHTML = text
+      currentCarBody = value;
+    }
+  }
+}
+
+
+</script>
+
+<!-- Инициализация подсказки (tooltip) -->
+<script>
+  var myTooltipEl = document.querySelector('[data-bs-toggle="tooltip"]');
+  var tooltip = new bootstrap.Tooltip(myTooltipEl, {
+    title: `
+      Корейские авто <strike>100 000 ₽</strike> 80 000 ₽
+      Китайские авто <strike>50 000 ₽</strike> 40 000 ₽
+      Японские авто <strike>50 000 ₽</strike> 40 000 ₽
+      `
+  });
+
+  var tooltip_svg = document.getElementById('tooltip_1');
+  tooltip_svg.addEventListener('mousemove', () =>{
+    var tooltip = document.querySelector('.tooltip-inner');
+    var tooltip = document.querySelector('.tooltip-inner');
+    if(tooltip){
+      tooltip.innerHTML = `
+      Корейские авто <strike>100 000 ₽</strike> 80 000 ₽
+      Китайские авто <strike>50 000 ₽</strike> 40 000 ₽
+      Японские авто <strike>50 000 ₽</strike> 40 000 ₽
+      `;
+    }
+  });
+  
+</script>
+
+<!-- Shorts -->
+<script>
+  // Вертикальный слайдер для Shorts
+  const shortsSplider = new Splide('.splide', {
+    type: 'loop',
+    direction: 'ttb',
+    height: '800px',
+    arrows: false,
+    pagination: false,
+    wheel: true,
+  });
+
+  const sliderShorts = document.querySelectorAll('.slider-shorts-youtube .slick-slide');
+  let countSliderShorts = 0;
+  for (let i = 0; i < sliderShorts.length; i++) {
+    if (sliderShorts[i].classList.contains('slick-cloned')) {
+      continue;
+    }
+    countSliderShorts++;
+
+    sliderShorts[i].querySelector('video').setAttribute('id', `id_slider_shorts_youtube_${countSliderShorts}`);
+    document.querySelector('.splide__list').appendChild(createLiSlideSplide(countSliderShorts));
+  }
+  
+  // Инициализация видеоплееров Plyr
+  const players = document.querySelectorAll('.splide__slide video');
+  let splideSlide = 1;
+
+
+  players.forEach((player, index) => {
+    if (splideSlide === 5) splideSlide = 1;
+
+    new Plyr(`#id_video_player_${index + 1}`, { ratio: '9:16', loop: {active: true}, fullscreen: {enabled: false,}, controls: [],}
+    ).source = {
+      type: 'video',
+      title: `video_${index + 1}`,
+      sources: [
+      {
+        src: `{% static 'video/video_1.mp4' %}`,
+        type: 'video/mp4',
+      }],
+    }
+    
+    splideSlide++;
+    player.plyr.muted = false;
+  });
+
+  shortsSplider.mount();
+
+  // Модальное окно Shorts и кнопка закрытия
+  const modalShorts = document.getElementById('id_youtube_shorts_modal');
+  const btnCloseShorts = document.getElementById('id_close_shorts');
+  
+  // Инициализация кнопоки выключения звука
+  const btnsVolume = document.querySelectorAll('.volume-btn');
+  btnsVolume.forEach((btn)=> {
+    btn.addEventListener("click", mutedVideo);
+  })
+
+  // Открыть модальное окно
+  for (let i = 0; i < players.length; i++) {
+  document.querySelector(`#id_slider_shorts_youtube_${i + 1}`).addEventListener('click', () => {
+      modalShorts.classList.add('youtube-shorts-modal-show');
+      shortsSplider.go(i);
+      videoPlayback();
+    });
+  }
+
+  // Закрыть модальное окно и прекратить воспроизведение
+  btnCloseShorts.addEventListener('click', () => {
+    modalShorts.classList.remove('youtube-shorts-modal-show');
+    players.forEach((player) => {
+      player.plyr.stop();
+    });
+  });
+
+  // Выключать следующее и предыдущее видео, включать текущее
+  shortsSplider.on('moved', () => {
+    videoPlayback();
+  });
+
+  function videoPlayback () {
+    const slides = document.querySelectorAll('.splide__slide');
+    let count = 0;
+    for (let i = 0; i < slides.length; i++) {
+      if (slides[i].classList.contains('splide__slide--clone')) {
+        continue;
+      }
+
+      if (slides[i].classList.contains('is-active')) {
+        players[count].plyr.play();
+        
+      } else {
+        players[count].plyr.stop();
+      }
+      count++;
+    }
+    
+  }
+
+  function mutedVideo () {
+    const imgsVolume = document.querySelectorAll('#id_volume_btn');
+
+    if (imgsVolume[0].dataset.muted === 'false'){
+      imgsVolume.forEach((imgVolume, index) => {
+        imgVolume.src = "{% static 'img/shorts/mute-shorts.png' %}"
+        imgVolume.dataset.muted = 'true';
+        players[index].plyr.muted = true;
+      })
+    } else{
+      imgsVolume.forEach((imgVolume, index) => {
+        imgVolume.src = "{%  static 'img/shorts/volume-shorts.png' %}"
+        imgVolume.dataset.muted = 'false';
+        players[index].plyr.muted = false;
+      })
+    }
+  }
+
+  function createLiSlideSplide(idVideo) {
+    const slide = document.createElement('li');
+    slide.classList.add('splide__slide');
+
+    // Элемен видео
+    const video = document.createElement('video');
+    video.controls = true;
+    video.playsinline = true;
+    video.setAttribute("id", `id_video_player_${idVideo}`)
+    slide.appendChild(video);
+
+    // Контейнер для кнопок соц.активности
+    const btnsContainer = document.createElement('div');
+    btnsContainer.classList.add('btns-shorts-active');
+
+    // Кнопка громкости
+    const volumeBtn = document.createElement('div');
+    volumeBtn.classList.add('volume-btn');
+
+    const volumeImg = document.createElement('img');
+    volumeImg.id = 'id_volume_btn';
+    volumeImg.src = "{% static 'img/shorts/volume-shorts.png' %}";
+    volumeImg.alt = 'icon';
+    volumeImg.dataset.muted = 'false';
+    volumeBtn.appendChild(volumeImg);
+
+    btnsContainer.appendChild(volumeBtn);
+    slide.appendChild(btnsContainer);
+
+    return slide;
+  }
+</script>
 {% endblock %}

@@ -33,10 +33,11 @@ class MainPageView(TemplateView):
         poster = get_object_or_404(MainPagePosterModel)
         feedback_form = FeedbackForm()
         japan = MainPageCarsModel.objects.filter(country=1)
-        korea = MainPageCarsModel.objects.filter(country=2)
+        korea = MainPageCarsModel.objects.filter(country=3)
         europe = MainPageCarsModel.objects.filter(country=4)
-        china = MainPageCarsModel.objects.filter(country=3)
+        china = MainPageCarsModel.objects.filter(country=2)
         yt_reviews, yt_shorts = self.build_youtube_list()
+
 
         return render(request, 'templates/main/main.html',
                       context={'japan': japan, 'korea': korea, 'europe': europe,
