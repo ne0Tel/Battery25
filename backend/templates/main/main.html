@@ -2647,8 +2647,7 @@
 
 </section>
 
-<iframe width="343" height="609" src="https://www.youtube.com/embed/J0r__S1x_1U" title="Изобретение беговой дорожки." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<iframe width="343" height="609" src="https://www.youtube.com/embed/J0r__S1x_1U" title="Изобретение беговой дорожки." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 <!-- Shorts -->
 <div id="id_youtube_shorts_modal" class="youtube-shorts-modal">
@@ -3713,6 +3712,9 @@
     }
   }
 
+
+
+
   function spreadingIDandEvents (nameCountry) {
 
     const buttonsFilter = document.querySelectorAll(`.country-catalog-${nameCountry} .filter-catalog-button`);
@@ -3940,6 +3942,7 @@ function setMap(typeFiled, value, text) {
     ).source = {
       type: 'video',
       title: `video_${index + 1}`,
+      embed: 'https://www.youtube.com/embed/J0r__S1x_1U',
       sources: [
       {
         src: `{% static 'video/video_1.mp4' %}`,
