@@ -205,7 +205,7 @@ section {
 }
 
 .product-card-button {
-  padding: 12px 20px;
+  padding: 12px 20px !important;
   font-weight: 500 !important;
   border-radius: 12px;
   background-color: #234546;
@@ -278,11 +278,15 @@ section {
 .fixed {
   background-color: #FFFFFF;
   position: fixed;
-  padding: 5px 0px;
+  padding: 16px 0px;
   top: 0;
   left: 0;
   width: 100% !important;
   z-index: 1000;
+}
+
+#fixed-navbar ._container{
+  overflow-x: visible !important;
 }
 
 .tooltip .tooltip-arrow::before {
@@ -430,7 +434,15 @@ header hr {
   margin-right: 0px !important;
 }
 
+header .header-logo {
+  margin-right: 40px !important;
+}
+
 .header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .header-contact a {
@@ -466,9 +478,11 @@ header .navbar .nav-link {
   font-size: 16px;
   color: #161616 !important;
   transition: color .5s ease-in-out;
+  padding: 0px !important;
 }
 
 header .navbar .nav-item .dropdown .dropdown-toggle {
+  padding: 0px !important;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -477,6 +491,10 @@ header .navbar .nav-item .dropdown .dropdown-toggle {
   background-color: #FFFFFF;
   border: none;
   transition: color .5s ease-in-out, fill .5s ease-in-out;
+}
+
+header .navbar .container-fluid {
+  padding: 0px !important;
 }
 
 header .navbar .nav-item .dropdown .dropdown-toggle:hover {
@@ -503,7 +521,7 @@ header .navbar .nav-link:hover {
 }
 
 .header .navbar .navbar-nav > * {
-  margin-right: 12px;
+  margin-right: 28px;
 }
 
 .header .navbar .navbar-nav > *:last-child {
@@ -511,6 +529,25 @@ header .navbar .nav-link:hover {
 }
 
 
+.header .dropdown .dropdown-menu{
+  margin-top: 4px !important;
+  padding: 8px !important;
+  border-radius: 12px !important;
+}
+
+.header .dropdown .dropdown-item {
+  padding: 8px 12px !important;
+  color: #161616 !important;
+  background-color: #FFFFFF !important;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+header .dropdown .dropdown-item:hover {
+  border-radius: 8px !important;
+  background-color: #F6F7F9 !important;
+  color: #77BB58 !important;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
 
 
 /* ------------Cars In Stock------------ */
@@ -771,6 +808,10 @@ select {
   transform: translate(-9%, -50%);
 }
 
+.purchase-scheme-info .general-button {
+  padding: 12px 20px !important;
+}
+
 
 /* ------------Consultation For Auto------------ */
 
@@ -805,16 +846,25 @@ select {
 }
 
 .consultation-for-auto-button-whatsapp {
-  padding: 8px;
+  padding: 10px;
   background-color: #234546;
   border-radius: 16px;
+  transition: background-color .5s ease-in-out;
 }
 
+.consultation-for-auto-button-whatsapp:hover {
+  background-color: #2E5051;
+  transition: background-color .5s ease-in-out;
+}
+
+.consultation-for-auto .general-button {
+  padding: 12px 20px !important;
+}
 
 /* ------------About Us------------ */
 
 .about-us {
-  margin-bottom: 60px !important;
+  margin-bottom: 100px !important;
 }
 
 .about-us-text {
@@ -894,6 +944,7 @@ select {
 
 .reviews h2 {
   color: #FFFFFF;
+  margin: 0px !important;
 }
 
 .reviews a {
@@ -956,6 +1007,10 @@ select {
   padding: 16px;
   border-radius: 16px;
   background-color: #F6F6F6;
+}
+
+.reviews .social-links .social-links-item .social-rating-average-number {
+  margin-right: 12px !important;
 }
 
 .reviews .social-links .social-links-item .social-reviews {
@@ -1061,6 +1116,10 @@ select {
 .shorts-youtube {
   position: relative;
   margin-bottom: 100px !important;
+}
+
+.shorts-youtube h2 {
+  margin: 0px !important;
 }
 
 .shorts-youtube .slick-track {
@@ -1205,7 +1264,9 @@ select {
   margin-top: 8px !important;
 }
 
-
+.video-reviews h2 {
+  margin: 0px !important;
+}
 
 
 /* ------------Popular Articles------------ */
@@ -1268,13 +1329,23 @@ select {
 
 .form-feedback .contacts h2 {
   color: #FFFFFF;
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 
 .form-feedback .contacts a {
   color: #FFFFFF !important;
   font-weight: 500;
   font-size: 16px;
+}
+
+.form-feedback .contacts .col a {
+  color: #FFFFFF !important;
+  transition: color .5s ease-in-out;
+}
+
+.form-feedback .contacts .col a:hover {
+  color: #77BB58 !important;
+  transition: color .5s ease-in-out;
 }
 
 .form-feedback .contacts .form-contact-click p {
@@ -1337,15 +1408,25 @@ select {
   border-radius: 12px;
   color: #ffffff !important;
   cursor: pointer;
+  transition: background-color .5s ease-in-out;
 }
 
 .form-feedback .contacts .form-wp #id_form_feedback .form-control:focus{
+  transition: background-color .5s ease-in-out;
+  background-color: #2E5051;
   box-shadow: none;
 }
 
+.form-feedback .contacts .form-wp #id_privacy_policy input {
+  background-color: #FFFFFF !important;
+}
+
 .form-feedback .contacts .form-wp #id_form_feedback .form-check-input{
+  outline: none !important;
+  box-shadow: none !important;
   margin-right: 12px !important;
 }
+
 
 .form-feedback .contacts .form-wp #id_form_feedback input::placeholder {
   font-weight: 400;
@@ -1368,7 +1449,14 @@ select {
 }
 
 .form-feedback .contacts .form-wp #id_form_feedback textarea {
+  transition: background-color .5s ease-in-out;
+  background-color: #234546;
   cursor: pointer;
+}
+
+.form-feedback .contacts .form-wp #id_form_feedback textarea:focus {
+  transition: background-color .5s ease-in-out;
+  background-color: #2E5051;
 }
 
 .form-feedback .contacts .form-wp #id_form_feedback textarea::placeholder {
@@ -1450,6 +1538,9 @@ select {
   z-index:10;
 }
 
+.form-feedback .contacts .col a:hover {
+
+}
 
 
 /* ------------Footer------------ */
@@ -1484,6 +1575,15 @@ footer a {
 footer a:hover {
   color: #77BB58 !important;
   transition: color .5s ease-in-out;
+}
+
+footer .footer-telephone {
+  font-weight: 500 !important;
+  font-size: 24px !important;
+}
+
+footer .footer-email {
+  font-size: 16px !important;
 }
 
 footer span {
@@ -1628,14 +1728,21 @@ footer .social-links-footer svg:hover {
   display: none;
 }
 
+.catalog .filter .dropdown .dropdown-item {
+  padding: 8px 12px !important;
+  background-color: #FFFFFF !important;
+  transition: background-color .5s ease-in-out;
+}
+
 .catalog .filter .dropdown .dropdown-item:hover { 
   border-radius: 8px !important;
   background-color: #F6F7F9 !important;
+  transition: background-color .5s ease-in-out;
 }
 
 .catalog .filter .dropdown .dropdown-menu{
   margin-top: 4px !important;
-  padding: 0px 8px !important;
+  padding: 8px !important;
   border-radius: 12px !important;
 }
 
@@ -1653,7 +1760,7 @@ footer .social-links-footer svg:hover {
 
 .catalog {
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
   position: relative;
 }
 
