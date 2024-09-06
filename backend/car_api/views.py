@@ -40,10 +40,29 @@ class MainPageView(TemplateView):
 
 
         return render(request, 'templates/main/main.html',
-                      context={'japan': japan, 'korea': korea, 'europe': europe,
+                        context={'japan': japan, 'korea': korea, 'europe': europe,
                                'china': china, 'contacts': contacts, 'poster': poster,
-                               'feedBackForm': feedback_form, 'yt_reviews': yt_reviews, 'yt_shorts': yt_shorts})
+                               'yt_reviews': yt_reviews, 'yt_shorts': yt_shorts})
     
+
+def card(request):
+    return render(request, "templates/main/card.html")
+
+
+def similar_cars(request):
+    return render(request, "templates/similar_cars.html")
+
+
+def shipping_calculator(request):
+    return render(request, "templates/shipping_calculator.html")
+
+
+def feedback_form(request):
+    feedback_form = FeedbackForm()
+
+    return render(request, "templates/feedback_form.html", 
+                    context={'feedBackForm': feedback_form})
+
 
 class CarsJapan(FilteredCarListView):
     form_filter = CarJapanFilterForm

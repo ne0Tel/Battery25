@@ -285,6 +285,14 @@ section {
   z-index: 1000;
 }
 
+#fixed-navbar {
+  padding: 16px 0px !important;
+}
+
+.bg-not-main-page {
+  background-color: #63A744 !important;
+}
+
 #fixed-navbar ._container{
   overflow-x: visible !important;
 }
@@ -424,6 +432,7 @@ header {
 header hr {
   width: 100% !important;
   border: 1px solid #B8B8B8 !important;
+  margin: 0px !important;
 }
 
 .header-contact__info > * {
@@ -481,6 +490,16 @@ header .navbar .nav-link {
   padding: 0px !important;
 }
 
+header .navbar .nav-link-not-main-page .nav-link  {
+  color: #FFFFFF !important;
+  transition: color .5s ease-in-out;
+}
+
+header .navbar .nav-link-not-main-page .nav-link:hover  {
+  color: #37ff00 !important;
+  transition: color .5s ease-in-out;
+}
+
 header .navbar .nav-item .dropdown .dropdown-toggle {
   padding: 0px !important;
   display: flex;
@@ -493,6 +512,13 @@ header .navbar .nav-item .dropdown .dropdown-toggle {
   transition: color .5s ease-in-out, fill .5s ease-in-out;
 }
 
+header .navbar .nav-link-not-main-page .nav-item .dropdown .dropdown-toggle {
+  color: #FFFFFF !important;
+  fill: #FFFFFF;
+  background-color: #63A744;
+  transition: color .5s ease-in-out, fill .5s ease-in-out;
+}
+
 header .navbar .container-fluid {
   padding: 0px !important;
 }
@@ -501,6 +527,13 @@ header .navbar .nav-item .dropdown .dropdown-toggle:hover {
   font-size: 16px;
   color: #77BB58 !important;
   fill: #77BB58;
+  transition: color .5s ease-in-out, fill .5s ease-in-out;
+}
+
+header .navbar .nav-link-not-main-page .nav-item .dropdown .dropdown-toggle:hover {
+  font-size: 16px;
+  color: #37ff00 !important;
+  fill: #37ff00 !important;
   transition: color .5s ease-in-out, fill .5s ease-in-out;
 }
 
@@ -546,6 +579,18 @@ header .dropdown .dropdown-item:hover {
   border-radius: 8px !important;
   background-color: #F6F7F9 !important;
   color: #77BB58 !important;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+header .btns-not-main-page .general-button {
+  background-color: #FFFFFF !important;
+  color: #49554D !important;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+header .btns-not-main-page .general-button:hover {
+  background-color: #a5a5a5 !important;
+  color: #ffffff !important;
   transition: background-color .5s ease-in-out, color .5s ease-in-out;
 }
 

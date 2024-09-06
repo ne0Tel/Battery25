@@ -12,5 +12,9 @@ rest_patterns = [
 
 urlpatterns = [
     path('main/', MainPageView.as_view()),
-    path('catalog/', CarsJapan.as_view())
+    path('catalog/', CarsJapan.as_view()),
+    path('card/', card, name="card"),
+    path('shipping_calculator/', shipping_calculator, name="shipping_calculator"),
+    path('feedback_form/', feedback_form, name="feedback_form"),
+    path('similar_cars/' , similar_cars, name="similar_cars")
 ] + rest_patterns
