@@ -1,3 +1,57 @@
 {% load static %}
 
-<div><h1><a href="">Hello World!!!!</a></h1></div>
+<section class="similar-cars">
+  <div class="d-flex align-items-center">
+    <h2 style="font-size: 24px !important;" class="mb-4">Похожие автомобили</h2>
+  </div>
+
+  <button class="custom-prev-arrow">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.96945 12.5306L14.4694 20.0306C14.5391 20.1003 14.6219 20.1556 14.7129 20.1933C14.8039 20.231 14.9015 20.2504 15.0001 20.2504C15.0986 20.2504 15.1962 20.231 15.2872 20.1933C15.3783 20.1556 15.461 20.1003 15.5307 20.0306C15.6004 19.9609 15.6557 19.8782 15.6934 19.7872C15.7311 19.6961 15.7505 19.5986 15.7505 19.5C15.7505 19.4015 15.7311 19.3039 15.6934 19.2128C15.6557 19.1218 15.6004 19.0391 15.5307 18.9694L8.56038 12L15.5307 5.03063C15.6714 4.8899 15.7505 4.69903 15.7505 4.50001C15.7505 4.30098 15.6714 4.11011 15.5307 3.96938C15.39 3.82865 15.1991 3.74959 15.0001 3.74959C14.801 3.74959 14.6102 3.82865 14.4694 3.96938L6.96945 11.4694C6.89971 11.539 6.84439 11.6218 6.80665 11.7128C6.76891 11.8038 6.74948 11.9014 6.74948 12C6.74948 12.0986 6.76891 12.1962 6.80665 12.2872C6.84439 12.3783 6.89971 12.461 6.96945 12.5306Z" fill="white"/>
+      </svg>
+      
+  </button>
+  <button class="custom-next-arrow">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.0306 12.5306L9.53055 20.0306C9.46087 20.1003 9.37815 20.1556 9.2871 20.1933C9.19606 20.231 9.09847 20.2504 8.99993 20.2504C8.90138 20.2504 8.8038 20.231 8.71276 20.1933C8.62171 20.1556 8.53899 20.1003 8.4693 20.0306C8.39962 19.9609 8.34435 19.8782 8.30663 19.7872C8.26892 19.6961 8.24951 19.5986 8.24951 19.5C8.24951 19.4015 8.26892 19.3039 8.30663 19.2128C8.34435 19.1218 8.39962 19.0391 8.4693 18.9694L15.4396 12L8.4693 5.03063C8.32857 4.8899 8.24951 4.69903 8.24951 4.50001C8.24951 4.30098 8.32857 4.11011 8.4693 3.96938C8.61003 3.82865 8.80091 3.74959 8.99993 3.74959C9.19895 3.74959 9.38982 3.82865 9.53055 3.96938L17.0306 11.4694C17.1003 11.539 17.1556 11.6218 17.1933 11.7128C17.2311 11.8038 17.2505 11.9014 17.2505 12C17.2505 12.0986 17.2311 12.1962 17.1933 12.2872C17.1556 12.3783 17.1003 12.461 17.0306 12.5306Z" fill="white"/>
+      </svg>
+      
+  </button>
+  
+  <div class="slider-similar-cars">
+    {% for car in korea %}
+      <div class="product-card">
+        <div class="product-card-car-rating">
+          <img class="product-card-img" src="/media/{{car.img.all.0}}" alt="{{ car.brand }} {{ car.model }}">
+          <div>{{car.img}}</div>
+          <div class="rating-product">{{car.rating}}</div>
+        </div>
+
+        <div class="product-card-info">
+          <h2 class="product-card-title">{{ car.brand }} {{ car.model }}</h2>
+          <p class="m-0 product-card-subtitle">{{car.year}} • {{car.body_type}} • {{car.mileage}} км</p>
+          
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="m-0 product-card-price">{{ car.price }} ₽</p>
+            <button type="button" class="btn product-card-button" style="font-size: 14px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  $('.slider-similar-cars').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    centerMode: false,
+    prevArrow: $('.similar-cars .custom-prev-arrow'),
+    nextArrow: $('.similar-cars .custom-next-arrow'),
+  });
+</script>

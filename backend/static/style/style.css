@@ -1588,6 +1588,122 @@ select {
 }
 
 
+/* ------------Similar Cars------------ */
+
+.similar-cars {
+  position: relative;
+  margin-bottom: 60px !important;
+}
+
+
+
+
+
+/* ------------Card Cars------------ */
+
+.car-card {
+  margin-bottom: 60px !important;
+  margin-top: 60px !important;
+}
+
+.car-card h2 {
+  margin-bottom: 24px !important;
+}
+
+.car-card .informations-right {
+  margin-left: 40px !important;
+}
+
+.types-prices {
+  padding: 24px;
+  background-color: #F6F7F9;
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.car-card .types-prices .other-price .flex-column > *:not(:last-child) {
+  margin-bottom: 12px !important;
+}
+
+.types-prices h3 {
+  font-size: 24px !important;
+  margin-bottom: 12px !important;
+}
+
+.types-prices span {
+  color: #757575;
+  font-size: 16px;
+  margin-right: 24px;
+}
+
+.price-in-rubles {
+}
+
+.title-price-in-yen {
+}
+
+.price-in-yen {
+}
+
+.title-duty-price {
+}
+
+.duty-price {
+}
+
+.buttons-car-card {
+  margin-top: 24px;
+}
+
+.buttons-car-card > *:not(:last-child) {
+  margin-right: 12px;
+}
+
+.car-card .buttons-car-card  .general-button {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+}
+
+.car-card .buttons-car-card  #calculation-button {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 12px 24px !important;
+  color: #0D1C12 !important;
+  border-radius: 12px !important;
+  background-color: #EFEFEF !important;
+  transition: color .5s ease-in-out, background-color .5s ease-in-out;
+}
+
+.car-card .buttons-car-card  #calculation-button:hover {
+  color: #FFFFFF !important;
+  background-color: #8b8b8b !important;
+  transition: color .5s ease-in-out, background-color .5s ease-in-out;
+}
+
+.car-card .info-car {
+  margin: 24px 0px;
+}
+
+.car-card .info-car .col-info-car > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.car-card .info-car .d-flex .car-info-value {
+  width: 150px;
+  margin-right: 24px;
+  color: #757575;
+}
+
+.info-car .d-flex .car-value {
+
+}
+
+.car-card .overview-description {
+  max-width: 780px;
+}
+
 /* ------------Footer------------ */
 
 footer {
@@ -2107,3 +2223,10 @@ margin-right: 0px;
 background-color: #EB1C24;
 }
 }
+
+
+
+
+
+
+/* ----------------------------------....Card Page....-------------------------------- */

@@ -46,7 +46,9 @@ class MainPageView(TemplateView):
     
 
 def card(request):
-    return render(request, "templates/main/card.html")
+    korea = MainPageCarsModel.objects.filter(country=3)
+
+    return render(request, "templates/main/card.html", context={'korea': korea})
 
 
 def similar_cars(request):
