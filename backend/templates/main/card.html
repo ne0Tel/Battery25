@@ -17,7 +17,7 @@
             src="/media/{{car.img.all.0}}"
             alt="{{ car.brand }} {{ car.model }}"
             class="gallery-slide slide-{{ forloop.counter0 }} gallery__Image" 
-            data-large="{{photo}}"
+            data-large="/media/{{car.img.all.0}}"
             style="cursor: pointer;"
           />
     
@@ -767,9 +767,12 @@
   </div>
 </section>
 
+
 {% include 'templates/similar_cars.html' %}
 {% include 'templates/shipping_calculator.html' %}
 {% include 'templates/feedback_form.html' %}
+
+
 
 <script>
   window.onload = (function () {
